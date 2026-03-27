@@ -26,8 +26,8 @@ const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
  */
 app.post('/chat', async (req, res) => {
   try {
-    // 1. Extract the 'message' property from the parsed JSON body
-    const { message } = req.body;
+    // 1. Extract 'message' and 'history' from the parsed JSON body (default history to empty array)
+    const { message, history = [] } = req.body;
 
     // 2. Validate input: Ensure the message is provided
     if (!message) {
@@ -61,11 +61,26 @@ Response format:
 Keep answers clear, structured, and not too long.`
     });
 
-    // 4. Send the message to the Gemini API and await the response 
-    const result = await model.generateContent(message);
+    // 4. Handle history safely: keep only the last 5 messages to avoid long context window
+    const recentHistory = history.slice(-5);
+
+    // 5. Format messages for Gemini API chat-style format
+    // Map 'user' -> 'user', and 'assistant' -> 'model'
+    const formattedHistory = recentHistory.map(msg => ({
+      role: msg.role === 'assistant' ? 'model' : 'user',
+      parts: [{ text: msg.content }]
+    }));
+
+    // 6. Start a chat session using the correctly formatted history
+    const chat = model.startChat({
+      history: formattedHistory
+    });
+
+    // 7. Send the new user message to the chat session
+    const result = await chat.sendMessage(message);
     const aiResponseText = result.response.text();
 
-    // 5. Send the AI response back to the client as JSON
+    // 8. Send the AI response back to the client as JSON
     res.json({ response: aiResponseText });
 
   } catch (error) {

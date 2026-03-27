@@ -33,5 +33,12 @@ We successfully created and verified a simple, robust Express.js backend that se
 *   **Final Verification**: Processed a live test question ("What is the hybridization of carbon in CH4?"). The AI successfully returned a perfect, well-structured response following all JEE Chemistry Tutor formatting rules.
 *   **Clean Test Scripts**: Created temporary developer scripts like `test_genai.js` and `test_raw.js` to run isolated verifications without accruing unnecessary billing charges or impacting the main Node server.
 
+### 5. Multi-Turn Conversation Memory
+*   **API Payload Update**: Modified the `/chat` endpoint to gracefully accept an optional `history` array from the frontend request body.
+*   **History Processing**: Implemented safety limits to extract only the last 5 messages, preventing excessively long context windows and token usage.
+*   **Role Mapping**: Created mapping logic to convert standard frontend roles (`assistant`, `user`) into the strictly formatted roles required by the Gemini SDK (`model`, `user`).
+*   **Chat Session Implementation**: Refactored the core model execution, switching from `model.generateContent()` to `model.startChat({ history })` and `chat.sendMessage(message)`.
+*   **Memory Verification**: Successfully ran a multi-turn automated test script (`test_memory.js`). Passed sequential prompts ("lets start with hyberddisation today" followed by "cant understand, explain in simpler language") to prove that the bot accurately maintained context and adaptively simplified its instructions based on the prior chat history.
+
 ## Current State
-The backend is fully functional, secure, and ready to be connected to any frontend application. No further changes to the backend codebase (`index.js`, `package.json`) are required at this stage.
+The backend is fully functional, secure, and actively capable of multi-turn conversations. It operates as a strict JEE Chemistry Tutor and is ready to be connected to any frontend application. No further changes to the core backend codebase (`index.js`, `package.json`) are required at this stage.
