@@ -1,0 +1,6 @@
+node_modules/
+.env
+output.txt
+final_response.txt
+clean_output.txt
+final_output.txt
