@@ -1,6 +1,8 @@
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
+import fs from 'fs';
+import path from 'path';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 
 // Load environment variables from a .env file into process.env
@@ -34,10 +36,31 @@ app.post('/chat', async (req, res) => {
       return res.status(400).json({ error: 'Message is required. Provide JSON like { "message": "text" }' });
     }
 
-    // 3. Select the Gemini model. "gemini-2.5-flash" is the recommended model for general text tasks in 2026.
-    const model = genAI.getGenerativeModel({
-      model: "gemini-2.5-flash",
-      systemInstruction: `You are a JEE Chemistry tutor.
+    // --- NEW: Basic Chapter Detection ---
+    let chapter = null;
+    const lowerMessage = message.toLowerCase();
+    if (lowerMessage.includes('bond') || lowerMessage.includes('hybridization') || lowerMessage.includes('vsepr')) {
+      chapter = 'chemical_bonding';
+    } else if (lowerMessage.includes('orbital') || lowerMessage.includes('quantum') || lowerMessage.includes('electron')) {
+      chapter = 'atomic_structure';
+    }
+
+    // --- NEW: Load Notes From File ---
+    let notesContent = '';
+    if (chapter) {
+      try {
+        const notesPath = path.join(process.cwd(), 'data', 'notes', `${chapter}.txt`);
+        if (fs.existsSync(notesPath)) {
+          notesContent = fs.readFileSync(notesPath, 'utf-8');
+        }
+      } catch (err) {
+        // If file missing or error reading -> skip safely (no error, do not crash server)
+        console.error(`Error reading notes for chapter ${chapter}:`, err.message);
+      }
+    }
+
+    // --- NEW: Final Prompt Structure ---
+    let finalSystemInstruction = `You are a JEE Chemistry tutor.
 
 Your job is to teach students clearly and in an exam-focused way.
 
@@ -58,7 +81,17 @@ Response format:
 4. Example (if helpful)
 5. Exam tip (short)
 
-Keep answers clear, structured, and not too long.`
+Keep answers clear, structured, and not too long.`;
+
+    // Inject notes into prompt if chapter was detected and notes were loaded
+    if (notesContent) {
+      finalSystemInstruction += `\n\nPrefer and align your explanation with the following JEE study material. Stay exam-focused and avoid unnecessary advanced theory.\n\n[${chapter} notes content]\n${notesContent}`;
+    }
+
+    // 3. Select the Gemini model.
+    const model = genAI.getGenerativeModel({
+      model: "gemini-2.5-flash",
+      systemInstruction: finalSystemInstruction
     });
 
     // 4. Handle history safely: keep only the last 5 messages to avoid long context window

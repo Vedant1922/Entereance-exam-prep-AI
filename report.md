@@ -40,5 +40,12 @@ We successfully created and verified a simple, robust Express.js backend that se
 *   **Chat Session Implementation**: Refactored the core model execution, switching from `model.generateContent()` to `model.startChat({ history })` and `chat.sendMessage(message)`.
 *   **Memory Verification**: Successfully ran a multi-turn automated test script (`test_memory.js`). Passed sequential prompts ("lets start with hyberddisation today" followed by "cant understand, explain in simpler language") to prove that the bot accurately maintained context and adaptively simplified its instructions based on the prior chat history.
 
+### 6. Light Knowledge Control (Chapter Notes Injection)
+*   **Notes Infrastructure**: Established a simple `data/notes/` directory containing plain text files (`chemical_bonding.txt`, `atomic_structure.txt`) for isolated chapter-specific knowledge.
+*   **Dynamic File Loading**: Used the Node.js `fs` module to dynamically load specific notes at runtime. Incorporated robust error handling (`try/catch` with `fs.existsSync`) to perfectly ensure that if a notes file is missing or unreadable, the server safely skips it and continues functioning without crashing.
+*   **Keyword Detection**: Built a non-intrusive keyword matching system that scans the user's message (e.g., "hybridization" or "orbital") to identify the relevant chapter and load its specific text.
+*   **System Prompt Injection**: Engineered a dynamic injection strategy that temporarily appends the loaded notes directly into the Gemini `systemInstruction` model configuration before the chat session is created.
+*   **Seamless Integration**: Confirmed through testing that this entire feature operates entirely behind the scenes—it strictly preserves the existing JEE Chemistry Tutor rules, functions flawlessly alongside the conversation memory history array, and maintains the required JSON response format untouched.
+
 ## Current State
-The backend is fully functional, secure, and actively capable of multi-turn conversations. It operates as a strict JEE Chemistry Tutor and is ready to be connected to any frontend application. No further changes to the core backend codebase (`index.js`, `package.json`) are required at this stage.
+The backend is fully functional, secure, and actively capable of multi-turn conversations with dynamic chapter knowledge injection. It operates as a strict JEE Chemistry Tutor and is ready to be connected to any frontend application. No further changes to the core backend codebase (`index.js`, `package.json`) are required at this stage.

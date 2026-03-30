@@ -1,0 +1,4 @@
+CHEMICAL BONDING JEE NOTES:
+- VSEPR Theory strictly determines molecule shapes based on lone pair and bond pair repulsions.
+- Hybridization is purely a mathematical concept to explain observed bond angles.
+- Only sigma and lone pairs determine steric number. Pi bonds do not affect geometry.

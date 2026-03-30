@@ -1,0 +1,4 @@
+ATOMIC STRUCTURE JEE NOTES:
+- Quantum numbers fully describe the state of an electron in an atom (n, l, ml, ms).
+- s, p, d, f orbitals represent probability density spaces, not defined planetary paths.
+- Aufbau principle dictates lower energy orbitals fill before higher ones.
