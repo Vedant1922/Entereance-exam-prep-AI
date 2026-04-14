@@ -14,3 +14,58 @@ html, body, #root {
   background-color: var(--color-theme_bg);
   color-scheme: dark;
 }
+
+/* --- CUSTOM MARKDOWN STYLES FOR CHAT BUBBLES --- */
+.markdown-body {
+  line-height: 1.6;
+  word-break: break-word;
+}
+.markdown-body p {
+  margin-bottom: 0.65rem;
+}
+.markdown-body p:last-child {
+  margin-bottom: 0;
+}
+.markdown-body strong {
+  font-weight: 700;
+  color: #FFFFFF;
+}
+.markdown-body ul {
+  list-style-type: disc;
+  padding-left: 1.25rem;
+  margin-bottom: 0.65rem;
+  margin-top: 0.25rem;
+}
+.markdown-body ol {
+  list-style-type: decimal;
+  padding-left: 1.25rem;
+  margin-bottom: 0.65rem;
+  margin-top: 0.25rem;
+}
+.markdown-body li {
+  margin-bottom: 0.2rem;
+}
+.markdown-body pre {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 0.6rem;
+  padding: 0.8rem;
+  overflow-x: auto;
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+  font-family: monospace;
+  font-size: 0.9em;
+}
+.markdown-body code {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.25rem;
+  font-family: monospace;
+  font-size: 0.9em;
+  color: #A6DEBF; /* Green accent for inline code */
+}
+.markdown-body pre code {
+  background-color: transparent;
+  padding: 0;
+  color: inherit;
+}

@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
 import { MessageSquare, Flame, CalendarClock, UserCircle, Send, Plus, Settings, LogOut } from 'lucide-react';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
+import 'katex/dist/katex.min.css';
 
 function App() {
   const [activeSubject, setActiveSubject] = useState('CHEMISTRY');
@@ -148,8 +153,13 @@ function App() {
                     {msg.content}
                   </div>
                 ) : (
-                  <div className="text-gray-200 max-w-[85%] text-[15.5px] leading-relaxed relative font-medium">
-                    {msg.content}
+                  <div className="text-gray-200 max-w-[90%] text-[15.5px] leading-relaxed relative font-medium markdown-body text-left w-full pr-4">
+                    <ReactMarkdown 
+                      remarkPlugins={[remarkGfm, remarkMath]}
+                      rehypePlugins={[rehypeKatex]}
+                    >
+                      {msg.content}
+                    </ReactMarkdown>
                   </div>
                 )}
               </div>
