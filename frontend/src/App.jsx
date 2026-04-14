@@ -7,18 +7,49 @@ function App() {
     { role: 'assistant', content: 'I am filling the gap between your preparation to result.' }
   ]);
   const [input, setInput] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
 
   const [examDays] = useState(153);
   const [streak] = useState(12);
   const [isProfileOpen, setIsProfileOpen] = useState(false);
 
-  const handleSend = () => {
-    if (!input.trim()) return;
-    setMessages(prev => [...prev, { role: 'user', content: input }]);
+  const handleSend = async () => {
+    if (!input.trim() || isLoading) return;
+    
+    const userMessage = input.trim();
     setInput('');
-    setTimeout(() => {
-      setMessages(prev => [...prev, { role: 'assistant', content: 'This is a mocked response placeholder.' }]);
-    }, 1000);
+    setIsLoading(true);
+
+    const newHistory = [...messages, { role: 'user', content: userMessage }];
+    setMessages(newHistory);
+
+    try {
+      // Exclude the hardcoded intro from backend history to avoid polluting context
+      const historyPayload = newHistory.slice(1);
+
+      // Embed the subject context secretly into the prompt
+      const payloadMessage = `[Context: ${activeSubject}]\n${userMessage}`;
+
+      const response = await fetch('http://localhost:3000/chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: payloadMessage, history: historyPayload })
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to fetch AI response');
+      }
+
+      setMessages(prev => [...prev, { role: 'assistant', content: data.response }]);
+
+    } catch (error) {
+      console.error("Fetch Error:", error);
+      setMessages(prev => [...prev, { role: 'assistant', content: `🚨 Network Error: ${error.message}. Is the Node backend server running?` }]);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -123,6 +154,17 @@ function App() {
                 )}
               </div>
             ))}
+
+            {/* AI Typing Animation */}
+            {isLoading && (
+              <div className="flex w-full justify-start">
+                <div className="bg-[#1E1E1E] border border-white/5 px-5 py-4 rounded-3xl max-w-[85%] shadow-sm flex gap-1.5 items-center justify-center">
+                  <div className="w-2 h-2 bg-theme_green rounded-full animate-bounce opacity-80" style={{ animationDelay: '0ms' }} />
+                  <div className="w-2 h-2 bg-theme_green rounded-full animate-bounce opacity-80" style={{ animationDelay: '150ms' }} />
+                  <div className="w-2 h-2 bg-theme_green rounded-full animate-bounce opacity-80" style={{ animationDelay: '300ms' }} />
+                </div>
+              </div>
+            )}
           </div>
         </div>
 
@@ -134,12 +176,13 @@ function App() {
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={(e) => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); handleSend(); } }}
               placeholder={`Message JEE ${activeSubject === 'CHEMISTRY' ? 'Chemistry' : activeSubject === 'PHYSICS' ? 'Physics' : 'Maths'} AI...`}
-              className="w-full max-h-48 min-h-[60px] py-4 pl-5 pr-14 bg-transparent resize-none outline-none text-[16px] text-gray-100 placeholder-gray-500"
+              className="w-full max-h-48 min-h-[60px] py-4 pl-5 pr-14 bg-transparent resize-none outline-none text-[16px] text-gray-100 placeholder-gray-500 disabled:opacity-50"
               rows="1"
+              disabled={isLoading}
             />
             <button 
               onClick={handleSend}
-              disabled={!input.trim()}
+              disabled={!input.trim() || isLoading}
               className="absolute right-2 bottom-2 p-2.5 bg-theme_green text-gray-900 rounded-2xl hover:bg-opacity-80 disabled:opacity-30 disabled:hover:bg-theme_green transition-all duration-300 transform active:scale-95 flex items-center justify-center font-bold"
             >
               <Send className="w-5 h-5 ml-0.5" />
