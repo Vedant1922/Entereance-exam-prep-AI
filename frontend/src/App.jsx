@@ -28,11 +28,11 @@ function App() {
     const newHistory = [...messages, { role: 'user', content: userMessage }];
     setMessages(newHistory);
 
-    try {
-      // Exclude the hardcoded intro from backend history to avoid polluting context
-      const historyPayload = newHistory.slice(1);
+    // Add an empty assistant message slot that we'll stream into
+    setMessages(prev => [...prev, { role: 'assistant', content: '' }]);
 
-      // Embed the subject context secretly into the prompt
+    try {
+      const historyPayload = newHistory.slice(1);
       const payloadMessage = `[Context: ${activeSubject}]\n${userMessage}`;
 
       const response = await fetch('http://localhost:3000/chat', {
@@ -41,24 +41,63 @@ function App() {
         body: JSON.stringify({ message: payloadMessage, history: historyPayload })
       });
 
-      const data = await response.json();
-
       if (!response.ok) {
-        throw new Error(data.error || 'Failed to fetch AI response');
+        throw new Error('Failed to connect to AI server');
       }
 
-      setMessages(prev => [...prev, { role: 'assistant', content: data.response }]);
+      // Read the stream chunk by chunk
+      const reader = response.body.getReader();
+      const decoder = new TextDecoder();
+
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+
+        const text = decoder.decode(value, { stream: true });
+        const lines = text.split('\n');
+
+        for (const line of lines) {
+          if (!line.startsWith('data: ')) continue;
+          const data = line.slice(6).trim();
+          if (data === '[DONE]') break;
+
+          try {
+            const parsed = JSON.parse(data);
+            if (parsed.error) throw new Error(parsed.error);
+            if (parsed.chunk) {
+              // Append the new chunk to the last message
+              setMessages(prev => {
+                const updated = [...prev];
+                updated[updated.length - 1] = {
+                  ...updated[updated.length - 1],
+                  content: updated[updated.length - 1].content + parsed.chunk
+                };
+                return updated;
+              });
+            }
+          } catch (e) {
+            // Skip malformed chunks silently
+          }
+        }
+      }
 
     } catch (error) {
-      console.error("Fetch Error:", error);
-      setMessages(prev => [...prev, { role: 'assistant', content: `🚨 Network Error: ${error.message}. Is the Node backend server running?` }]);
+      console.error("Stream Error:", error);
+      setMessages(prev => {
+        const updated = [...prev];
+        updated[updated.length - 1] = {
+          role: 'assistant',
+          content: `🚨 Connection Error: ${error.message}. Is the Node backend server running?`
+        };
+        return updated;
+      });
     } finally {
       setIsLoading(false);
     }
   };
 
   return (
-    <div className="overflow-hidden bg-theme_bg text-gray-200 selection:bg-theme_purple selection:text-gray-900 font-sans h-screen flex w-full">
+    <div className="overflow-hidden bg-theme_bg text-gray-200 selection:bg-theme_cyan selection:text-gray-900 font-sans h-screen flex w-full">
         
       {/* SIDEBAR */}
       <aside className="w-1/4 max-w-xs flex flex-col bg-theme_sidebar border-r border-white/5 shadow-xl z-20">
@@ -77,7 +116,7 @@ function App() {
 
         <div className="p-4">
           {/* New Chat Button */}
-          <button className="w-full flex items-center justify-center gap-2 px-3 py-3 bg-theme_purple hover:bg-opacity-90 text-gray-900 rounded-xl text-sm font-bold transition-all duration-300 shadow-sm active:scale-95 group">
+          <button className="w-full flex items-center justify-center gap-2 px-3 py-3 bg-theme_cyan hover:bg-opacity-90 text-gray-900 rounded-xl text-sm font-bold transition-all duration-300 shadow-sm active:scale-95 group">
             <Plus className="w-5 h-5 transition-transform duration-300 group-hover:rotate-90" />
             New Chat
           </button>
@@ -149,11 +188,11 @@ function App() {
             {messages.map((msg, i) => (
               <div key={i} className={`flex w-full ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
                 {msg.role === 'user' ? (
-                  <div className="bg-theme_purple/40 text-white px-5 py-3.5 rounded-[22px] rounded-tr-md max-w-[80%] text-[15.5px] leading-relaxed shadow-sm">
+                  <div className="bg-theme_cyan/40 text-white px-5 py-3.5 rounded-[22px] rounded-tr-md max-w-[80%] text-[15.5px] leading-relaxed shadow-sm">
                     {msg.content}
                   </div>
                 ) : (
-                  <div className="text-gray-200 max-w-[90%] text-[15.5px] leading-relaxed relative font-medium markdown-body text-left w-full pr-4">
+                  <div className="text-gray-300 max-w-[90%] text-[15.5px] leading-relaxed relative markdown-body text-left w-full pr-4">
                     <ReactMarkdown 
                       remarkPlugins={[remarkGfm, remarkMath]}
                       rehypePlugins={[rehypeKatex]}

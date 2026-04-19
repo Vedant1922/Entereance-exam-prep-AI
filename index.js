@@ -36,7 +36,7 @@ app.post('/chat', async (req, res) => {
       return res.status(400).json({ error: 'Message is required. Provide JSON like { "message": "text" }' });
     }
 
-    // --- NEW: Basic Chapter Detection ---
+    // --- Basic Chapter Detection ---
     let chapter = null;
     const lowerMessage = message.toLowerCase();
     if (lowerMessage.includes('bond') || lowerMessage.includes('hybridization') || lowerMessage.includes('vsepr')) {
@@ -45,7 +45,7 @@ app.post('/chat', async (req, res) => {
       chapter = 'atomic_structure';
     }
 
-    // --- NEW: Load Notes From File ---
+    // --- Load Notes From File ---
     let notesContent = '';
     if (chapter) {
       try {
@@ -54,13 +54,11 @@ app.post('/chat', async (req, res) => {
           notesContent = fs.readFileSync(notesPath, 'utf-8');
         }
       } catch (err) {
-        // If file missing or error reading -> skip safely (no error, do not crash server)
         console.error(`Error reading notes for chapter ${chapter}:`, err.message);
       }
     }
 
-    // --- NEW: Final Prompt Structure ---
-    // Dynamically loading the Elite Mentor V2 Framework to prevent huge hardcoded strings
+    // --- Load Master Prompt ---
     const masterPromptPath = path.join(process.cwd(), 'prompt_engineering', 'v2_elite_mentor_framework.txt');
     let finalSystemInstruction = 'You are a JEE Tutor.'; // fallback
     try {
@@ -69,45 +67,57 @@ app.post('/chat', async (req, res) => {
       console.error('Warning: Failed to load master prompt file:', err.message);
     }
 
-    // Inject notes into prompt if chapter was detected and notes were loaded
+    // Inject notes if loaded
     if (notesContent) {
       finalSystemInstruction += `\n\nPrefer and align your explanation with the following JEE study material. Stay exam-focused and avoid unnecessary advanced theory.\n\n[${chapter} notes content]\n${notesContent}`;
     }
 
-    // 3. Select the Gemini model.
+    // --- Set SSE Headers for real-time streaming ---
+    res.setHeader('Content-Type', 'text/event-stream');
+    res.setHeader('Cache-Control', 'no-cache');
+    res.setHeader('Connection', 'keep-alive');
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.flushHeaders();
+
+    // --- Select Model ---
     const model = genAI.getGenerativeModel({
       model: "gemini-2.5-flash",
       systemInstruction: finalSystemInstruction
     });
 
-    // 4. Handle history safely: keep only the last 5 messages to avoid long context window
+    // --- Format History ---
     const recentHistory = history.slice(-5);
-
-    // 5. Format messages for Gemini API chat-style format
-    // Map 'user' -> 'user', and 'assistant' -> 'model'
     const formattedHistory = recentHistory.map(msg => ({
       role: msg.role === 'assistant' ? 'model' : 'user',
       parts: [{ text: msg.content }]
     }));
 
-    // 6. Start a chat session using the correctly formatted history
-    const chat = model.startChat({
-      history: formattedHistory
-    });
+    // --- Start Chat ---
+    const chat = model.startChat({ history: formattedHistory });
 
-    // 7. Send the new user message to the chat session
-    const result = await chat.sendMessage(message);
-    const aiResponseText = result.response.text();
+    // --- Stream response chunk by chunk ---
+    const result = await chat.sendMessageStream(message);
 
-    // 8. Send the AI response back to the client as JSON
-    res.json({ response: aiResponseText });
+    for await (const chunk of result.stream) {
+      const chunkText = chunk.text();
+      if (chunkText) {
+        res.write(`data: ${JSON.stringify({ chunk: chunkText })}\n\n`);
+      }
+    }
+
+    // Signal the frontend that streaming is complete
+    res.write('data: [DONE]\n\n');
+    res.end();
 
   } catch (error) {
-    // Log the error for debugging purposes
     console.error('Error generating AI response:', error);
-    
-    // Return a generic error message to the client indicating a server issue
-    res.status(500).json({ error: 'Failed to generate response. Check API key and server logs.' });
+    // If headers already sent, can't send JSON error — write as SSE error event
+    if (!res.headersSent) {
+      res.status(500).json({ error: 'Failed to generate response. Check API key and server logs.' });
+    } else {
+      res.write(`data: ${JSON.stringify({ error: error.message })}\n\n`);
+      res.end();
+    }
   }
 });
 
