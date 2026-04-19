@@ -4,11 +4,10 @@
   --color-theme_green: #A6DEBF;
   --color-theme_cyan: #5FC4C0;
   --color-theme_tan: #DEBFA6;
-  --color-theme_bg: #121212;
-  --color-theme_sidebar: #1E1E1E;
-  
-  /* Apply Inter globally to sans */
-  --font-sans: 'Inter', sans-serif;
+  --color-theme_bg: #1C1917;         /* Warm brown-black - the Claude base */
+  --color-theme_sidebar: #242019;    /* Slightly darker warm brown sidebar */
+  --color-theme_bubble: #252E2B;     /* Our unique twist: dark green-tinted user bubble */
+  --color-theme_input: #262220;      /* Input box warm dark */
 }
 
 html, body, #root {
