@@ -97,7 +97,7 @@ function App() {
   };
 
   return (
-    <div className="overflow-hidden bg-theme_bg text-[#E8E4DC] selection:bg-theme_green/40 selection:text-white font-sans h-screen flex w-full">
+    <div className="overflow-hidden bg-theme_bg text-[#ECECEC] selection:bg-theme_green/40 selection:text-white font-sans h-screen flex w-full">
         
       {/* SIDEBAR */}
       <aside className="w-1/4 max-w-xs flex flex-col bg-theme_sidebar border-r border-white/5 shadow-xl z-20">
@@ -141,7 +141,7 @@ function App() {
         {/* Account / Profile Area */}
         <div className="p-4 border-t border-white/5 relative">
           {/* Mock Profile Popup */}
-          <div className={`absolute bottom-20 left-4 w-[calc(100%-2rem)] bg-[#2D2926] shadow-2xl border border-white/10 rounded-2xl p-2 z-30 flex flex-col gap-1 transition-all duration-200 origin-bottom-left ${isProfileOpen ? 'opacity-100 scale-100 pointer-events-auto' : 'opacity-0 scale-95 pointer-events-none'}`}>
+          <div className={`absolute bottom-20 left-4 w-[calc(100%-2rem)] bg-[#2F2F2F] shadow-2xl border border-white/10 rounded-2xl p-2 z-30 flex flex-col gap-1 transition-all duration-200 origin-bottom-left ${isProfileOpen ? 'opacity-100 scale-100 pointer-events-auto' : 'opacity-0 scale-95 pointer-events-none'}`}>
             <button className="flex items-center gap-3 px-3 py-2.5 text-sm hover:bg-white/10 rounded-xl text-left text-gray-200 font-medium transition-colors">
               <Settings className="w-4 h-4 opacity-70" /> Settings
             </button>
@@ -169,7 +169,7 @@ function App() {
         
         {/* Top Subject Switcher */}
         <div className="absolute top-0 w-full flex justify-center pt-6 z-10 pointer-events-none">
-          <div className="flex items-center p-1 bg-[#242019] border border-white/5 rounded-full shadow-lg pointer-events-auto backdrop-blur-md">
+          <div className="flex items-center p-1 bg-[#2A2A2A] border border-white/5 rounded-full shadow-lg pointer-events-auto backdrop-blur-md">
             {['PHYSICS', 'CHEMISTRY', 'MATHS'].map(sub => (
               <button 
                 key={sub}
@@ -188,7 +188,7 @@ function App() {
             {messages.map((msg, i) => (
               <div key={i} className={`flex w-full ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
                 {msg.role === 'user' ? (
-                  <div className="bg-theme_bubble text-[#E8E4DC] px-5 py-3.5 rounded-[22px] rounded-tr-md max-w-[80%] text-[15.5px] leading-relaxed shadow-sm border border-white/5">
+                  <div className="bg-theme_bubble text-[#ECECEC] px-5 py-3.5 rounded-[22px] rounded-tr-md max-w-[80%] text-[15.5px] leading-relaxed shadow-sm border border-white/5">
                     {msg.content}
                   </div>
                 ) : (
@@ -207,7 +207,7 @@ function App() {
             {/* AI Typing Animation */}
             {isLoading && (
               <div className="flex w-full justify-start">
-                <div className="bg-[#242019] border border-white/5 px-5 py-4 rounded-3xl max-w-[85%] shadow-sm flex gap-1.5 items-center justify-center">
+                <div className="bg-[#2A2A2A] border border-white/5 px-5 py-4 rounded-3xl max-w-[85%] shadow-sm flex gap-1.5 items-center justify-center">
                   <div className="w-2 h-2 bg-theme_green rounded-full animate-bounce opacity-80" style={{ animationDelay: '0ms' }} />
                   <div className="w-2 h-2 bg-theme_green rounded-full animate-bounce opacity-80" style={{ animationDelay: '150ms' }} />
                   <div className="w-2 h-2 bg-theme_green rounded-full animate-bounce opacity-80" style={{ animationDelay: '300ms' }} />
@@ -219,25 +219,25 @@ function App() {
 
         {/* Chat Input Area */}
         <div className="absolute w-full bottom-0 bg-gradient-to-t from-theme_bg via-theme_bg to-transparent pt-12 pb-8 px-4 md:px-20 z-10">
-          <div className="max-w-3xl mx-auto relative bg-[#262220] rounded-3xl border border-white/8 overflow-hidden focus-within:border-theme_green shadow-lg focus-within:ring-2 focus-within:ring-theme_green/20 transition-all duration-300">
+          <div className="max-w-3xl mx-auto relative bg-theme_input rounded-3xl border border-white/8 overflow-hidden focus-within:border-theme_green shadow-lg focus-within:ring-2 focus-within:ring-theme_green/20 transition-all duration-300">
             <textarea
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={(e) => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); handleSend(); } }}
               placeholder={`Message JEE ${activeSubject === 'CHEMISTRY' ? 'Chemistry' : activeSubject === 'PHYSICS' ? 'Physics' : 'Maths'} AI...`}
-              className="w-full max-h-48 min-h-[60px] py-4 pl-5 pr-14 bg-transparent resize-none outline-none text-[16px] text-[#E8E4DC] placeholder-[#6B6560] disabled:opacity-50"
+              className="w-full max-h-48 min-h-[60px] py-4 pl-5 pr-14 bg-transparent resize-none outline-none text-[16px] text-[#ECECEC] placeholder-[#666] disabled:opacity-50"
               rows="1"
               disabled={isLoading}
             />
             <button 
               onClick={handleSend}
               disabled={!input.trim() || isLoading}
-              className="absolute right-2 bottom-2 p-2.5 bg-theme_green text-[#1C1917] rounded-2xl hover:bg-opacity-80 disabled:opacity-30 disabled:hover:bg-theme_green transition-all duration-300 transform active:scale-95 flex items-center justify-center font-bold"
+              className="absolute right-2 bottom-2 p-2.5 bg-theme_green text-[#212121] rounded-2xl hover:bg-opacity-80 disabled:opacity-30 disabled:hover:bg-theme_green transition-all duration-300 transform active:scale-95 flex items-center justify-center font-bold"
             >
               <Send className="w-5 h-5 ml-0.5" />
             </button>
           </div>
-          <p className="text-center text-xs text-[#6B6560] mt-4 font-medium tracking-wide">
+          <p className="text-center text-xs text-[#555] mt-4 font-medium tracking-wide">
             JEE AI Tutor can make mistakes. Always verify with standard NCERT materials.
           </p>
         </div>

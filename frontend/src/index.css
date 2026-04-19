@@ -4,10 +4,10 @@
   --color-theme_green: #A6DEBF;
   --color-theme_cyan: #5FC4C0;
   --color-theme_tan: #DEBFA6;
-  --color-theme_bg: #1C1917;         /* Warm brown-black - the Claude base */
-  --color-theme_sidebar: #242019;    /* Slightly darker warm brown sidebar */
-  --color-theme_bubble: #252E2B;     /* Our unique twist: dark green-tinted user bubble */
-  --color-theme_input: #262220;      /* Input box warm dark */
+  --color-theme_bg: #212121;         /* ChatGPT exact background */
+  --color-theme_sidebar: #171717;    /* ChatGPT exact sidebar - deeper near-black */
+  --color-theme_bubble: #2C3130;     /* Our twist: very subtle green-tinted dark gray */
+  --color-theme_input: #2F2F2F;      /* ChatGPT input box */
 }
 
 html, body, #root {
