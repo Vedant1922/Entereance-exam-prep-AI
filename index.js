@@ -59,7 +59,7 @@ app.post('/chat', async (req, res) => {
     }
 
     // --- Load Master Prompt ---
-    const masterPromptPath = path.join(process.cwd(), 'prompt_engineering', 'v2_elite_mentor_framework.txt');
+    const masterPromptPath = path.join(process.cwd(), 'prompt_engineering', 'v3_prompt_draft.txt');
     let finalSystemInstruction = 'You are a JEE Tutor.'; // fallback
     try {
       finalSystemInstruction = fs.readFileSync(masterPromptPath, 'utf-8');
@@ -81,7 +81,7 @@ app.post('/chat', async (req, res) => {
 
     // --- Select Model ---
     const model = genAI.getGenerativeModel({
-      model: "gemini-2.5-flash",
+      model: "gemini-1.5-flash",
       systemInstruction: finalSystemInstruction
     });
 
