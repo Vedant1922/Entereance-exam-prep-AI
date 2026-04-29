@@ -72,25 +72,61 @@ app.post('/chat', async (req, res) => {
       });
     }
 
-    // --- Basic Chapter Detection ---
-    let chapter = null;
-    const lowerMessage = message.toLowerCase();
-    if (lowerMessage.includes('bond') || lowerMessage.includes('hybridization') || lowerMessage.includes('vsepr')) {
-      chapter = 'chemical_bonding';
-    } else if (lowerMessage.includes('orbital') || lowerMessage.includes('quantum') || lowerMessage.includes('electron')) {
-      chapter = 'atomic_structure';
+    // --- AI Router: Two-Pass Classification ---
+    let chapterFilename = null;
+    let notesContent = '';
+    
+    try {
+      const routerModel = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+      const routerPrompt = `You are a strict traffic router for a JEE Chemistry AI Tutor.
+Analyze the student's message. 
+If the student is asking a general question (e.g., 'hi', 'how are you', 'how should I study', 'motivate me', 'thanks', 'bye', or anything not directly related to chemistry subject matter), reply with EXACTLY the word: GENERAL
+
+If the student is asking a Chemistry question, figure out which syllabus unit it belongs to and reply with EXACTLY the corresponding filename (do not include the .txt extension).
+Here are the available units:
+chem_unit1_basic_concepts
+chem_unit2_atomic_structure
+chem_unit3_chemical_bonding
+chem_unit4_thermodynamics
+chem_unit5_solutions
+chem_unit6_equilibrium
+chem_unit7_electrochemistry
+chem_unit8_kinetics
+chem_unit9_periodic_table
+chem_unit10_pblock
+chem_unit11_dfblock
+chem_unit12_coordination
+chem_unit13_14_organic_basics
+chem_unit15_hydrocarbons
+chem_unit16_17_18_functional_organic
+chem_unit19_20_biomolecules_practical
+
+Student message: "${message}"
+Reply ONLY with 'GENERAL' or the exact filename. Do not add any quotes, punctuation, or other text.`;
+
+      const routerResult = await routerModel.generateContent(routerPrompt);
+      const routerResponse = routerResult.response.text().trim().replace(/['"]/g, ''); // strip any quotes
+      console.log(`[AI Router] Classified message as: ${routerResponse}`);
+
+      if (routerResponse !== 'GENERAL' && routerResponse.length > 0) {
+        chapterFilename = routerResponse;
+      }
+    } catch (err) {
+      console.error('Error in AI Router:', err.message);
     }
 
     // --- Load Notes From File ---
-    let notesContent = '';
-    if (chapter) {
+    if (chapterFilename) {
       try {
-        const notesPath = path.join(process.cwd(), 'data', 'notes', `${chapter}.txt`);
+        const notesPath = path.join(process.cwd(), 'syllabus_docs', `${chapterFilename}.txt`);
         if (fs.existsSync(notesPath)) {
           notesContent = fs.readFileSync(notesPath, 'utf-8');
+          console.log(`[Backend] Successfully loaded notes: ${chapterFilename}.txt`);
+        } else {
+          console.warn(`[Backend] Warning: Router suggested ${chapterFilename}, but file was not found at ${notesPath}`);
         }
       } catch (err) {
-        console.error(`Error reading notes for chapter ${chapter}:`, err.message);
+        console.error(`Error reading notes for chapter ${chapterFilename}:`, err.message);
       }
     }
 
@@ -105,7 +141,7 @@ app.post('/chat', async (req, res) => {
 
     // Inject notes if loaded
     if (notesContent) {
-      finalSystemInstruction += `\n\nPrefer and align your explanation with the following JEE study material. Stay exam-focused and avoid unnecessary advanced theory.\n\n[${chapter} notes content]\n${notesContent}`;
+      finalSystemInstruction += `\n\nPrefer and align your explanation with the following JEE study material. Stay exam-focused and avoid unnecessary advanced theory.\n\n[${chapterFilename} notes content]\n${notesContent}`;
     }
 
     // --- Set SSE Headers ---
