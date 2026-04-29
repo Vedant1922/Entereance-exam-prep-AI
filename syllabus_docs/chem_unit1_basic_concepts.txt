@@ -1,0 +1,201 @@
+================================================================
+JEE MAIN 2026 | CHEMISTRY NOTES
+UNIT 1: SOME BASIC CONCEPTS IN CHEMISTRY
+[Physical Chemistry | JEE Mains Weightage: HIGH — 1-2 questions almost every year]
+================================================================
+
+OFFICIAL SYLLABUS SCOPE (JEE Main 2026):
+Matter and its nature, Dalton's atomic theory, Concept of atom, molecule, element and compound,
+Laws of chemical combination, Atomic and molecular masses, Mole concept, Molar mass,
+Percentage composition, Empirical and molecular formulae, Chemical equations and stoichiometry.
+
+----------------------------------------------------------------
+SECTION 1: LAWS OF CHEMICAL COMBINATION
+----------------------------------------------------------------
+
+Five fundamental laws — JEE tests conceptual application, not just definitions.
+
+1. Law of Conservation of Mass (Lavoisier)
+   → Total mass of reactants = Total mass of products in any chemical reaction.
+   → Key: Mass is never created or destroyed, only rearranged.
+
+2. Law of Definite Proportions (Proust)
+   → A pure compound always contains the same elements in the same fixed mass ratio regardless of source or method of preparation.
+   → Example: Water always has H:O ratio = 1:8 by mass. Always.
+
+3. Law of Multiple Proportions (Dalton)
+   → When two elements combine to form more than one compound, the masses of one element that combine with a fixed mass of the other are in simple whole number ratios.
+   → Classic JEE Example: CO and CO2 — oxygen combining with fixed carbon = 16:32 = 1:2 ratio.
+
+4. Law of Gaseous Volumes (Gay-Lussac)
+   → Gases react and produce in simple whole number ratios by volume at same T and P.
+   → Example: H2 + Cl2 → 2HCl means 1 vol : 1 vol : 2 vol.
+
+5. Avogadro's Law
+   → Equal volumes of all gases at same temperature and pressure contain equal number of molecules.
+   → This is why 1 mole of any gas = 22.4 L at STP.
+
+JEE TRAP: Students confuse Law of Definite Proportions (same compound, fixed ratio) with Law of Multiple Proportions (same two elements, different compounds). Always read the question carefully.
+
+----------------------------------------------------------------
+SECTION 2: ATOMIC MASS & MOLECULAR MASS
+----------------------------------------------------------------
+
+Atomic Mass:
+→ Mass of an atom relative to 1/12th mass of Carbon-12.
+→ Carbon-12 is the standard reference. Its mass = exactly 12 u (unified atomic mass units).
+→ 1 u = 1.66 × 10^-24 g
+
+Important atomic masses to memorize for JEE:
+H=1, C=12, N=14, O=16, Na=23, Mg=24, Al=27, S=32, Cl=35.5, K=39, Ca=40, Fe=56, Cu=63.5, Zn=65, Br=80, Ag=108, I=127, Ba=137
+
+Molecular Mass:
+→ Sum of atomic masses of all atoms in one molecule of the compound.
+→ Example: H2SO4 = 2(1) + 32 + 4(16) = 98 g/mol
+
+Equivalent Mass (not always in JEE Mains but in Advanced):
+→ Equivalent mass = Molecular mass / n-factor
+
+----------------------------------------------------------------
+SECTION 3: MOLE CONCEPT — THE HEART OF THIS CHAPTER
+----------------------------------------------------------------
+
+1 mole = 6.022 × 10^23 entities (atoms, molecules, ions, electrons — whatever is specified)
+This number is Avogadro's Number (NA) = 6.022 × 10^23 mol^-1
+
+The mole is a counting unit, exactly like a "dozen" = 12. A mole just = 6.022 × 10^23.
+
+KEY RELATIONSHIPS (these are the conversion bridge — master these):
+
+   Moles = Given mass (g) / Molar mass (g/mol)
+
+   Number of particles = Moles × NA
+   Number of particles = Moles × 6.022 × 10^23
+
+   Volume at STP (for gases only) = Moles × 22.4 L
+   [STP = 0°C and 1 atm. IMPORTANT: Some JEE questions use new STP = 0°C, 1 bar → volume ≈ 22.7 L, but unless specified, use 22.4 L]
+
+   Moles = Volume at STP / 22.4
+
+Molar Mass:
+→ Mass of 1 mole of a substance in grams.
+→ Numerically equal to molecular mass but in g/mol instead of u.
+→ Example: Molar mass of H2O = 18 g/mol, so 1 mole of water weighs 18 g.
+
+JEE CRITICAL POINT: Mole concept is the bridge between the microscopic world (atoms) and the macroscopic world (grams you can measure in a lab). Every stoichiometry problem passes through moles. Never try to work directly in grams.
+
+----------------------------------------------------------------
+SECTION 4: PERCENTAGE COMPOSITION
+----------------------------------------------------------------
+
+% by mass of element X in compound = (Mass of X in 1 mole of compound / Molar mass of compound) × 100
+
+Example: % of O in H2O = (16/18) × 100 = 88.9%
+
+JEE Application: Given % composition → find empirical formula (see Section 5)
+
+----------------------------------------------------------------
+SECTION 5: EMPIRICAL AND MOLECULAR FORMULA
+----------------------------------------------------------------
+
+Empirical Formula = Simplest whole number ratio of atoms in a compound.
+Molecular Formula = Actual number of atoms in one molecule of the compound.
+
+Relationship:
+   Molecular Formula = n × (Empirical Formula)
+   where n = Molecular Mass / Empirical Formula Mass
+   n must always be a positive whole number (1, 2, 3...)
+
+STANDARD METHOD to find Empirical Formula from % composition:
+
+Step 1: Assume 100 g of compound → % values become gram values directly.
+Step 2: Convert grams of each element to moles: moles = mass / atomic mass
+Step 3: Divide all mole values by the smallest mole value to get ratios.
+Step 4: If ratios are not whole numbers, multiply all by smallest integer to make them whole.
+Step 5: Write empirical formula from the whole number ratios.
+
+JEE COMMON TRAP: A ratio of 1.5 → multiply everything by 2. A ratio of 1.33 → multiply by 3. A ratio of 1.25 → multiply by 4. Students often round 1.5 to 2 and get wrong empirical formula.
+
+Example: Compound has 40% C, 6.67% H, 53.33% O
+→ Moles: C = 40/12 = 3.33, H = 6.67/1 = 6.67, O = 53.33/16 = 3.33
+→ Ratio: C = 3.33/3.33 = 1, H = 6.67/3.33 = 2, O = 3.33/3.33 = 1
+→ Empirical formula: CH2O (glucose, fructose, acetic acid all share this empirical formula)
+
+----------------------------------------------------------------
+SECTION 6: CHEMICAL EQUATIONS & STOICHIOMETRY
+----------------------------------------------------------------
+
+A balanced chemical equation must satisfy:
+→ Law of conservation of mass (atoms balanced on both sides)
+→ Law of conservation of charge (for ionic equations)
+
+Mole Ratio from Balanced Equation:
+→ Coefficients in a balanced equation represent mole ratios directly.
+→ Example: N2 + 3H2 → 2NH3
+  This means: 1 mole N2 reacts with 3 moles H2 to give 2 moles NH3.
+  So mole ratio N2 : H2 : NH3 = 1 : 3 : 2
+
+LIMITING REAGENT (Limiting Reactant):
+→ The reactant that is completely consumed first in a reaction. It limits how much product forms.
+→ All yield calculations are based on the limiting reagent, NOT the excess reagent.
+
+How to identify Limiting Reagent:
+Step 1: Convert all given quantities to moles.
+Step 2: Divide moles of each reactant by its stoichiometric coefficient from balanced equation.
+Step 3: Whichever gives the SMALLER value is the limiting reagent.
+
+Example: 3g H2 and 29g O2 react to form water (2H2 + O2 → 2H2O)
+→ Moles H2 = 3/2 = 1.5, Moles O2 = 29/32 = 0.906
+→ H2/coefficient = 1.5/2 = 0.75, O2/coefficient = 0.906/1 = 0.906
+→ H2 gives smaller value → H2 is the limiting reagent
+→ Moles of H2O formed = 1.5 mol (same ratio as H2, coefficient ratio 2:2 = 1:1)
+
+Theoretical Yield vs Actual Yield:
+→ Theoretical yield = calculated from limiting reagent using stoichiometry
+→ % Yield = (Actual yield / Theoretical yield) × 100
+
+JEE TRAP: Never calculate yield based on the excess reagent. Students who don't identify limiting reagent correctly lose marks on these questions every year.
+
+----------------------------------------------------------------
+SECTION 7: JEE-SPECIFIC PATTERNS (WHAT ACTUALLY GETS ASKED)
+----------------------------------------------------------------
+
+HIGH FREQUENCY QUESTION TYPES in JEE Mains:
+1. Given mass → find number of atoms/molecules (mole conversion)
+2. Given % composition → find empirical + molecular formula (n-factor calculation)
+3. Limiting reagent identification → find moles/mass of product formed
+4. Verify or apply laws of chemical combination with numerical data
+5. Mole → volume at STP → number of molecules chain conversions
+
+CRITICAL EXCEPTIONS AND TRAPS JEE EXPLOITS:
+→ 22.4 L/mol applies ONLY to gases at STP (0°C, 1 atm). Never apply to liquids or solids.
+→ When the question says "at NTP" (25°C, 1 atm) → molar volume ≈ 24.4 L/mol, NOT 22.4 L/mol.
+→ Avogadro's number applies to ANY particles — atoms, molecules, ions, formula units. Read carefully what entity is being counted.
+→ Empirical formula can be the same as molecular formula (n=1). Example: CH2O can be empirical (formaldehyde HCHO has molecular formula CH2O, n=1).
+→ Two different compounds can have the same empirical formula: glucose (C6H12O6) and acetic acid (CH3COOH) both have empirical formula CH2O.
+
+OUT OF JEE SCOPE — DO NOT TEACH:
+→ Advanced nuclear mass calculations
+→ Quantum mechanical definitions of atomic mass
+→ Detailed isotope abundance calculations beyond simple weighted average
+
+----------------------------------------------------------------
+SECTION 8: KEY FORMULAS SUMMARY
+----------------------------------------------------------------
+
+Moles = mass(g) / Molar mass(g/mol)
+Moles = Number of particles / NA
+Moles = Volume at STP(L) / 22.4
+Number of particles = moles × 6.022 × 10^23
+Mass = moles × Molar mass
+Volume at STP = moles × 22.4 L
+% composition = (mass of element in 1 mol / molar mass of compound) × 100
+n (for molecular formula) = Molecular mass / Empirical formula mass
+% yield = (actual yield / theoretical yield) × 100
+NA = 6.022 × 10^23 mol^-1
+1 u = 1.66 × 10^-24 g
+Molar volume of ideal gas at STP = 22.4 L/mol
+
+================================================================
+END OF UNIT 1 NOTES
+================================================================

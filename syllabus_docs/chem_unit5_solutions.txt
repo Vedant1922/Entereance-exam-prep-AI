@@ -1,0 +1,253 @@
+================================================================
+JEE MAIN 2026 | CHEMISTRY NOTES
+UNIT 5: SOLUTIONS
+[Physical Chemistry | JEE Mains Weightage: HIGH — 1-2 questions per paper]
+================================================================
+
+OFFICIAL SYLLABUS SCOPE (JEE Main 2026):
+Concentration expressions (molality, molarity, mole fraction, %), vapour pressure and Raoult's Law,
+Ideal and non-ideal solutions, colligative properties (relative lowering of VP, depression of freezing point,
+elevation of boiling point, osmotic pressure), molecular mass determination, van't Hoff factor.
+
+----------------------------------------------------------------
+SECTION 1: CONCENTRATION EXPRESSIONS
+----------------------------------------------------------------
+
+Molarity (M):
+   M = moles of solute / volume of solution in litres
+   Unit: mol/L or M
+   → Depends on temperature (volume changes with T)
+   → Most commonly used in reactions and titrations
+
+Molality (m):
+   m = moles of solute / mass of solvent in kg
+   Unit: mol/kg
+   → Does NOT depend on temperature (mass doesn't change with T)
+   → Used in colligative property calculations
+
+Mole Fraction (χ):
+   χA = nA / (nA + nB)
+   Sum of all mole fractions = 1
+   χA + χB = 1 (for binary solution)
+
+Percentage by mass (w/w):
+   % = (mass of solute / mass of solution) × 100
+
+Percentage by volume (v/v):
+   % = (volume of solute / volume of solution) × 100
+
+Parts per million (ppm):
+   ppm = (mass of component / total mass of solution) × 10^6
+   Used for very dilute solutions (like pollutants in water)
+
+CONVERSIONS (commonly asked in JEE):
+Molarity to Molality:
+   m = (M × 1000) / (1000 × d - M × M_solute)
+   [d = density in g/mL, M_solute = molar mass of solute]
+
+Molarity to Mole Fraction:
+   χsolute = M / (M + 1000d/M_solvent - M × M_solute/M_solvent)
+
+JEE TRAP: Molarity uses SOLUTION volume. Molality uses SOLVENT mass. Students often mix these up.
+
+----------------------------------------------------------------
+SECTION 2: VAPOUR PRESSURE AND RAOULT'S LAW
+----------------------------------------------------------------
+
+Vapour Pressure: Pressure exerted by vapour in equilibrium with its liquid at given temperature.
+→ Increases with temperature.
+→ Liquid boils when vapour pressure = external pressure.
+
+Raoult's Law (for ideal solutions):
+   PA = χA × PA°
+   [Partial pressure of A = mole fraction of A × vapour pressure of pure A]
+
+For binary solution (A = solvent, B = solute):
+   Ptotal = PA + PB = χA·PA° + χB·PB°
+
+Ideal Solutions:
+→ Follow Raoult's law at all concentrations.
+→ ΔHmix = 0, ΔVmix = 0
+→ Intermolecular forces between A-A, B-B, and A-B are identical.
+→ Examples: benzene + toluene, hexane + heptane, CCl4 + SiCl4
+
+Non-Ideal Solutions:
+Positive deviation (A-B interactions weaker than A-A and B-B):
+→ P > Raoult's law prediction (higher vapour pressure)
+→ ΔHmix > 0 (endothermic mixing), ΔVmix > 0
+→ Examples: ethanol + water, acetone + CS2, acetone + benzene
+→ May show minimum boiling azeotrope (e.g., ethanol-water 95.6% ethanol, bp 78.1°C)
+
+Negative deviation (A-B interactions stronger than A-A and B-B):
+→ P < Raoult's law prediction (lower vapour pressure)
+→ ΔHmix < 0 (exothermic mixing), ΔVmix < 0
+→ Examples: acetone + chloroform, HCl + water, HNO3 + water
+→ May show maximum boiling azeotrope (e.g., HCl-water 20.2% HCl, bp 108.6°C)
+
+Henry's Law (for dissolved gases):
+   p = KH × χ
+   [Partial pressure of gas = Henry's constant × mole fraction of gas in solution]
+→ Higher temperature → lower solubility of gas (KH increases)
+→ Higher pressure → higher solubility of gas (scuba diving, carbonated drinks)
+
+JEE TRAP: Raoult's law applies to the SOLVENT in dilute solutions. Henry's law applies to the SOLUTE (gas dissolved in liquid).
+
+----------------------------------------------------------------
+SECTION 3: COLLIGATIVE PROPERTIES
+----------------------------------------------------------------
+
+Colligative properties depend ONLY on the NUMBER of solute particles, not their nature/identity.
+Four colligative properties in JEE:
+
+1. RELATIVE LOWERING OF VAPOUR PRESSURE (RLVP):
+
+   (PA° - PA) / PA° = χB (mole fraction of solute)
+
+   For dilute solutions: (PA° - PA) / PA° ≈ nB/nA ≈ wB·MA / (wA·MB)
+
+   JEE: This is used to find molecular mass of solute.
+
+2. ELEVATION OF BOILING POINT (ΔTb):
+   
+   Solution boils at higher temperature than pure solvent (because vapour pressure is lowered).
+   
+   ΔTb = Tb(solution) - Tb(solvent) = Kb × m
+   
+   Kb = Ebullioscopic constant (molal elevation constant) — property of solvent only.
+   Kb(water) = 0.512 K·kg/mol
+   
+   For finding molar mass: M_solute = (Kb × w_B × 1000) / (ΔTb × w_A)
+   [wA = mass of solvent in g, wB = mass of solute in g]
+
+3. DEPRESSION OF FREEZING POINT (ΔTf):
+   
+   Solution freezes at lower temperature than pure solvent.
+   
+   ΔTf = Tf(solvent) - Tf(solution) = Kf × m
+   
+   Kf = Cryoscopic constant (molal depression constant) — property of solvent only.
+   Kf(water) = 1.86 K·kg/mol (MUST MEMORIZE)
+   Kf(benzene) = 5.12 K·kg/mol
+   
+   For finding molar mass: M_solute = (Kf × w_B × 1000) / (ΔTf × w_A)
+   
+   JEE APPLICATION: Antifreeze in car radiators (ethylene glycol lowers freezing point of water).
+   Blood group testing uses isotonic solutions to prevent cell lysis.
+
+4. OSMOTIC PRESSURE (π):
+   
+   Osmosis: spontaneous flow of solvent through semipermeable membrane from dilute to concentrated solution.
+   Osmotic pressure = minimum pressure needed to stop osmosis.
+   
+   π = MRT = (n/V)RT
+   [M = molarity, R = 0.0821 L·atm/mol·K OR 8.314 J/mol·K, T in Kelvin]
+   
+   Comparing solutions:
+   → Isotonic: same osmotic pressure (same solute concentration)
+   → Hypertonic: higher osmotic pressure
+   → Hypotonic: lower osmotic pressure
+   
+   Reverse osmosis: applying pressure greater than π to force solvent from concentrated to dilute (used in water purification).
+   
+   JEE NOTE: At very low concentrations, osmotic pressure is the most sensitive colligative property for molar mass determination (especially for polymers and proteins).
+
+JEE TRAP: Kb and Kf are properties of the SOLVENT, not the solute. Kb(water) ≠ Kf(water).
+
+----------------------------------------------------------------
+SECTION 4: VAN'T HOFF FACTOR (i)
+----------------------------------------------------------------
+
+van't Hoff factor (i) = actual number of particles / expected number of particles
+OR: i = normal molar mass / observed molar mass
+
+For non-electrolytes: i = 1 (no dissociation, no association)
+For electrolytes that dissociate: i > 1
+   NaCl → Na+ + Cl-: i = 2 (ideal, complete dissociation)
+   MgCl2 → Mg2+ + 2Cl-: i = 3
+   K2SO4 → 2K+ + SO4²-: i = 3
+   Al2(SO4)3 → 2Al3+ + 3SO4²-: i = 5
+
+For solutes that associate: i < 1
+   Acetic acid in benzene (forms dimers): i < 1
+   i approaches 0.5 for complete dimerization
+
+Modified colligative properties with van't Hoff factor:
+   ΔTb = i × Kb × m
+   ΔTf = i × Kf × m
+   π = i × MRT
+   RLVP: (PA° - PA)/PA° = i × χB (approximately)
+
+Degree of dissociation (α) from i:
+For AxBy → xA^(y+) + yB^(x-):
+   Total particles per formula unit = x + y = n
+   i = 1 + α(n-1)
+   α = (i-1)/(n-1)
+
+JEE EXAMPLE: For NaCl (n=2): i = 1 + α(2-1) = 1 + α
+If i = 1.87, then α = 0.87 (87% dissociation)
+
+JEE TRAP: Van't Hoff factor for strong electrolytes in dilute solution approaches ideal value but is never exactly equal (due to interionic interactions). For calculation purposes in JEE, use ideal i value unless told otherwise.
+
+----------------------------------------------------------------
+SECTION 5: ABNORMAL MOLAR MASS
+----------------------------------------------------------------
+
+When solute dissociates or associates, the observed molar mass differs from expected.
+
+Observed M < Expected M → dissociation (i > 1)
+Observed M > Expected M → association (i < 1)
+
+Examples:
+→ NaCl in water: dissociates → observed M ≈ 29 g/mol (instead of 58.5 g/mol)
+→ Acetic acid in benzene: associates into dimers → observed M ≈ 120 g/mol (instead of 60 g/mol)
+
+----------------------------------------------------------------
+SECTION 6: JEE-SPECIFIC PATTERNS
+----------------------------------------------------------------
+
+HIGH FREQUENCY QUESTION TYPES:
+1. Calculate ΔTf or ΔTb given molality or mass data
+2. Find molar mass of solute using any colligative property
+3. Calculate osmotic pressure and compare solutions (isotonic/hypertonic/hypotonic)
+4. Apply van't Hoff factor to modify colligative property
+5. Identify positive vs negative deviation from Raoult's law
+6. Relative lowering of vapour pressure calculation
+7. Convert between concentration units (molarity ↔ molality ↔ mole fraction)
+
+CRITICAL TRAPS:
+→ ΔTf = Kf × m (molality, NOT molarity). Temperature doesn't change molality.
+→ Kf of water = 1.86, Kb of water = 0.512 — these are different values, don't confuse them.
+→ Colligative property depends on NUMBER of particles, not their type. 0.1 m NaCl ≠ 0.1 m glucose in effect (NaCl gives 2 particles, glucose gives 1).
+→ Osmotic pressure: π = MRT uses MOLARITY. ΔTb and ΔTf use MOLALITY.
+→ Elevation of boiling point and depression of freezing point are always positive values (they represent magnitudes of change). Boiling point goes UP, freezing point goes DOWN.
+
+OUT OF JEE SCOPE:
+→ Detailed derivation of colligative property equations from thermodynamics
+→ Activity coefficients and deviations from ideal behavior in electrolyte solutions
+→ Donnan membrane equilibrium
+
+----------------------------------------------------------------
+SECTION 7: KEY FORMULAS SUMMARY
+----------------------------------------------------------------
+
+M = mol / L(solution)
+m = mol / kg(solvent)
+χA = nA/(nA+nB)
+
+PA = χA · PA° (Raoult's Law)
+p = KH · χ (Henry's Law)
+
+ΔTb = i · Kb · m
+ΔTf = i · Kf · m
+π = i · M · R · T
+(PA°-PA)/PA° = i · χB
+
+i = 1 + α(n-1), where n = total ions per formula unit
+α = (i-1)/(n-1)
+
+Kf(water) = 1.86 K·kg/mol
+Kb(water) = 0.512 K·kg/mol
+
+================================================================
+END OF UNIT 5 NOTES
+================================================================

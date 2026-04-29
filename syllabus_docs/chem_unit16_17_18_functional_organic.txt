@@ -1,0 +1,420 @@
+================================================================
+JEE MAIN 2026 | CHEMISTRY NOTES
+UNIT 16-18: ORGANIC COMPOUNDS (HALOGENS, OXYGEN, NITROGEN)
+[Organic Chemistry | JEE Mains Weightage: HIGH — 2-3 questions per paper combined]
+================================================================
+
+OFFICIAL SYLLABUS SCOPE:
+Unit 16: Haloalkanes — preparation, properties, nature of C-X bond, substitution mechanisms.
+  Environmental effects of chloroform, iodoform, freons, DDT.
+Unit 17: Alcohols, Phenols, Ethers (identification, dehydration, acidic nature, reactions).
+  Aldehydes, Ketones (carbonyl group, nucleophilic addition, reactions).
+  Carboxylic acids (acidic strength, factors affecting).
+Unit 18: Amines (nomenclature, classification, basic character).
+  Diazonium salts (importance in synthesis).
+
+================================================================
+UNIT 16: HALOALKANES AND HALOARENES
+================================================================
+
+----------------------------------------------------------------
+Nature of C-X Bond
+----------------------------------------------------------------
+
+→ C-X bond is polar (X is more electronegative): Cδ+-Xδ-.
+→ Bond length: C-F < C-Cl < C-Br < C-I (increases down the group, atomic size increases).
+→ Bond strength: C-F > C-Cl > C-Br > C-I (decreases down group).
+→ Polarity: C-F most polar, C-I least polar.
+
+→ C-X bond is weaker in haloalkanes than in haloarenes (due to partial double bond character in haloarenes via resonance).
+
+----------------------------------------------------------------
+Preparation of Haloalkanes
+----------------------------------------------------------------
+
+From alcohols: ROH + PCl5 → RCl + POCl3 + HCl
+              ROH + SOCl2 → RCl + SO2 + HCl (preferred, gaseous byproducts escape)
+              ROH + HX → RX (Lucas reagent: HCl + ZnCl2)
+              
+Lucas Test: used to distinguish 1°, 2°, 3° alcohols.
+→ 3° alcohol: reacts immediately with Lucas reagent (turbidity instantly).
+→ 2° alcohol: turbidity in 5 minutes.
+→ 1° alcohol: no turbidity (or reacts very slowly, needs heating).
+
+Halogenation: R-H + X2 → R-X (free radical mechanism, UV light).
+Allylic/benzylic halogenation with NBS (N-Bromosuccinimide): 
+→ Selectively brominates allylic/benzylic positions (free radical, more stable radical).
+
+Addition to Alkenes: CH2=CH2 + HX → CH3CH2X (Markovnikov).
+
+----------------------------------------------------------------
+NUCLEOPHILIC SUBSTITUTION MECHANISMS
+----------------------------------------------------------------
+
+SN1 (Unimolecular Nucleophilic Substitution):
+→ Two-step mechanism: Step 1 = rate-determining ionization to carbocation. Step 2 = fast nucleophilic attack.
+→ Rate = k[RX] (depends only on substrate, NOT nucleophile).
+→ Favored by: 3° substrates (stable carbocations), polar protic solvents (stabilize ions).
+→ Gives RACEMIZATION (nucleophile attacks carbocation from both faces → 50:50 R and S).
+→ Carbocation can rearrange if more stable carbocation forms by 1,2-shift.
+
+SN2 (Bimolecular Nucleophilic Substitution):
+→ One-step mechanism: simultaneous bond breaking + bond forming (concerted).
+→ Rate = k[RX][Nu] (depends on both substrate and nucleophile).
+→ Favored by: 1° substrates (least steric hindrance), strong nucleophiles, polar aprotic solvents (DMSO, acetone, DMF).
+→ Gives INVERSION of configuration (Walden inversion — nucleophile attacks from BACK of C-X bond).
+→ Backside attack → complete stereochemical inversion (R → S or S → R).
+
+Substrate reactivity:
+SN1: 3° > 2° > 1° > CH3X (3° forms most stable carbocation)
+SN2: CH3X > 1° > 2° > 3° (least steric hindrance at methyl and primary)
+
+Nucleophile strength for SN2: I- > Br- > Cl- > F- (in protic solvents)
+(Iodide is the best nucleophile because it's large, polarizable, low solvation)
+
+JEE TRAP: Benzylic and allylic systems: fast SN1 due to resonance-stabilized carbocations AND fast SN2 due to resonance-stabilized transition state. Both mechanisms possible.
+
+Elimination vs Substitution competition:
+→ Strong, bulky base → elimination preferred (E2).
+→ Weak nucleophile/base, high temperature → elimination.
+→ Primary substrate + strong nucleophile → SN2 dominates.
+→ Tertiary substrate + strong base → E2 dominates.
+→ Tertiary substrate + weak nucleophile + polar protic solvent → SN1/E1.
+
+ELIMINATION (E2):
+→ Anti-periplanar requirement: H and X must be anti to each other.
+→ Saytzeff's rule: more substituted alkene forms (major product).
+→ Zaitsev's rule = Saytzeff's rule.
+→ Hofmann's rule: with bulky base, LESS substituted alkene forms.
+
+----------------------------------------------------------------
+Environmental Concerns
+----------------------------------------------------------------
+
+Chloroform (CHCl3): toxic, carcinogenic, was used as anesthetic.
+Iodoform (CHI3): antiseptic, used as wound dressing (iodoform test for methyl ketones).
+Freons (CCl2F2 etc.): refrigerants, cause ozone layer depletion (Cl• radical chain reaction).
+DDT (dichlorodiphenyltrichloroethane): insecticide, now banned (non-biodegradable, accumulates in food chain, endocrine disruptor).
+
+Iodoform test (haloform reaction): positive for CH3COR compounds (methyl ketones) and ethanol.
+Reaction: CH3COR + I2 + NaOH → CHI3 (yellow ppt, antiseptic smell) + RCOONa
+
+================================================================
+UNIT 17: OXYGEN-CONTAINING ORGANIC COMPOUNDS
+================================================================
+
+----------------------------------------------------------------
+ALCOHOLS
+----------------------------------------------------------------
+
+Classification: Primary (1°, -CH2OH), Secondary (2°, RCHOH), Tertiary (3°, R3COH).
+
+Physical Properties:
+→ Higher BP than corresponding alkanes (H-bonding).
+→ Lower BP than water (alcohols have one H-bond per molecule vs water's average ~2).
+→ Short-chain alcohols are water-miscible (H-bonding with water). Long-chain are insoluble.
+
+Acidity of alcohols:
+→ Alcohols are weakly acidic (pKa ≈ 16-18). Weaker than water (pKa ≈ 15.7) for most secondary and tertiary alcohols.
+→ Acidity order: 1° > 2° > 3° (alkyl groups increase electron density on O → less acidic).
+   CH3OH > RCH2OH > R2CHOH > R3COH
+→ Phenol is much more acidic than alcohols (pKa ≈ 10) due to resonance stabilization of phenoxide ion.
+
+Reactions:
+1. With sodium metal: 2ROH + 2Na → 2RONa + H2↑ (less vigorous than Na + H2O)
+2. Dehydration with conc. H2SO4:
+   at 440-450K (170°C): gives alkene (intramolecular elimination) → Saytzeff product (major).
+   at 413K (140°C) with excess alcohol: gives ether (intermolecular dehydration) → R-O-R.
+3. Oxidation:
+   1° alcohol → aldehyde → carboxylic acid (with KMnO4 or K2Cr2O7/H2SO4)
+   2° alcohol → ketone (oxidation stops here usually)
+   3° alcohol → resistant to oxidation under mild conditions.
+   PCC (pyridinium chlorochromate): oxidizes 1° to aldehyde ONLY (does not oxidize further).
+4. Esterification: RCOOH + R'OH ⇌ RCOOR' + H2O (acid catalyst, reversible).
+5. Lucas Test: HCl + ZnCl2 → 3° turbid immediately, 2° in 5 min, 1° slow/no turbidity.
+
+JEE TRAP: Dehydration gives less water-containing product → alkene favored at higher temperature and lower alcohol concentration. Ether favored at lower temperature and higher alcohol concentration.
+
+----------------------------------------------------------------
+PHENOLS
+----------------------------------------------------------------
+
+Phenol: C6H5-OH (benzene with -OH attached to ring)
+
+Acidic character:
+→ Phenol more acidic than alcohols (pKa ≈ 10 vs ≈ 16 for alcohols).
+→ Phenoxide ion stabilized by resonance (negative charge delocalized over ring).
+→ Phenol is weakly acidic: reacts with NaOH but NOT with NaHCO3 (unlike carboxylic acids).
+→ Carboxylic acids react with NaHCO3, phenols do NOT → used to distinguish them.
+
+Electron-donating OH group → ring activated for EAS → o/p director.
+
+Reactions on Ring (EAS, very reactive compared to benzene):
+1. Bromination: PhOH + Br2 (aq) → 2,4,6-tribromophenol (white ppt) — no catalyst needed (OH activates ring strongly).
+2. Nitration: PhOH + dil HNO3 → mixture of o- and p-nitrophenol.
+3. Sulfonation: PhOH + H2SO4 → o-phenolsulfonic acid (at room T) or p-phenolsulfonic acid (at higher T).
+4. Reimer-Tiemann Reaction: PhOH + CHCl3 + NaOH → 2-hydroxybenzaldehyde (salicylaldehyde) [CHO at ortho].
+5. Kolbe Reaction: PhONa + CO2 (high pressure, 125°C) → sodium salicylate → salicylic acid (aspirin precursor).
+
+Reaction on OH group:
+1. Etherification (Williamson synthesis): PhONa + CH3I → PhOCH3 (anisole) + NaI.
+2. Esterification: PhOH + (CH3CO)2O → PhOOCCH3 (phenyl acetate) + CH3COOH.
+
+JEE TRAP: Phenol + NaOH → sodium phenoxide (soluble) → confirms phenol's acidic nature.
+Phenol + FeCl3 → violet color (characteristic test for phenol).
+Phenol + Br2/water → white precipitate of 2,4,6-tribromophenol (immediately, no catalyst).
+
+Comparison of acidic strength:
+carboxylic acid >> phenol >> H2O >> alcohol
+(Carboxylic acid reacts with NaHCO3. Phenol does not. Alcohol does not.)
+
+o-nitrophenol vs p-nitrophenol:
+→ o-nitrophenol: intramolecular H-bond with NO2 → lower BP, steam-volatile, less soluble in water.
+→ p-nitrophenol: intermolecular H-bond with water molecules → higher BP, more water soluble.
+
+----------------------------------------------------------------
+ETHERS
+----------------------------------------------------------------
+
+Structure: R-O-R' (two alkyl groups on oxygen)
+
+Preparation: Williamson Synthesis: R-O-Na + R'X → R-O-R' + NaX
+→ Best with 1° alkyl halide and sodium alkoxide.
+→ SN2 mechanism → 3° RX leads to elimination instead.
+
+Properties:
+→ Relatively inert under normal conditions.
+→ Used as solvents (diethyl ether, THF, dioxane).
+→ Ether oxygen has lone pairs → Lewis base → forms complexes with Lewis acids (BF3, AlCl3).
+
+Reactions:
+1. Cleavage by HI (or HBr): R-O-R' + HI → R-OH + R'-I (or R-I + R'-OH depending on R and R').
+   If ether is unsymmetrical: smaller or primary group becomes iodide (SN2).
+   For mixed ether with 3° alkyl group: SN1 with larger alkyl group as carbocation.
+2. Reaction with conc. H2SO4 at high temperature: cleaves ether bond.
+3. Peroxide formation: ethers stored in air form explosive peroxides.
+
+JEE TRAP: Test for ether = reaction with conc. HI to give alkyl iodide. Williamson synthesis requires sodium alkoxide (not just alcohol + alkyl halide).
+
+----------------------------------------------------------------
+ALDEHYDES AND KETONES
+----------------------------------------------------------------
+
+Aldehydes: R-CHO (carbonyl at end of chain). Ketones: R-CO-R' (carbonyl in middle).
+
+Physical Properties:
+→ Carbonyl group is polar (C=O) → higher BP than alkanes but lower than alcohols (no H-bonding in aldehydes/ketones).
+→ Lower aldehydes/ketones are water soluble (H-bond with water via carbonyl O).
+
+Nucleophilic Addition to Carbonyl (C=O):
+→ Carbonyl carbon is electrophilic (C is δ+) → attacked by nucleophiles.
+→ Aldehydes are MORE reactive than ketones in nucleophilic addition.
+   Reason: (1) Less steric hindrance in aldehyde. (2) Ketone has 2 electron-donating alkyl groups (reduce C electrophilicity). (3) Inductive effect.
+
+KEY NUCLEOPHILIC ADDITION REACTIONS:
+
+1. Addition of HCN (Hydrogen Cyanide):
+   RCHO + HCN → RCH(OH)CN (cyanohydrin)
+   Mechanism: CN- (nucleophile) attacks C=O → adds CN- → protonation gives cyanohydrin.
+   Product has new chiral center if R ≠ H → racemic mixture.
+   
+2. Addition of NaHSO3 (Sodium Bisulfite):
+   RCHO + NaHSO3 → RCHO·NaHSO3 (crystalline adduct) — only aldehydes and methyl ketones.
+   Used to purify aldehydes.
+
+3. Addition of NH3 and derivatives (R-NH2, NH2OH, etc.):
+   RCHO + NH3 → alkylimine (Schiff base) — unstable.
+   RCHO + NH2OH → aldoxime (C=N-OH).
+   RCHO + NH2-NH2 → hydrazone (C=N-NH2).
+   RCHO + NH2-NH-C6H5 → phenylhydrazone.
+   2,4-DNP test: RCHO or RCOR' + 2,4-dinitrophenylhydrazine → orange/yellow precipitate = confirms C=O.
+
+4. Addition of Grignard Reagent:
+   RCHO + R'MgX → secondary alcohol (after hydrolysis).
+   RCOR'' + R'MgX → tertiary alcohol.
+   HCHO (formaldehyde) + RMgX → primary alcohol.
+
+5. Cannizzaro Reaction:
+   Only for aldehydes WITHOUT alpha hydrogen (like HCHO, PhCHO, Cl3CCHO).
+   2RCHO + NaOH → RCOONa + RCH2OH (one oxidized, one reduced — disproportionation).
+
+6. Aldol Condensation:
+   Only for carbonyl compounds with alpha-H (H adjacent to C=O).
+   2CH3CHO + NaOH → CH3CH(OH)CH2CHO (aldol — beta-hydroxy aldehyde) → dehydration → CH3CH=CHCHO (crotonaldehyde, alpha,beta-unsaturated aldehyde).
+
+7. Clemmensen Reduction (Zn-Hg/HCl): 
+   C=O → CH2 (reduces carbonyl to methylene). For acid-sensitive compounds.
+
+8. Wolff-Kishner Reduction (N2H4/KOH):
+   C=O → CH2. Used with alkaline condition. For acid-sensitive substrates.
+
+9. Tollens' Test (Silver Mirror Test):
+   Only ALDEHYDES give positive test. Ketones do NOT.
+   RCHO + [Ag(NH3)2]+ (Tollen's reagent) → RCOONa + Ag (mirror on glass).
+
+10. Fehling's Test:
+    Only ALDEHYDES give brick-red precipitate (Cu2O). Ketones do NOT.
+    Aliphatic aldehydes give positive Fehling's. Benzaldehyde does NOT (aromatic).
+
+11. Iodoform Test (Haloform reaction):
+    Positive for: CH3COCH3 (acetone), CH3CHO, ethanol, other methyl ketones, secondary alcohols that can be oxidized to methyl ketone.
+    RCOCH3 + I2 + NaOH → CHI3 (yellow ppt, antiseptic smell) + RCOONa.
+
+JEE TRAP: 
+→ Toll ens' test: ALL aldehydes (aliphatic and aromatic). Ketones: NEGATIVE.
+→ Fehling's test: only ALIPHATIC aldehydes. Benzaldehyde: NEGATIVE. Ketones: NEGATIVE.
+→ Iodoform: methyl ketones + ethanol. NOT just ketones in general.
+
+----------------------------------------------------------------
+CARBOXYLIC ACIDS
+----------------------------------------------------------------
+
+Acidity:
+→ Carboxylic acids much more acidic than alcohols (pKa 4-5 vs 16).
+→ Carboxylate anion stabilized by resonance (negative charge delocalized over two O atoms).
+
+Factors affecting acid strength:
+→ Electron-withdrawing groups (EWG) increase acidity (stabilize carboxylate ion further).
+   F3CCOOH (pKa = 0.5) > Cl3CCOOH > CHCl2COOH > ClCH2COOH > CH3COOH (pKa = 4.75)
+→ Closer the EWG to COOH, stronger the effect.
+→ Electron-donating groups decrease acidity.
+→ More EWG substituents → more acidic.
+
+Important acidity comparisons:
+→ Formic acid (HCOOH) > Acetic acid (CH3COOH): H is less electron-donating than CH3.
+→ Benzoic acid > acetic acid: phenyl ring is electron-withdrawing relative to CH3.
+→ p-nitrobenzoic acid > benzoic acid: NO2 is EWG, withdraws electrons.
+→ p-methylbenzoic acid < benzoic acid: CH3 is electron-donating.
+
+Reactions:
+1. Salt formation: RCOOH + NaOH → RCOONa + H2O.
+2. Esterification: RCOOH + R'OH ⇌ RCOOR' + H2O (acid-catalyzed, reversible).
+3. Reaction with LiAlH4: reduces -COOH to -CH2OH (primary alcohol).
+4. Decarboxylation: removes CO2. Easy for: beta-keto acids, malonic acid derivatives.
+   CH3COCH2COOH → CH3COCH3 + CO2 (beta-keto acid decarboxylation).
+
+================================================================
+UNIT 18: NITROGEN-CONTAINING ORGANIC COMPOUNDS
+================================================================
+
+----------------------------------------------------------------
+AMINES
+----------------------------------------------------------------
+
+Classification:
+Primary (1°): RNH2 (one alkyl/aryl group on N)
+Secondary (2°): R2NH (two groups on N)
+Tertiary (3°): R3N (three groups on N)
+Quaternary ammonium salt: R4N+X- (four groups, no lone pair — not a base)
+
+Basic Character:
+→ Amines are Lewis bases (lone pair on N) → accept proton.
+→ Basicity: Kb (or pKb = 14 - pKa of conjugate acid).
+→ More electron density on N → more basic.
+
+Basicity order in aliphatic amines:
+2° > 1° > 3° > NH3 [in gas phase due to inductive effect only]
+In water (aqueous): 2° > 1° ≈ 3° > NH3 [hydration stabilizes conjugate acid; 3° is less hydrated]
+
+In aromatic amines:
+→ Aniline (C6H5NH2) is MUCH less basic than aliphatic amines.
+→ Lone pair on N is delocalized into benzene ring → less available for protonation.
+→ pKb of aniline ≈ 9.4, vs ethylamine ≈ 3.4 (aniline is far less basic).
+
+Basicity order:
+Aliphatic amine >> NH3 >> aromatic amine (aniline, etc.)
+
+Effect of substituents on aniline's basicity:
+→ EWG on ring (like -NO2 at para) → decreases basicity further.
+→ EDG on ring (like -CH3 at para) → increases basicity slightly.
+
+Preparation of Amines:
+1. Reduction of nitro compounds: ArNO2 + 3Fe + 6HCl → ArNH2 + ... (Sn/HCl or Fe/HCl)
+2. Reduction of nitriles: RCN + 4[H] → RCH2NH2 (via LiAlH4)
+3. Gabriel phthalimide synthesis: makes primary amines free of secondary and tertiary.
+4. Hofmann bromamide reaction: RCONH2 + Br2 + 4NaOH → RNH2 + Na2CO3 + 2NaBr + 2H2O
+   [One carbon less than starting amide — useful for lower primary amine]
+
+Reactions:
+1. With HCl: RNH2 + HCl → RNH3+Cl- (salt formation — amines are bases).
+2. With acyl chloride: RNH2 + R'COCl → R'CONHR + HCl (amide formation).
+3. With NaNO2 + HCl:
+   Aliphatic 1° amines: unstable diazonium salt → N2 gas + alcohol.
+   Aromatic 1° amines: stable diazonium salt ArN2+Cl- (diazotization — at 0-5°C).
+
+Distinction tests:
+→ Primary amine + CHCl3 + KOH (alcoholic) → isocyanide (bad-smelling) — carbylamine test. ONLY primary amines.
+→ Hinsberg test: Primary amine reacts with benzenesulfonyl chloride (PhSO2Cl) → sulfonamide soluble in NaOH. Secondary amine → sulfonamide insoluble in NaOH. Tertiary → no reaction.
+
+Hofmann's exhaustive methylation: converts amine to quaternary salt → Hofmann elimination → least substituted alkene.
+(Opposite of Saytzeff's rule — gives less substituted alkene.)
+
+JEE TRAP: Carbylamine test is ONLY positive for PRIMARY amines (not 2° or 3°). Bad smell = isocyanide = positive test.
+
+----------------------------------------------------------------
+DIAZONIUM SALTS
+----------------------------------------------------------------
+
+Formation: Ar-NH2 + NaNO2 + HCl (0-5°C) → Ar-N2+Cl- (aryldiazonium salt) + 2H2O
+
+Stability: ArN2+ is stable at 0-5°C due to resonance (nitrogen stabilized by aryl ring).
+Aliphatic diazonium salts are unstable → lose N2 immediately.
+
+REACTIONS OF DIAZONIUM SALTS (very important for JEE — synthetic route):
+
+REPLACEMENT OF N2 by other groups:
+→ Ar-N2+Cl- + CuCl → Ar-Cl + N2 (Sandmeyer reaction with Cu salts)
+→ Ar-N2+Cl- + CuBr → Ar-Br + N2 (Sandmeyer)
+→ Ar-N2+Cl- + CuCN → Ar-CN + N2 (Sandmeyer)
+→ Ar-N2+Cl- + HBF4 → Ar-F + N2 (Balz-Schiemann reaction, heat)
+→ Ar-N2+Cl- + KI → Ar-I + N2 + KCl (Finkelstein type — no Cu needed for I)
+→ Ar-N2+Cl- + H2O (heat, dilute H2SO4) → Ar-OH + N2 (phenol formation)
+→ Ar-N2+Cl- + H3PO2/H2O → Ar-H + N2 (removal of -NH2 group, replacing with H)
+→ Ar-N2+Cl- + conc. HBF4 → ArN2BF4 → heat → Ar-F + N2 + BF3 (Schiemann)
+
+COUPLING REACTIONS (electrophilic attack on activated aromatic ring):
+→ Ar-N2+Cl- + aniline (in acid) → Ar-N=N-Ar' (azo compound, orange/yellow dye)
+→ Ar-N2+Cl- + phenol (in alkaline) → Ar-N=N-Ar'-OH (azo compound, orange dye)
+→ Diazonium couples at p-position (or o- if p is blocked) of activated ring.
+→ Azo dyes — commercially important.
+
+JEE APPLICATIONS:
+→ Diazonium salts allow conversion of -NH2 to virtually any functional group (via N2 as leaving group).
+→ Starting from aniline → can access: halides, cyanide, phenol, fluoride, which are not easy to make otherwise.
+
+JEE TRAP: Sandmeyer reaction uses CUPROUS salts (Cu+, CuCl, CuBr). NOT cupric.
+Replacement by I does NOT need Cu catalyst (I- attacks directly on N2 complex).
+
+================================================================
+JEE-SPECIFIC PATTERNS (ALL UNITS 16-18)
+================================================================
+
+HIGH FREQUENCY QUESTION TYPES:
+1. Predict SN1 vs SN2, identify major product of nucleophilic substitution
+2. Identify positive/negative result for Tollens', Fehling's, iodoform tests
+3. Write product of aldol condensation or Cannizzaro reaction
+4. Compare basicity/acidity of given compounds
+5. Write product of diazonium salt reaction (Sandmeyer, coupling)
+6. Identify the transformation in given synthesis: which reactants/conditions used
+7. Identify 1°/2°/3° alcohol from reaction behavior (Lucas test, oxidation)
+8. Write product of esterification, dehydration of alcohol, or ester hydrolysis
+
+CRITICAL TRAPS:
+→ Tollens' test: ALL aldehydes including aromatic. Fehling's: only ALIPHATIC aldehydes.
+→ Iodoform test: only methyl ketones (CH3COR) and ethanol.
+→ Cannizzaro: only for aldehydes WITHOUT alpha-H (no CH adjacent to CHO).
+→ Aldol condensation: only for carbonyl compounds WITH alpha-H.
+→ SN1: 3° substrates, protic solvents, weak nucleophile. SN2: 1° substrates, aprotic solvents, strong nucleophile.
+→ Diazonium stability: aryl > alkyl. Must keep at 0-5°C.
+→ Aniline much less basic than aliphatic amines (lone pair delocalized in ring).
+→ Carbylamine test is ONLY for primary amines.
+→ p-nitrophenol more acidic than phenol more acidic than alcohol more acidic than water (comparing pKa values).
+
+OUT OF JEE SCOPE:
+→ Detailed mechanisms of Reformatsky, Wittig, and other named reactions beyond syllabus
+→ Protecting group chemistry
+→ Multi-step synthesis (more than 2-3 steps)
+
+================================================================
+END OF UNITS 16-18 NOTES
+================================================================

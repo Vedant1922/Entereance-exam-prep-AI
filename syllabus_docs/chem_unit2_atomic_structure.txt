@@ -1,0 +1,292 @@
+================================================================
+JEE MAIN 2026 | CHEMISTRY NOTES
+UNIT 2: ATOMIC STRUCTURE
+[Physical Chemistry | JEE Mains Weightage: VERY HIGH — 2-3 questions almost every year]
+================================================================
+
+OFFICIAL SYLLABUS SCOPE (JEE Main 2026):
+Nature of electromagnetic radiation, photoelectric effect, spectrum of hydrogen atom,
+Bohr model of hydrogen atom - postulates, energy and radii relations, limitations,
+Dual nature of matter, de Broglie's relationship, Heisenberg uncertainty principle,
+Quantum mechanical model, atomic orbitals as wave functions, quantum numbers,
+Shapes of s, p, d orbitals, electron spin, rules for filling electrons (Aufbau, Pauli, Hund's),
+Electronic configuration, extra stability of half-filled and completely filled orbitals.
+
+----------------------------------------------------------------
+SECTION 1: SUBATOMIC PARTICLES
+----------------------------------------------------------------
+
+Electron: charge = -1.6 × 10^-19 C, mass = 9.1 × 10^-31 kg (negligible in mass calculations)
+Proton: charge = +1.6 × 10^-19 C, mass = 1.67 × 10^-27 kg
+Neutron: charge = 0, mass = 1.67 × 10^-27 kg
+
+Atomic Number (Z) = number of protons = number of electrons (in neutral atom)
+Mass Number (A) = protons + neutrons
+Neutrons = A - Z
+
+Isotopes: Same Z, different A (same element, different mass number)
+Example: C-12 and C-14 are isotopes of carbon.
+Isobars: Same A, different Z (different elements, same mass number)
+Isotones: Same number of neutrons, different Z
+
+JEE TRAP: In a cation (positive ion), electrons are removed. In anion, electrons are added.
+Fe2+ has 26 - 2 = 24 electrons. O2- has 8 + 2 = 10 electrons.
+
+----------------------------------------------------------------
+SECTION 2: ATOMIC MODELS — EVOLUTION
+----------------------------------------------------------------
+
+Thomson's Model (Plum Pudding):
+→ Atom = positive sphere with electrons embedded in it.
+→ Failed because: could not explain Rutherford's gold foil experiment.
+
+Rutherford's Nuclear Model:
+→ Gold foil experiment: alpha particles fired at thin gold foil.
+→ Most passed through → atom is mostly empty space.
+→ Few deflected at large angles → small, dense, positive nucleus exists.
+→ Very few bounced back → nucleus is extremely hard and small.
+→ Limitations: Could not explain atomic stability (accelerating electrons should radiate energy and spiral into nucleus), and could not explain discrete atomic spectra.
+
+Bohr's Model (Valid ONLY for hydrogen and hydrogen-like ions: He+, Li2+, Be3+):
+Postulates:
+1. Electrons move in fixed circular orbits (shells) without radiating energy.
+2. Each orbit has fixed energy — energy is quantized.
+3. Energy is emitted or absorbed only when electron jumps between orbits.
+4. Angular momentum of electron is quantized: mvr = nh/2π
+
+----------------------------------------------------------------
+SECTION 3: BOHR MODEL — KEY EQUATIONS (Very High JEE Frequency)
+----------------------------------------------------------------
+
+For hydrogen-like species (charge Z on nucleus):
+
+Energy of nth orbit:
+   En = -13.6 × Z² / n² eV
+   En = -2.18 × 10^-18 × Z² / n² J
+
+Radius of nth orbit:
+   rn = 0.529 × n² / Z Å (angstroms)
+   rn = 52.9 × n² / Z pm (picometers)
+
+Velocity of electron in nth orbit:
+   vn = 2.18 × 10^6 × Z / n m/s
+
+For hydrogen (Z=1):
+   E1 = -13.6 eV (ground state energy)
+   r1 = 0.529 Å (Bohr radius)
+
+Energy of photon emitted/absorbed during transition:
+   ΔE = Efinal - Einitial = 13.6 × Z² × (1/n1² - 1/n2²) eV
+   [n2 > n1 for emission, ΔE is positive for absorption]
+
+Wavenumber (Rydberg equation):
+   1/λ = RH × Z² × (1/n1² - 1/n2²)
+   RH = 1.097 × 10^7 m^-1 (Rydberg constant)
+   c = νλ, E = hν = hc/λ
+
+SPECTRAL SERIES OF HYDROGEN — MUST MEMORIZE:
+   Lyman series:    n1=1, n2=2,3,4... → Ultraviolet region
+   Balmer series:   n1=2, n2=3,4,5... → Visible region (most important for JEE)
+   Paschen series:  n1=3, n2=4,5,6... → Infrared
+   Brackett series: n1=4, n2=5,6,7... → Infrared
+   Pfund series:    n1=5, n2=6,7,8... → Far Infrared
+
+Number of spectral lines when electron falls from nth to ground state = n(n-1)/2
+
+JEE TRAP: Lyman series is UV, Balmer is visible. Students often confuse these.
+JEE TRAP: The first line of Balmer (n=3 to n=2) is in visible — called H-alpha line (red).
+
+Limitations of Bohr's Model:
+→ Only works for hydrogen-like species (1 electron). Fails for multi-electron atoms.
+→ Cannot explain Zeeman effect (splitting of spectral lines in magnetic field).
+→ Cannot explain fine structure of spectral lines.
+→ Does not explain chemical bonding.
+
+----------------------------------------------------------------
+SECTION 4: DUAL NATURE OF MATTER AND RADIATION
+----------------------------------------------------------------
+
+Wave Nature of Light:
+→ Light exhibits interference and diffraction — proves wave nature.
+→ λ = c/ν, E = hν = hc/λ
+→ h = Planck's constant = 6.626 × 10^-34 J·s
+
+Photoelectric Effect (Einstein's explanation):
+→ Light shining on metal surface ejects electrons.
+→ KE of emitted electron = hν - hν0 = hν - φ (work function)
+→ Threshold frequency (ν0): minimum frequency needed to eject electron.
+→ KEY: Increasing intensity increases NUMBER of electrons, not their KE.
+→ Increasing frequency increases KE of electrons, not their number.
+→ This proved particle nature of light (photons).
+
+JEE TRAP: Below threshold frequency, NO electrons are ejected regardless of intensity. This is one of the most tested concepts.
+
+de Broglie Wavelength (Wave nature of matter):
+→ Every moving particle has an associated wavelength.
+   λ = h/mv = h/p
+   where m = mass, v = velocity, p = momentum
+
+→ For electron accelerated through potential difference V:
+   λ = h / √(2meV) = 12.27/√V Å (V in volts)
+
+Heisenberg Uncertainty Principle:
+   Δx × Δp ≥ h/4π
+   Δx × (mΔv) ≥ h/4π
+
+→ Cannot simultaneously know exact position AND exact momentum of a particle.
+→ This is WHY Bohr's model is fundamentally flawed — it assumed fixed orbits with known position and velocity simultaneously.
+
+JEE APPLICATION: If Δx is given, find minimum Δv = h/(4π × m × Δx)
+
+----------------------------------------------------------------
+SECTION 5: QUANTUM MECHANICAL MODEL
+----------------------------------------------------------------
+
+Orbital = region of space where probability of finding electron is maximum (≥90%).
+NOT a fixed path. It is a probability distribution (electron cloud).
+
+Atomic orbital is described by a wave function ψ.
+|ψ|² = probability density of finding electron at a point.
+
+FOUR QUANTUM NUMBERS — define the state of an electron completely:
+
+1. Principal Quantum Number (n):
+   → Values: 1, 2, 3, 4... (positive integers only)
+   → Determines energy (primarily) and size of orbital.
+   → Higher n = higher energy = larger orbital.
+   → Maximum electrons in shell = 2n²
+
+2. Azimuthal/Angular Momentum Quantum Number (l):
+   → Values: 0 to (n-1)
+   → Determines shape of orbital.
+   → l=0 → s orbital (spherical)
+   → l=1 → p orbital (dumbbell)
+   → l=2 → d orbital (cloverleaf/complex)
+   → l=3 → f orbital
+   → Number of orbitals in a subshell = 2l+1
+
+3. Magnetic Quantum Number (ml):
+   → Values: -l to +l (including 0), total = 2l+1 values
+   → Determines orientation of orbital in space.
+   → s: ml=0 (1 orbital), p: ml=-1,0,+1 (3 orbitals), d: ml=-2,-1,0,+1,+2 (5 orbitals)
+
+4. Spin Quantum Number (ms):
+   → Values: +1/2 or -1/2 only
+   → Represents intrinsic angular momentum (spin) of electron.
+   → Two electrons in same orbital have opposite spins.
+
+JEE TRAP: A valid set of quantum numbers must satisfy ALL rules simultaneously.
+Common invalid sets:
+   n=2, l=2 → INVALID (l must be 0 to n-1, so max l=1 for n=2)
+   n=3, l=1, ml=2 → INVALID (ml must be -1 to +1 for l=1)
+   ms=0 → INVALID (ms can only be +1/2 or -1/2)
+
+SHAPES OF ORBITALS:
+   s orbital: Spherical, one lobe, non-directional. Increases in size with n.
+   p orbital: Two lobes on opposite sides of nucleus along an axis. Three orientations: px, py, pz.
+   d orbital: Five orbitals. Four cloverleaf-shaped (dxy, dxz, dyz, dx²-y²) + one dz² (dumbbell with ring).
+   Node: Region where ψ² = 0 (zero probability). Number of radial nodes = n - l - 1.
+
+----------------------------------------------------------------
+SECTION 6: ELECTRONIC CONFIGURATION
+----------------------------------------------------------------
+
+THREE RULES (all three must be applied together):
+
+1. Aufbau Principle:
+   → Fill orbitals in order of increasing energy.
+   → Energy order: 1s < 2s < 2p < 3s < 3p < 4s < 3d < 4p < 5s < 4d < 5p...
+   → Use (n+l) rule: Lower (n+l) = filled first. If (n+l) same, lower n = filled first.
+   → 4s (n+l=4) fills before 3d (n+l=5) ← CRITICAL
+
+2. Pauli Exclusion Principle:
+   → No two electrons in an atom can have all four quantum numbers identical.
+   → Maximum 2 electrons per orbital, and they must have opposite spins.
+
+3. Hund's Rule of Maximum Multiplicity:
+   → Electrons fill degenerate orbitals (same energy) one each before pairing.
+   → All singly occupied orbitals have same spin (all ↑ before any ↓).
+
+CRITICAL EXCEPTIONS — JEE TESTS THESE EVERY YEAR:
+
+Chromium (Z=24): Expected: [Ar] 4s² 3d⁴ → Actual: [Ar] 4s¹ 3d⁵
+Reason: Half-filled 3d (3d⁵) gives extra stability due to symmetrical distribution.
+
+Copper (Z=29): Expected: [Ar] 4s² 3d⁹ → Actual: [Ar] 4s¹ 3d¹⁰
+Reason: Completely filled 3d (3d¹⁰) gives extra stability.
+
+→ RULE: Half-filled and completely filled subshells (d⁵, d¹⁰, f⁷, f¹⁴) have extra stability.
+→ These exceptions occur because the energy gained from extra stability exceeds the energy cost of promoting one electron from 4s to 3d.
+
+JEE TRAP: When writing electronic configuration of ions, remove electrons from 4s before 3d.
+Fe: [Ar] 4s² 3d⁶ → Fe²⁺: [Ar] 3d⁶ (both 4s electrons removed first)
+→ Fe²⁺ is NOT [Ar] 4s² 3d⁴. Students often make this error.
+
+Number of orbitals in a shell n = n²
+Number of electrons maximum in shell n = 2n²
+
+----------------------------------------------------------------
+SECTION 7: ELECTROMAGNETIC RADIATION
+----------------------------------------------------------------
+
+Nature of EMR:
+→ Transverse waves consisting of oscillating electric and magnetic fields.
+→ Travel at speed of light c = 3 × 10^8 m/s in vacuum.
+→ c = νλ (c = frequency × wavelength)
+
+Electromagnetic Spectrum (increasing frequency / energy):
+Radio < Microwave < Infrared < Visible < UV < X-rays < Gamma rays
+
+Visible light wavelength range: 400nm (violet) to 700nm (red)
+Energy: E = hν = hc/λ
+Higher frequency = higher energy = shorter wavelength
+
+----------------------------------------------------------------
+SECTION 8: JEE-SPECIFIC PATTERNS
+----------------------------------------------------------------
+
+HIGH FREQUENCY QUESTION TYPES:
+1. Calculate energy emitted/absorbed during electronic transition in H-atom or H-like ion
+2. Calculate wavelength of spectral line using Rydberg equation — identify which series
+3. Find de Broglie wavelength of electron/particle
+4. Identify valid/invalid sets of quantum numbers (very common MCQ type)
+5. Write electronic configuration of transition metals and their ions
+6. Number of spectral lines when electron drops from nth level
+7. Radius/energy comparison between different H-like species
+
+CRITICAL TRAPS JEE EXPLOITS:
+→ For He+ (Z=2): E1 = -13.6 × 4 = -54.4 eV (4 times that of H)
+→ Energy is NEGATIVE — more negative means more stable (lower energy)
+→ When n increases, energy becomes less negative (increases toward zero)
+→ Bohr model: orbit is fixed → position and velocity both known → VIOLATES Heisenberg principle
+→ 4s fills before 3d BUT empties before 3d when forming cations
+→ ms = 0 is NOT a valid spin quantum number
+
+OUT OF JEE SCOPE:
+→ Detailed mathematical derivation of Schrödinger equation
+→ Slater's rules for shielding (beyond basics)
+→ Detailed relativistic corrections to atomic structure
+
+----------------------------------------------------------------
+SECTION 9: KEY FORMULAS SUMMARY
+----------------------------------------------------------------
+
+En = -13.6 × Z²/n² eV = -2.18 × 10^-18 × Z²/n² J
+rn = 0.529 × n²/Z Å
+vn = 2.18 × 10^6 × Z/n m/s
+1/λ = RH × Z² (1/n1² - 1/n2²)
+RH = 1.097 × 10^7 m^-1
+c = νλ = 3 × 10^8 m/s
+E = hν = hc/λ
+h = 6.626 × 10^-34 J·s
+KE (photoelectron) = hν - hν0
+λ (de Broglie) = h/mv = h/p
+Δx·Δp ≥ h/4π
+Number of spectral lines from n to 1 = n(n-1)/2
+Max electrons in shell = 2n²
+Orbitals in shell = n²
+Orbitals in subshell = 2l+1
+
+================================================================
+END OF UNIT 2 NOTES
+================================================================

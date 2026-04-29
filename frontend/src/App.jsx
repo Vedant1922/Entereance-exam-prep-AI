@@ -54,6 +54,12 @@ function App() {
   const [isProfileOpen, setIsProfileOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   
+  // Modals & User Data
+  const [showSettings, setShowSettings] = useState(false);
+  const [showOnboarding, setShowOnboarding] = useState(false);
+  const [selectedYear, setSelectedYear] = useState('2026');
+  const [isSavingYear, setIsSavingYear] = useState(false);
+  
   // Database State
   const [currentSessionId, setCurrentSessionId] = useState(null);
   const [chatSessions, setChatSessions] = useState([]);
@@ -95,6 +101,7 @@ function App() {
           setStreak(data.streak_count);
         }
         if (data.target_exam_year) {
+          setSelectedYear(data.target_exam_year.toString());
           // Standard JEE Mains target: Jan 24th of the target year
           const targetDate = new Date(`${data.target_exam_year}-01-24T00:00:00Z`);
           const today = new Date();
@@ -105,11 +112,59 @@ function App() {
           } else {
             setExamDays(153); // Fallback if their DB year defaults to something in the past
           }
+        } else {
+          checkAndShowOnboarding();
         }
+      } else {
+        checkAndShowOnboarding();
       }
     } catch(err) {
-      // User row likely doesn't exist yet (will auto-create on first message)
+      checkAndShowOnboarding();
     }
+  };
+
+  const checkAndShowOnboarding = () => {
+    if (!localStorage.getItem('skippedOnboarding_JEE')) {
+      setShowOnboarding(true);
+    }
+  };
+
+  const handleSaveSettings = async () => {
+    setIsSavingYear(true);
+    try {
+      const { error } = await supabase.from('users').upsert(
+        { id: session.user.id, email: session.user.email, target_exam_year: parseInt(selectedYear) },
+        { onConflict: 'id' }
+      );
+      if (!error) {
+        setShowSettings(false);
+        setShowOnboarding(false);
+        loadUserStats(); // refresh visual days left
+      }
+    } catch (err) {
+      console.error("Failed to save settings", err);
+    } finally {
+      setIsSavingYear(false);
+    }
+  };
+
+  const handleClearAllChats = async () => {
+    if (window.confirm("Are you sure you want to delete all your chat history? This cannot be undone.")) {
+      try {
+        await supabase.from('chat_sessions').delete().eq('user_id', session.user.id);
+        setChatSessions([]);
+        setMessages([INITIAL_MESSAGE]);
+        setCurrentSessionId(null);
+        setShowSettings(false);
+      } catch (err) {
+        console.error("Failed to delete chats", err);
+      }
+    }
+  };
+
+  const handleSkipOnboarding = () => {
+    localStorage.setItem('skippedOnboarding_JEE', 'true');
+    setShowOnboarding(false);
   };
 
   const loadSidebarSessions = async () => {
@@ -360,6 +415,90 @@ function App() {
   return (
     <div className="overflow-hidden bg-theme_bg text-[#ECECEC] selection:bg-theme_green/40 selection:text-white font-sans h-screen flex w-full">
       
+      {/* --- SETTINGS / ONBOARDING MODAL --- */}
+      {(showSettings || showOnboarding) && (
+        <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-[100] flex items-center justify-center p-4">
+          <div className="bg-[#1C1C1C] border border-white/10 rounded-2xl w-full max-w-sm p-6 relative shadow-2xl">
+            <div className="w-10 h-10 rounded-xl bg-theme_green/15 border border-theme_green/25 flex items-center justify-center mb-5">
+              <Settings className="w-5 h-5 text-theme_green" />
+            </div>
+            
+            <h2 className="text-xl font-bold text-white mb-1.5">{showOnboarding ? 'Welcome to JEE AI' : 'Account Settings'}</h2>
+            <p className="text-[13px] text-gray-400 mb-8 max-w-[90%]">
+              {showOnboarding ? "Let's set up your countdown clock. What year are you taking the exam?" : "Update your profile preferences and target exam year."}
+            </p>
+
+            <div className="flex flex-col gap-5 mb-8">
+              {showSettings && (
+                <div className="flex flex-col gap-4 border-b border-white/5 pb-5">
+                  <div>
+                    <label className="text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-2 block">Account Email</label>
+                    <div className="px-3.5 py-3 bg-white/5 rounded-xl text-[13.5px] text-gray-300 border border-white/5 truncate">
+                      {session?.user?.email}
+                    </div>
+                  </div>
+                  <div className="flex items-center justify-between px-1">
+                    <label className="text-[12px] font-medium text-gray-300">App Theme</label>
+                    <span className="text-[11px] bg-theme_green/10 text-theme_green px-2.5 py-1 rounded-full border border-theme_green/20">Dark Mode</span>
+                  </div>
+                </div>
+              )}
+              
+              <div>
+                <label className="text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-2 block">Target Exam Year</label>
+                <select 
+                  value={selectedYear} 
+                  onChange={(e) => setSelectedYear(e.target.value)}
+                  className="w-full bg-[#171717] hover:bg-[#1A1A1A] border border-white/10 rounded-xl px-4 py-3 text-[14px] text-white outline-none focus:border-theme_green/40 focus:ring-1 focus:ring-theme_green/20 appearance-none transition-colors cursor-pointer"
+                >
+                  <option value="2026">2026</option>
+                  <option value="2027">2027</option>
+                  <option value="2028">2028</option>
+                  <option value="2029">2029</option>
+                </select>
+              </div>
+
+              {showSettings && (
+                <div className="pt-2">
+                  <button 
+                    onClick={handleClearAllChats}
+                    className="w-full py-3 border border-red-500/20 text-red-400 hover:bg-red-500/10 rounded-xl text-sm font-medium transition-colors"
+                  >
+                    Clear all chat history
+                  </button>
+                </div>
+              )}
+            </div>
+
+            <div className="flex items-center gap-3 w-full">
+              {showOnboarding ? (
+                <button 
+                  onClick={handleSkipOnboarding}
+                  className="flex-[0.7] py-3.5 text-[13.5px] font-semibold text-gray-400 hover:text-white transition-colors"
+                >
+                  Skip for now
+                </button>
+              ) : (
+                <button 
+                  onClick={() => setShowSettings(false)}
+                  className="flex-[0.7] py-3.5 text-[13.5px] font-semibold text-gray-400 hover:text-white bg-white/5 hover:bg-white/10 rounded-xl transition-colors"
+                >
+                  Cancel
+                </button>
+              )}
+              
+              <button 
+                onClick={handleSaveSettings}
+                disabled={isSavingYear}
+                className="flex-1 bg-theme_green hover:bg-theme_green/90 text-black font-bold py-3.5 rounded-xl transition-all disabled:opacity-50 text-[13.5px]"
+              >
+                {isSavingYear ? 'Saving...' : 'Save & Continue'}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Mobile Backdrop Overlay */}
       {isMobileMenuOpen && (
         <div 
@@ -434,11 +573,11 @@ function App() {
         {/* Profile */}
         <div className="p-3 border-t border-white/5 relative">
           <div className={`absolute bottom-16 left-3 right-3 bg-[#2F2F2F] shadow-2xl border border-white/10 rounded-2xl p-1.5 z-30 flex flex-col gap-0.5 transition-all duration-200 origin-bottom-left ${isProfileOpen ? 'opacity-100 scale-100 pointer-events-auto' : 'opacity-0 scale-95 pointer-events-none'}`}>
-            <button className="flex items-center gap-2.5 px-3 py-2 text-sm hover:bg-white/10 rounded-xl text-left text-gray-200 font-medium transition-colors">
+            <button onClick={() => { setShowSettings(true); setIsProfileOpen(false); }} className="flex items-center gap-2.5 px-3 py-2 text-sm hover:bg-white/10 rounded-xl text-left text-gray-200 font-medium transition-colors w-full">
               <Settings className="w-4 h-4 opacity-60" /> Settings
             </button>
             <div className="h-px bg-white/10 mx-1" />
-            <button onClick={handleLogOut} className="flex items-center gap-2.5 px-3 py-2 text-sm hover:bg-red-500/15 rounded-xl text-left text-red-400 font-medium transition-colors">
+            <button onClick={handleLogOut} className="flex items-center w-full gap-2.5 px-3 py-2 text-sm hover:bg-red-500/15 rounded-xl text-left text-red-400 font-medium transition-colors">
               <LogOut className="w-4 h-4" /> Log out
             </button>
           </div>

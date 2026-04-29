@@ -95,7 +95,7 @@ app.post('/chat', async (req, res) => {
     }
 
     // --- Load Master Prompt ---
-    const masterPromptPath = path.join(process.cwd(), 'prompt_engineering', 'v3_prompt_draft.txt');
+    const masterPromptPath = path.join(process.cwd(), 'prompt_engineering', 'v4_boundary_prompt.txt');
     let finalSystemInstruction = 'You are a JEE Tutor.'; // fallback
     try {
       finalSystemInstruction = fs.readFileSync(masterPromptPath, 'utf-8');

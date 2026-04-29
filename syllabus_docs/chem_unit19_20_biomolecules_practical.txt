@@ -1,0 +1,357 @@
+================================================================
+JEE MAIN 2026 | CHEMISTRY NOTES
+UNIT 19: BIOMOLECULES
+UNIT 20: PRINCIPLES RELATED TO PRACTICAL CHEMISTRY
+[Organic Chemistry | JEE Mains Weightage: LOW-MEDIUM — 1 question per paper]
+================================================================
+
+================================================================
+UNIT 19: BIOMOLECULES
+================================================================
+
+OFFICIAL SYLLABUS SCOPE (JEE Main 2026):
+Carbohydrates: classification, aldoses and ketoses, monosaccharides (glucose and fructose),
+constituent monosaccharides of oligosaccharides (sucrose, lactose, maltose).
+Proteins: alpha-amino acids, peptide bond, polypeptides, protein structure (primary, secondary, tertiary, quaternary), denaturation, enzymes.
+Vitamins: classification and functions.
+Nucleic acids: chemical constitution of DNA and RNA, biological functions.
+Hormones: general introduction.
+
+----------------------------------------------------------------
+SECTION 1: CARBOHYDRATES
+----------------------------------------------------------------
+
+Definition: Polyhydroxy aldehydes or polyhydroxy ketones, or compounds that yield these on hydrolysis.
+General formula: Cn(H2O)n for most monosaccharides.
+
+Classification by hydrolysis:
+→ Monosaccharides: cannot be hydrolyzed. Simplest unit. (Glucose, fructose, galactose, ribose)
+→ Oligosaccharides: yield 2-10 monosaccharides on hydrolysis.
+   Disaccharides (yield 2 monosaccharides): sucrose, lactose, maltose.
+→ Polysaccharides: yield many monosaccharides. (starch, cellulose, glycogen)
+
+Classification by functional group:
+→ Aldoses: contain aldehyde group (CHO) — Glucose is an aldohexose.
+→ Ketoses: contain ketone group (C=O) — Fructose is a ketohexose.
+
+GLUCOSE (D-glucose, blood sugar):
+→ Molecular formula: C6H12O6 (aldohexose)
+→ Has 4 chiral carbons → can form 16 stereoisomers.
+→ Open chain structure: CHO-(CHOH)4-CH2OH (aldehyde at C1).
+→ D-glucose and L-glucose are enantiomers (mirror images). D-form occurs naturally.
+→ Cyclic form (pyranose): 6-membered ring formed by reaction of C1 (CHO) with C5 (OH).
+   α-glucose and β-glucose are anomers (differ at C1 — anomeric carbon).
+
+Tests for glucose and reducing sugars:
+→ Reduces Tollens' reagent (silver mirror) → reducing sugar.
+→ Reduces Fehling's solution (brick-red Cu2O) → reducing sugar.
+→ All monosaccharides are reducing sugars.
+
+FRUCTOSE (D-fructose, fruit sugar):
+→ Molecular formula: C6H12O6 (ketohexose, isomer of glucose — functional group isomers)
+→ Ketone at C2 in open chain: CH2OH-CO-(CHOH)3-CH2OH.
+→ Forms 5-membered ring (furanose) via C2 ketone with C5 OH.
+→ Fructose is a reducing sugar (reduces Tollens' — reduces because it isomerizes to glucose in alkaline conditions via enediol).
+→ Fructose is 1.5-2 times sweeter than sucrose.
+
+SUCROSE (table sugar, cane sugar):
+→ Disaccharide of glucose + fructose (1→2 glycosidic bond, α-glucose C1 + β-fructose C2).
+→ NON-REDUCING sugar (neither free aldehyde nor free ketone — both anomeric carbons involved in bond).
+→ Does NOT reduce Tollens' or Fehling's.
+→ Sucrose on hydrolysis → glucose + fructose (invert sugar, sweeter than sucrose because fructose is sweet).
+→ Sucrose: [α]D = +66.5° (dextrorotatory). After hydrolysis: [α]D = -19.8° (levorotatory overall — inversion).
+→ Enzyme: invertase (sucrase) hydrolizes sucrose.
+
+LACTOSE (milk sugar):
+→ Disaccharide: galactose + glucose (β-1,4-glycosidic bond).
+→ REDUCING sugar (free anomeric carbon on glucose unit is free).
+→ Enzyme: lactase hydrolizes lactose.
+→ Lactose intolerance: deficiency of lactase enzyme.
+
+MALTOSE (malt sugar):
+→ Disaccharide: glucose + glucose (α-1,4-glycosidic bond).
+→ REDUCING sugar (C1 of second glucose unit is free).
+→ Formed during starch digestion by amylase.
+→ Enzyme: maltase hydrolizes maltose.
+
+STARCH: polymer of glucose.
+→ Amylose: linear chain, α-1,4-glycosidic bonds, about 20% of starch.
+→ Amylopectin: branched, α-1,4 and α-1,6 bonds, about 80% of starch.
+→ Starch + I2 → blue-black complex (test for starch — I2 trapped in helix of amylose).
+
+CELLULOSE: polymer of β-glucose (β-1,4-glycosidic bonds).
+→ Cannot be digested by humans (no cellulase enzyme). Cattle have cellulase-producing bacteria.
+→ Makes plant cell walls, cotton, wood.
+
+GLYCOGEN: animal starch (more branched than amylopectin).
+
+JEE TRAP: Sucrose is the only non-reducing disaccharide among the three (sucrose, lactose, maltose). Lactose and maltose are reducing sugars.
+
+----------------------------------------------------------------
+SECTION 2: PROTEINS
+----------------------------------------------------------------
+
+Amino Acids:
+→ Molecules with BOTH amino (-NH2) AND carboxyl (-COOH) group.
+→ α-amino acid: both groups on same (alpha) carbon.
+→ General structure: H2N-CHR-COOH (R = side chain, determines identity).
+→ 20 standard amino acids in proteins.
+→ All naturally occurring amino acids are L-amino acids (except glycine — no chiral carbon).
+→ Glycine (R=H): only amino acid without chirality.
+
+Zwitterion:
+→ At physiological pH, amino acids exist as zwitterions (internal salt): +H3N-CHR-COO-.
+→ Isoelectric point (pI): pH at which amino acid has no net charge (zwitterion form dominant).
+   At pI: amino acid doesn't migrate in electric field.
+   Below pI: amino acid is positively charged (NH3+ dominates).
+   Above pI: amino acid is negatively charged (COO- dominates).
+
+Peptide Bond:
+→ Formed by condensation between -COOH of one amino acid and -NH2 of next.
+→ -CO-NH- linkage (amide bond) = peptide bond.
+→ Dipeptide: 2 amino acids. Tripeptide: 3. Polypeptide: many. Protein: 100+ amino acids.
+
+Protein Structure Levels:
+1. Primary structure: sequence of amino acids (determined by genetic code). Held by covalent peptide bonds.
+2. Secondary structure: local 3D folding: α-helix (right-handed coil, H-bonds within chain) or β-pleated sheet (H-bonds between adjacent chains). Held by H-bonds.
+3. Tertiary structure: overall 3D shape of single polypeptide chain. Held by H-bonds, disulfide bonds (S-S), van der Waals, ionic interactions.
+4. Quaternary structure: association of multiple polypeptide subunits. Hemoglobin (4 subunits).
+
+Denaturation:
+→ Disruption of secondary, tertiary (and quaternary) structure without breaking peptide bonds.
+→ Loss of biological activity.
+→ Caused by: heat, extreme pH, organic solvents, urea, heavy metals.
+→ Example: cooking an egg (albumin denatures). Curdling of milk (casein denatures).
+→ Denaturation is often irreversible but sometimes reversible (if only non-covalent bonds broken).
+
+Enzymes:
+→ Biological catalysts — proteins that catalyze biochemical reactions.
+→ Highly specific (one enzyme for one reaction — "lock and key" specificity).
+→ Lower activation energy → faster reaction.
+→ Affected by: temperature (denature at high T), pH (optimal pH for each enzyme), inhibitors.
+→ Active site: specific region of enzyme that binds substrate.
+
+JEE TRAP: Denaturation breaks H-bonds and other secondary interactions, NOT primary structure (peptide bonds). The amino acid sequence is unchanged.
+
+----------------------------------------------------------------
+SECTION 3: VITAMINS
+----------------------------------------------------------------
+
+Vitamins: organic compounds required in small amounts in diet for normal body function.
+
+Fat-soluble vitamins: A, D, E, K (stored in fatty tissues, can accumulate to toxic levels).
+Water-soluble vitamins: C (ascorbic acid), B-complex (B1, B2, B3, B6, B12, folic acid, biotin) (not stored, needed regularly).
+
+JEE KEY FACTS:
+→ Vitamin A (retinol): vision. Deficiency = night blindness.
+→ Vitamin B1 (thiamine): beriberi (nerve disease).
+→ Vitamin B2 (riboflavin): skin lesions.
+→ Vitamin B12 (cyanocobalamin): pernicious anemia. Only vitamin containing a metal (cobalt — Co3+ coordination complex).
+→ Vitamin C (ascorbic acid): scurvy. Antioxidant.
+→ Vitamin D (calciferol): calcium absorption. Deficiency = rickets (children) or osteomalacia (adults).
+→ Vitamin E (tocopherol): antioxidant, fertility.
+→ Vitamin K (phylloquinone): blood clotting. Deficiency = excessive bleeding.
+
+JEE TRAP: Vitamin B12 contains cobalt (it's a coordination compound). Vitamins are NOT made of protein.
+
+----------------------------------------------------------------
+SECTION 4: NUCLEIC ACIDS
+----------------------------------------------------------------
+
+DNA (Deoxyribonucleic Acid): carries genetic information.
+RNA (Ribonucleic Acid): involved in protein synthesis.
+
+Components of Nucleic Acids:
+1. Phosphate group (-H2PO4)
+2. Pentose sugar:
+   → DNA: deoxyribose (2'-deoxyribose, C2 has H instead of OH)
+   → RNA: ribose (C2 has OH)
+3. Nitrogenous base:
+   Purines (double ring): Adenine (A), Guanine (G) — common to both DNA and RNA.
+   Pyrimidines (single ring):
+   → DNA: Cytosine (C), Thymine (T)
+   → RNA: Cytosine (C), Uracil (U) [no thymine in RNA]
+
+Base pairing in DNA (Watson-Crick):
+A pairs with T (2 H-bonds)
+G pairs with C (3 H-bonds)
+→ Double helix held together by H-bonds between complementary base pairs.
+
+Nucleoside = Sugar + Base (no phosphate)
+Nucleotide = Sugar + Base + Phosphate
+
+DNA double helix: two antiparallel strands wound around each other.
+RNA: usually single-stranded.
+
+Types of RNA:
+→ mRNA (messenger RNA): carries genetic code from DNA to ribosome.
+→ tRNA (transfer RNA): brings amino acids to ribosome. Cloverleaf structure.
+→ rRNA (ribosomal RNA): structural component of ribosome.
+
+Biological Functions:
+→ DNA: storage and transmission of genetic information.
+→ DNA replication: copying DNA (semiconservative mechanism).
+→ Transcription: DNA → mRNA.
+→ Translation: mRNA → protein (at ribosomes using tRNA).
+
+JEE TRAP: DNA has thymine (T). RNA has uracil (U). This is the key difference in bases.
+DNA uses deoxyribose, RNA uses ribose. Both have A, G, C.
+
+----------------------------------------------------------------
+SECTION 5: HORMONES (General Introduction)
+----------------------------------------------------------------
+
+→ Chemical messengers secreted by endocrine glands → transported by blood → target organ.
+→ Required in very small amounts, but regulate important body functions.
+
+Types:
+→ Peptide/Protein hormones: insulin (regulates blood glucose), glucagon, growth hormone. Water-soluble.
+→ Steroid hormones: testosterone, estrogen, cortisol (derived from cholesterol). Fat-soluble.
+→ Amino acid derivatives: adrenaline (epinephrine), thyroxine.
+
+JEE Level (very basic):
+→ Insulin: protein hormone from pancreas. Deficiency → diabetes mellitus.
+→ Adrenaline: fight-or-flight hormone, released from adrenal medulla.
+→ Thyroxine: iodine-containing amino acid derivative, regulates metabolism.
+→ Steroids: sex hormones (testosterone, estrogen), adrenal cortex hormones (cortisol).
+
+================================================================
+UNIT 20: PRINCIPLES RELATED TO PRACTICAL CHEMISTRY
+================================================================
+
+OFFICIAL SYLLABUS SCOPE (JEE Main 2026):
+Detection of elements, detection of functional groups, preparation of inorganic compounds (Mohr's salt, potash alum),
+preparation of organic compounds (acetanilide, p-nitroacetanilide, aniline yellow, iodoform),
+titrimetric exercises, qualitative salt analysis (cations and anions).
+
+----------------------------------------------------------------
+Qualitative Salt Analysis — CATION DETECTION
+----------------------------------------------------------------
+
+Group 0 (NH4+):
+→ Add NaOH → pungent smell gas (NH3) → turns moist red litmus blue.
+
+Group I (Pb2+):
+→ HCl precipitates PbCl2 (white, insoluble in cold water, soluble in hot water).
+
+Group II (Cu2+, etc.):
+→ H2S in acidic medium (HCl) → sulfide precipitates.
+→ Cu2+: black CuS precipitate. Also test: Cu2+ + NH3(excess) → deep blue solution [Cu(NH3)4]2+.
+
+Group III (Fe3+, Al3+):
+→ NH4Cl + NH4OH: hydroxide precipitates.
+→ Fe3+: brown Fe(OH)3 precipitate. Test: FeCl3 + SCN- → blood red [Fe(SCN)n]^(3-n).
+→ Al3+: white gelatinous Al(OH)3. Dissolves in excess NaOH (amphoteric).
+
+Group IV (Zn2+, Ni2+, Co2+, Mn2+):
+→ H2S in basic medium (NH4OH).
+→ Zn2+: white ZnS. Test: Zn2+ + NaOH → white precipitate soluble in excess NaOH.
+→ Ni2+: Ni2+ + dimethylglyoxime → red precipitate [Ni(dmgH)2] — specific test for Ni.
+→ Co2+: blue color, thiocyanate test.
+
+Group V (Ba2+, Ca2+):
+→ (NH4)2CO3 in basic medium → carbonate precipitates.
+→ Ba2+: BaSO4 (white, insoluble in HNO3). Ba2+ gives green flame. Test: Ba2+ + H2SO4 → BaSO4 ppt.
+→ Ca2+: CaSO4 slightly soluble. Ca gives brick-red flame. Test: Ca2+ + (NH4)2C2O4 → CaC2O4 (white, dissolves in HCl but not acetic acid).
+
+Group VI (Mg2+):
+→ NH4Cl + NH4OH + Na2HPO4 → Mg(NH4)PO4·6H2O (struvite, white crystalline ppt).
+
+Group VII (Na+, K+):
+→ Flame test: Na → persistent yellow flame. K → violet (purple) flame.
+
+JEE: Know the characteristic tests for the listed cations. Focus on: Fe3+ (SCN- test), Ni2+ (dimethylglyoxime), Cu2+ (deep blue with excess NH3), Ba2+ (H2SO4 test + green flame), Ca2+ (brick-red flame).
+
+----------------------------------------------------------------
+Qualitative Salt Analysis — ANION DETECTION
+----------------------------------------------------------------
+
+CO3²-: dilute HCl → brisk CO2 gas (turns lime water milky).
+S2-: dilute HCl → H2S (rotten egg smell) → turns lead acetate paper black.
+SO4²-: dilute HCl + BaCl2 → white BaSO4 ppt (insoluble in HNO3/HCl) — confirmatory.
+NO3-: brown ring test (FeSO4 + conc. H2SO4 in cold → brown ring at junction = Fe(NO)SO4.
+NO2-: dilute HCl → brown NO2 gas. Also starch-iodide paper turns blue with NO2-.
+Cl-: dilute HNO3 + AgNO3 → AgCl (white ppt, soluble in NH3).
+Br-: dilute HNO3 + AgNO3 → AgBr (pale yellow, slightly soluble in NH3).
+I-: dilute HNO3 + AgNO3 → AgI (yellow ppt, insoluble in NH3).
+
+Distinction of Cl-, Br-, I- by AgNO3:
+Cl-: white AgCl (soluble in dilute NH3)
+Br-: pale yellow AgBr (soluble only in conc. NH3)
+I-: yellow AgI (insoluble in NH3)
+
+JEE TRAP: BaSO4 ppt insoluble in HNO3 confirms SO4²- (BaCO3 or BaSO3 are soluble in HNO3 — so dilute HNO3 + BaCl2 rules out carbonates and sulfites, confirming only sulfate).
+
+----------------------------------------------------------------
+Organic Preparations
+----------------------------------------------------------------
+
+Acetanilide: C6H5NH2 + CH3CO-O-CO-CH3 (acetic anhydride) → C6H5NHCOCH3 + CH3COOH.
+→ Acylation of amine. Aspirin preparation is similar (acetylation of salicylic acid).
+
+p-Nitroacetanilide: Acetanilide + HNO3/H2SO4 (dilute, 0°C) → p-nitroacetanilide (NO2 at para position).
+→ Acetamido group is o/p director, but para is preferred (less steric hindrance). 
+
+Aniline yellow (azo dye): Aniline → (diazotization) → aryldiazonium → (coupling with aniline) → azo compound.
+→ Orange-yellow dye. Azo coupling.
+
+Iodoform: CH3CHO or CH3COCH3 + I2/NaOH → CHI3 (iodoform, yellow solid).
+
+Inorganic Preparations:
+Mohr's salt: FeSO4 + (NH4)2SO4 → FeSO4·(NH4)2SO4·6H2O (ferrous ammonium sulfate — double salt).
+→ More stable than FeSO4 alone (Fe2+ doesn't get oxidized easily in presence of NH4+ and SO4²-).
+→ Used as primary standard in volumetric analysis.
+
+Potash alum: K2SO4 + Al2(SO4)3 + 24H2O → K2SO4·Al2(SO4)3·24H2O or KAl(SO4)2·12H2O.
+→ Used in water purification, mordant in dyeing, medicine (styptic pencil for minor cuts).
+
+----------------------------------------------------------------
+Titrimetric Exercises
+----------------------------------------------------------------
+
+Acid-Base Titrations:
+→ Strong acid + strong base: equivalence point at pH 7. Any indicator works.
+→ Weak acid + strong base: equivalence point at pH > 7. Use phenolphthalein.
+→ Strong acid + weak base: equivalence point at pH < 7. Use methyl orange.
+
+Indicators:
+→ Phenolphthalein: colorless in acid, pink/red in base. pH range 8.3-10.0.
+→ Methyl orange: red in acid, orange-yellow in base. pH range 3.1-4.4.
+
+KMnO4 Titrations (in acidic H2SO4 medium):
+→ Oxalic acid (C2H2O4) vs KMnO4: 5C2O4²- + 2MnO4- + 16H+ → 10CO2 + 2Mn2+ + 8H2O
+→ Mohr's salt vs KMnO4: 5Fe2+ + MnO4- + 8H+ → 5Fe3+ + Mn2+ + 4H2O
+→ Self-indicating (purple → colorless at endpoint).
+→ Use H2SO4 to acidify (NOT HCl which would interfere).
+
+JEE TRAP: KMnO4 titrations use H2SO4, not HCl. HCl would be oxidized by KMnO4 to Cl2, consuming KMnO4 and giving wrong results.
+
+================================================================
+JEE-SPECIFIC PATTERNS (UNITS 19-20)
+================================================================
+
+HIGH FREQUENCY QUESTION TYPES:
+1. Identify reducing vs non-reducing sugars (sucrose vs lactose/maltose)
+2. Identify base composition difference: DNA has thymine, RNA has uracil
+3. Identify which vitamin is deficiency-related to a given disease
+4. Apply salt analysis to identify cation/anion from given tests
+5. Write reaction for ester hydrolysis, acidification of salt, etc.
+6. Identify protein structure level
+
+CRITICAL TRAPS:
+→ Sucrose = non-reducing (both anomeric carbons used in glycosidic bond).
+→ DNA has thymine. RNA has uracil. Both have A, G, C.
+→ DNA has deoxyribose. RNA has ribose. Key difference = 2'-OH present in RNA.
+→ Fat-soluble vitamins: A, D, E, K. Water-soluble: B-complex, C.
+→ Vitamin B12 has cobalt. This is unique — only metal-containing vitamin.
+→ In salt analysis: Cl- → white AgCl (NH3 soluble). Br- → pale yellow (partially NH3 soluble). I- → yellow AgI (NH3 insoluble). Students often confuse these.
+
+OUT OF JEE SCOPE:
+→ Detailed protein folding mechanisms
+→ Detailed enzyme kinetics
+→ Specific vitamin chemical structures beyond basic identification
+→ Detailed nucleic acid replication mechanisms beyond overview level
+
+================================================================
+END OF UNITS 19-20 NOTES
+================================================================

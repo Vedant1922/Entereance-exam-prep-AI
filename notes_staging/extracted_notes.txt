@@ -1,0 +1,847 @@
+
+
+--- Start of Chapter1_JEE_Chemistry_Notes.pdf ---
+
+CHAPTER 1: SOME BASIC CONCEPTS OF CHEMISTRY
+(JEE FOCUS)
+Topics Covered:
+
+Nature of matter
+
+Properties of matter (mass, volume, density)
+
+Laws of chemical combination
+
+Dalton’s atomic theory
+
+Atomic mass & molecular mass
+
+Mole concept & Avogadro number
+
+Molar mass & molar volume
+
+Percentage composition
+
+Empirical formula & molecular formula
+
+Stoichiometry & limiting reagent
+Core Concepts:
+
+Matter → has mass + occupies space
+
+Density = mass/volume
+
+Conservation of mass → total mass constant
+
+Definite proportions → fixed mass ratio
+
+Multiple proportions → simple whole number ratios
+
+Atomic mass → relative to 1/12 of C-12
+
+Molecular mass → sum of atomic masses
+
+Mole → 6.022 × 10^23 entities
+
+Molar mass → mass of 1 mole (g/mol)
+
+Avogadro number links particles ↔ moles
+
+Molar volume (gas, STP) → 22.4 L/mol
+
+% composition → fraction of element in compound
+
+Empirical formula → simplest ratio
+
+Molecular formula → actual ratio
+
+Stoichiometry → quantitative relation in reaction
+
+Limiting reagent → reactant consumed first
+
+Excess reagent → remains after reaction
+Key Formulas:
+
+Mole = given mass / molar mass
+
+Particles = moles × NA
+
+NA = 6.022 × 10^23
+
+Density = mass/volume
+
+% composition = (mass of element / molar mass) × 100
+
+Empirical formula → mole ratio (simplest)
+
+n = molecular mass / empirical mass
+
+Molecular formula = (Empirical formula)^n
+
+Gas volume (STP) = moles × 22.4 L
+Important Patterns:
+
+Always convert → mass → moles → ratio
+
+Assume 100 g in % composition problems
+
+Divide by smallest mole value for ratios
+
+
+Decimal ratio → multiply to nearest integer
+
+Limiting reagent → compare mole ratio, not mass
+
+Balanced equation → mandatory before solving
+
+Gas problems → check STP condition
+
+Units consistency → g, mol, L alignment
+Common Mistakes:
+
+Direct mass ratio instead of mole ratio
+
+Skipping balancing of equation
+
+Ignoring limiting reagent
+
+Wrong molar mass calculation
+
+Not converting units properly
+
+Rounding empirical ratios incorrectly
+
+Confusing empirical vs molecular formula
+
+Using 22.4 L when not at STP
+Examples (Important Cases):
+
+% composition of H2O, CO2
+
+Empirical formula from % data (CH2O type)
+
+Molecular formula using molar mass
+
+Limiting reagent in H2 + O2 → H2O
+
+Mole ↔ particles conversion
+Exam Tips:
+
+Start with given → find moles → apply ratio
+
+Write units at every step
+
+Memorize atomic masses (H, C, O, N)
+
+Use shortcut → 1 mole gas = 22.4 L (STP only)
+
+Practice limiting reagent (high weight)
+
+Check final answer logically (sanity check)
+
+Avoid skipping intermediate steps
+
+
+
+--- Start of Chapter2_Structure_of_Atom.pdf ---
+
+CHAPTER 2: STRUCTURE OF ATOM (JEE FOCUS)
+Topics Covered:
+
+Subatomic particles
+
+Atomic models
+
+Bohr model
+
+Dual nature of matter
+
+Quantum mechanical model
+
+Quantum numbers
+
+Electronic configuration
+Core Concepts:
+
+Electron (−), Proton (+), Neutron (0)
+
+Z = protons = electrons (neutral atom)
+
+A = protons + neutrons
+
+Isotopes → same Z, different A
+
+Rutherford → nucleus + empty space
+
+Bohr → quantized orbits (H-like only)
+
+Energy ∝ −1/n^2
+
+Dual nature → wave + particle
+
+Orbital → probability region
+
+Quantum numbers define electron state
+
+n, l, ml, ms → full description
+
+Pauli → max 2 electrons/orbital
+
+Hund → max unpaired first
+
+Aufbau → lowest energy fills first
+Key Formulas:
+
+En = −13.6 Z^2 / n^2 (eV)
+
+ΔE = Ef − Ei
+
+λ = h / mv
+
+E = hν
+
+c = νλ
+
+1/λ = RZ^2 (1/n1^2 − 1/n2^2)
+
+Max electrons = 2n^2
+Important Patterns:
+
+H-like → apply Bohr directly
+
+Spectral lines → depend on ΔE
+
+Higher n → closer energy levels
+
+Electronic order → n + l rule
+
+4s fills before 3d, empties first
+
+Cr, Cu → stability exceptions
+
+Quantum numbers → range check
+
+Orbitals in shell = n^2
+Common Mistakes:
+
+Using Bohr for multi-electron atoms
+
+Wrong orbital filling order
+
+
+Ignoring Cr, Cu exceptions
+
+Invalid quantum number sets
+
+Confusing orbit vs orbital
+
+Sign mistakes in energy
+
+Forgetting spin ±1/2
+Examples (Important Cases):
+
+Energy of He+, Li2+
+
+Lyman/Balmer wavelength
+
+Valid quantum number sets
+
+Electronic configuration of Cr, Cu
+
+Orbitals in n = 3, 4
+Exam Tips:
+
+Identify H-like or not first
+
+Memorize orbital order
+
+Use elimination in MCQs
+
+Visualize spectral transitions
+
+Practice exceptions repeatedly
+
+Keep constants ready
+
+Treat as rule-based chapter
+
+
+
+--- Start of Chapter3_Periodic_Classification.pdf ---
+
+CHAPTER 3: CLASSIFICATION OF ELEMENTS &
+PERIODICITY (JEE FOCUS)
+Topics Covered:
+
+Modern periodic table
+
+Periodic trends
+
+Electronic configuration
+
+Atomic radius
+
+Ionization enthalpy
+
+Electron gain enthalpy
+
+Electronegativity
+Core Concepts:
+
+Periodic law → properties periodic with atomic number
+
+Groups → same valence electrons
+
+Periods → same principal shell
+
+Atomic radius ↓ across, ↑ down
+
+Ionization enthalpy ↑ across, ↓ down
+
+Electron gain enthalpy → more negative across
+
+Electronegativity ↑ across, ↓ down
+
+Effective nuclear charge ↑ across
+
+Shielding effect ↑ down
+
+d-block → poor shielding
+
+Anions > atoms > cations (size)
+Key Formulas:
+
+Zeff = Z − shielding
+
+No fixed formula → trend-based reasoning
+
+Ionization enthalpy ∝ Zeff / size
+Important Patterns:
+
+Across → size ↓, IE ↑, EN ↑
+
+Down → size ↑, IE ↓
+
+Exception → B < Be, O < N (IE)
+
+EA exception → Cl > F
+
+Cations smaller, anions larger
+
+Isoelectronic → higher Z → smaller size
+Common Mistakes:
+
+Ignoring exceptions (B, O cases)
+
+Confusing IE vs EA
+
+Wrong trend direction
+
+Ignoring shielding
+
+Not using isoelectronic logic
+Examples (Important Cases):
+
+Compare size: O2−, F−, Na+
+
+IE trend in 2nd period
+
+
+EA: Cl vs F
+
+Order of atomic radius
+
+Electronegativity comparison
+Exam Tips:
+
+Always apply trend, not memory
+
+Check exceptions carefully
+
+Use elimination in MCQs
+
+Focus on isoelectronic species
+
+Visualize periodic table mentally
+
+
+
+--- Start of Chapter4_Chemical_Bonding.pdf ---
+
+CHAPTER 4: CHEMICAL BONDING & MOLECULAR
+STRUCTURE (JEE FOCUS)
+Topics Covered:
+
+Ionic bond
+
+Covalent bond
+
+Lewis structures
+
+VSEPR theory
+
+Hybridization
+
+Molecular Orbital Theory
+
+Bond parameters
+Core Concepts:
+
+Ionic bond → electron transfer
+
+Covalent bond → electron sharing
+
+Lattice energy → stability of ionic compounds
+
+Lewis structure → octet rule
+
+VSEPR → minimize repulsion
+
+Shape depends on lone pairs + bond pairs
+
+Hybridization → mixing of orbitals
+
+sp, sp2, sp3 → geometry fixed
+
+Bond order → stability measure
+
+MOT → bonding & antibonding orbitals
+
+Magnetic nature → unpaired electrons
+Key Formulas:
+
+Bond order = (Nb − Na)/2
+
+Dipole moment = q × r
+
+Formal charge = valence − (lone + 1/2 bonding)
+Important Patterns:
+
+More bond order → more stability
+
+More lone pairs → bond angle decreases
+
+sp → linear, sp2 → trigonal, sp3 → tetrahedral
+
+Bent shapes due to lone pairs
+
+MOT → O2 paramagnetic (important)
+
+Resonance → lowers energy
+
+Polar vs non-polar → symmetry check
+Common Mistakes:
+
+Ignoring lone pairs in shape
+
+Wrong hybridization
+
+Forgetting resonance
+
+Wrong bond order calculation
+
+Confusing geometry vs shape
+
+Ignoring symmetry in polarity
+Examples (Important Cases):
+
+
+Shape of NH3, H2O
+
+Hybridization of CH4, C2H4, C2H2
+
+MOT of O2, N2
+
+Bond order comparison
+
+Polarity of CO2, H2O
+Exam Tips:
+
+Draw structure before answering
+
+Count electron pairs carefully
+
+Memorize hybridization table
+
+Use symmetry for polarity
+
+Practice MOT diagrams
+
+Focus on shape-based questions
+
+High weight chapter → revise multiple times
+
+
+
+--- Start of Chapter5_States_of_Matter.pdf ---
+
+CHAPTER 5: STATES OF MATTER (JEE FOCUS)
+Topics Covered:
+
+Intermolecular forces
+
+Gas laws
+
+Ideal gas equation
+
+Kinetic theory of gases
+
+Real gases
+
+Liquefaction of gases
+
+Liquid state
+Core Concepts:
+
+Intermolecular forces → attraction between molecules
+
+Strength: H-bond > dipole > dispersion
+
+Boyle’s law → P ∝ 1/V
+
+Charles law → V ∝ T
+
+Avogadro law → V ∝ n
+
+Ideal gas → no interactions
+
+PV = nRT
+
+Kinetic energy ∝ temperature
+
+RMS speed ∝ √T/M
+
+Real gases → deviate at high P, low T
+
+Liquefaction → cooling + compression
+
+Surface tension → cohesive forces
+
+Viscosity → resistance to flow
+Key Formulas:
+
+PV = nRT
+
+P1V1 = P2V2
+
+V1/T1 = V2/T2
+
+u_rms = √(3RT/M)
+
+Z = PV/nRT
+
+KE = (3/2)RT
+Important Patterns:
+
+High T, low P → ideal behavior
+
+Heavy gas → slower speed
+
+Higher IMF → higher boiling point
+
+H-bond → strongest (N, O, F)
+
+Z ≠ 1 → real gas
+
+Compression → deviation ↑
+
+Liquids → high density, low compressibility
+Common Mistakes:
+
+Wrong units in gas equation
+
+Forgetting Kelvin temperature
+
+Confusing IMF strength order
+
+Using ideal equation for real gas blindly
+
+Ignoring molar mass in speed
+
+
+Wrong interpretation of Z
+Examples (Important Cases):
+
+Compare speeds of gases
+
+Gas law numericals
+
+Boiling point order (IMF)
+
+Deviation from ideal gas
+
+Surface tension examples
+Exam Tips:
+
+Convert temperature to Kelvin
+
+Check units before solving
+
+Memorize gas laws
+
+Use shortcuts for ratios
+
+Practice numericals (very important)
+
+Focus on IMF questions
+
+Identify ideal vs real gas quickly
+
+
+
+--- Start of Chapter6_Thermodynamics.pdf ---
+
+CHAPTER 6: THERMODYNAMICS (JEE FOCUS)
+Topics Covered:
+
+System & surroundings
+
+Types of systems
+
+Internal energy
+
+First law of thermodynamics
+
+Enthalpy
+
+Thermochemical equations
+
+Hess’s law
+
+Entropy & spontaneity
+
+Gibbs free energy
+Core Concepts:
+
+System → part under study
+
+Open, closed, isolated systems
+
+State function → depends only on state
+
+Path function → depends on path
+
+Internal energy (U) → total energy
+
+First law → energy conserved
+
+ΔU = q + w
+
+Work → w = −PΔV
+
+Enthalpy (H) = U + PV
+
+ΔH = q (constant pressure)
+
+Exothermic → ΔH < 0
+
+Endothermic → ΔH > 0
+
+Hess law → enthalpy additive
+
+Entropy (S) → randomness
+
+ΔS > 0 → more disorder
+
+Spontaneity → depends on ΔG
+
+ΔG = ΔH − TΔS
+Key Formulas:
+
+ΔU = q + w
+
+w = −PΔV
+
+H = U + PV
+
+ΔH = ΔU + ΔnRT
+
+ΔG = ΔH − TΔS
+
+q = mcΔT
+Important Patterns:
+
+State functions → path independent
+
+Exothermic → heat released
+
+ΔG < 0 → spontaneous
+
+ΔG > 0 → non-spontaneous
+
+ΔG = 0 → equilibrium
+
+Entropy ↑ → spontaneity ↑
+
+Hess law → break into steps
+
+Sign convention → very important
+
+Common Mistakes:
+
+Wrong sign of work
+
+Confusing ΔH and ΔU
+
+Ignoring ΔnRT term
+
+Mistakes in ΔG sign
+
+Mixing state vs path functions
+
+Wrong unit conversions
+
+Forgetting temperature in Kelvin
+Examples (Important Cases):
+
+Calculate work in expansion
+
+ΔH using Hess law
+
+Spontaneity using ΔG
+
+Exo vs endothermic reactions
+
+Entropy change cases
+Exam Tips:
+
+Always check sign convention
+
+Convert temperature to Kelvin
+
+Use Hess law smartly
+
+Focus on ΔG questions
+
+Practice numericals
+
+Write formulas before solving
+
+Avoid sign mistakes
+
+
+
+--- Start of Chapter7_Equilibrium.pdf ---
+
+CHAPTER 7: EQUILIBRIUM (JEE FOCUS)
+Topics Covered:
+
+Chemical equilibrium
+
+Law of mass action
+
+Equilibrium constant (Kc, Kp)
+
+Le Chatelier’s principle
+
+Ionic equilibrium
+
+pH and pOH
+
+Buffer solutions
+
+Solubility product
+Core Concepts:
+
+Equilibrium → forward rate = backward rate
+
+Dynamic nature → reactions continue
+
+Kc → concentration based
+
+Kp → pressure based
+
+Kp = Kc(RT)^Δn
+
+Le Chatelier → system opposes change
+
+Addition of reactant → shift forward
+
+Increase pressure → shift to fewer moles
+
+Temperature change → affects K
+
+pH = −log[H+]
+
+pOH = −log[OH−]
+
+pH + pOH = 14
+
+Buffer → resists pH change
+
+Solubility product (Ksp) → ionic equilibrium constant
+Key Formulas:
+
+Kc = [products]/[reactants]
+
+Kp = Kc(RT)^Δn
+
+pH = −log[H+]
+
+pOH = −log[OH−]
+
+pH + pOH = 14
+
+Ksp = product of ion concentrations
+
+Kw = [H+][OH−] = 10^-14
+Important Patterns:
+
+K >> 1 → products favored
+
+K << 1 → reactants favored
+
+Only temperature changes K
+
+Catalyst → no effect on K
+
+Pressure affects only gases
+
+Common ion → decreases solubility
+
+Buffer → weak acid/base + salt
+
+pH scale → logarithmic
+Common Mistakes:
+
+Including solids in K expression
+
+
+Wrong Δn in Kp relation
+
+Forgetting log scale in pH
+
+Assuming catalyst changes equilibrium
+
+Ignoring temperature effect on K
+
+Mistakes in buffer calculations
+
+Wrong units in equilibrium expressions
+Examples (Important Cases):
+
+Calculate Kc, Kp
+
+Effect of pressure/temperature
+
+pH of strong acid/base
+
+Buffer solution problems
+
+Ksp and solubility comparison
+Exam Tips:
+
+Write equilibrium expression carefully
+
+Check physical states before including terms
+
+Use log rules for pH quickly
+
+Apply Le Chatelier logically
+
+Focus on buffer and Ksp problems
+
+Practice numericals heavily
+
+Avoid unit mistakes
+

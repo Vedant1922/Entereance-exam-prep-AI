@@ -1,0 +1,355 @@
+================================================================
+JEE MAIN 2026 | CHEMISTRY NOTES
+UNIT 13 & 14: ORGANIC CHEMISTRY FUNDAMENTALS
+(Unit 13: Purification & Characterisation + Unit 14: Basic Principles)
+[Organic Chemistry | JEE Mains Weightage: HIGH — 2-3 questions per paper combined]
+================================================================
+
+OFFICIAL SYLLABUS SCOPE (JEE Main 2026):
+Unit 13: Crystallization, sublimation, distillation, chromatography. Detection of N, S, P, halogens.
+Unit 14: Tetravalency of carbon, hybridization, classification by functional groups, homologous series,
+isomerism (structural and stereo), IUPAC nomenclature, bond fission (homolytic/heterolytic),
+carbocations, carbanions, free radicals, electrophiles, nucleophiles, inductive/resonance/hyperconjugation,
+common reaction types.
+
+----------------------------------------------------------------
+SECTION 1: PURIFICATION METHODS
+----------------------------------------------------------------
+
+1. Crystallization:
+→ Used for solids that are more soluble at higher temperatures.
+→ Dissolve in hot solvent → cool slowly → pure crystals form → filter.
+→ Used for: common salt, alum, benzoic acid.
+
+2. Sublimation:
+→ Substance converts directly solid → gas without going through liquid (and vice versa).
+→ Used for: iodine, camphor, naphthalene, ammonium chloride.
+→ Non-sublimable impurities remain behind.
+
+3. Distillation:
+→ Simple distillation: liquids with widely different boiling points.
+→ Fractional distillation: liquids with close boiling points (petroleum refining, ethanol-water).
+→ Distillation under reduced pressure (vacuum distillation): liquids that decompose at their normal boiling points.
+→ Steam distillation: purifying immiscible liquids that are steam-volatile at <100°C (aniline, nitrobenzene).
+
+4. Differential Extraction:
+→ Separates compound between two immiscible solvents (usually organic + water).
+→ Compound partitions preferentially into solvent in which it is more soluble.
+→ Multiple extractions with smaller portions more efficient than one large extraction.
+
+5. Chromatography (all types same basic principle: differential migration in mobile vs stationary phase):
+→ Column Chromatography: stationary = silica/alumina; mobile = organic solvent flowing through.
+→ TLC (Thin Layer Chromatography): stationary = silica on glass plate; mobile = solvent runs up.
+   Rf = distance traveled by compound / distance traveled by solvent front. 0 < Rf < 1.
+→ Paper Chromatography: stationary = paper (cellulose-water); mobile = solvent. Used for amino acids, sugars.
+→ Gas Chromatography (GC): volatile compounds separated by inert gas carrier.
+
+JEE TRAP: Rf value is characteristic of compound + solvent combination. Higher Rf = less polar compound (moves farther with nonpolar mobile phase, less retained by polar stationary phase).
+
+QUALITATIVE ANALYSIS (Detection of Elements):
+
+Lassaigne's Test (Sodium Fusion Test):
+→ Fuse sample with Na metal → converts heteroatoms to ionic forms in melt.
+   N → NaCN, S → Na2S, Halogen → NaX, P → Na3PO4
+→ Dissolve fusion mass in water → filter (gives Lassaigne's extract).
+
+Tests on Lassaigne's extract:
+Nitrogen: Add FeSO4 + FeCl3 + dil H2SO4 → Prussian blue precipitate [Fe4(Fe(CN)6)3] confirms N.
+Sulfur: Add dilute HCl + lead acetate solution → black ppt (PbS) confirms S.
+   OR: Add Na2[Fe(CN)5NO] (sodium nitroprusside) → violet/purple color confirms S.
+Halogens: Acidify with HNO3, then add AgNO3:
+   AgCl: white ppt, soluble in NH3 → Cl
+   AgBr: pale yellow ppt, slightly soluble in NH3 → Br
+   AgI: yellow ppt, insoluble in NH3 → I
+
+JEE TRAP: If N and S both present in compound, NaSCN (sodium thiocyanate) forms in fusion. It interferes with nitrogen test (gives blood-red Fe(SCN)3 instead of Prussian blue). Must boil to decompose SCN- before testing for N in this case.
+
+Phosphorus Detection: Fusion extract + ammonium molybdate → yellow ppt [(NH4)3PO4·12MoO3] confirms P.
+
+----------------------------------------------------------------
+SECTION 2: TETRAVALENCY AND HYBRIDIZATION OF CARBON
+----------------------------------------------------------------
+
+Carbon has 4 valence electrons → can form 4 covalent bonds.
+Carbon is unique: can bond with itself (catenation) and form chains, rings, branches.
+
+Hybridization determines geometry and bonding:
+
+sp³ Carbon:
+→ 4 sigma bonds, no pi bonds, tetrahedral (109.5°)
+→ Examples: alkanes, -CH3, -CH2-, -CH<, >C<
+→ C-H bond length: 1.09 Å
+
+sp² Carbon:
+→ 3 sigma bonds + 1 pi bond, trigonal planar (120°)
+→ Present in: alkenes (C=C), aldehydes/ketones (C=O), carboxylic acids, aromatic rings
+→ Shorter C=C: 1.34 Å (double bond)
+
+sp Carbon:
+→ 2 sigma bonds + 2 pi bonds, linear (180°)
+→ Present in: alkynes (C≡C), nitriles (C≡N)
+→ Shortest C≡C: 1.20 Å
+
+Key pattern: more s-character → shorter bond, stronger bond, more acidic C-H.
+s-character: sp³=25%, sp²=33%, sp=50%
+Acidity order: alkyne H > alkene H > alkane H (C-H bond)
+
+----------------------------------------------------------------
+SECTION 3: FUNCTIONAL GROUPS AND HOMOLOGOUS SERIES
+----------------------------------------------------------------
+
+Functional group: atom or group of atoms responsible for characteristic properties.
+
+Major Functional Groups for JEE:
+-OH (hydroxyl): alcohols, phenols
+C=O (carbonyl): aldehydes (-CHO), ketones (>C=O)
+-COOH (carboxyl): carboxylic acids
+-NH2 (amino): amines
+-NO2 (nitro): nitro compounds
+-X (halo): halides (F, Cl, Br, I)
+-C≡N (cyano/nitrile)
+-SO3H (sulfonyl): sulfonic acids
+C=C: alkenes
+C≡C: alkynes
+
+Homologous Series:
+→ Series of compounds with same functional group and general formula.
+→ Each member differs by -CH2- from the next.
+→ Same general formula, general preparation, general reactions.
+→ Physical properties change gradually (BP, MP increase with chain length).
+
+General formulas:
+Alkanes: CnH2n+2
+Alkenes: CnH2n
+Alkynes: CnH2n-2
+Benzene series: CnH2n-6
+Alcohols: CnH2n+2O (primary, secondary, tertiary)
+Aldehydes: CnH2nO
+Ketones: CnH2nO
+Carboxylic acids: CnH2nO2
+
+----------------------------------------------------------------
+SECTION 4: ISOMERISM
+----------------------------------------------------------------
+
+Isomers: compounds with SAME molecular formula but DIFFERENT arrangement of atoms.
+
+STRUCTURAL ISOMERISM (constitutional isomerism):
+
+1. Chain (Skeletal) Isomerism: different carbon skeleton.
+   n-butane and isobutane (2-methylpropane) → C4H10
+
+2. Position Isomerism: functional group or substituent at different positions.
+   1-propanol and 2-propanol → C3H8O
+
+3. Functional Group Isomerism: different functional group, same molecular formula.
+   Ethanol (C2H5OH) and dimethyl ether (CH3-O-CH3) → C2H6O
+   Ethanoic acid and methyl formate → C2H4O2
+   Aldehydes and ketones with same formula: propanal and acetone → C3H6O
+
+4. Metamerism: different alkyl groups on same side of functional group.
+   Diethyl ether (C2H5-O-C2H5) and methyl propyl ether (CH3-O-C3H7) → C4H10O
+   [Only possible with divalent functional groups: ether, ketone, ester]
+
+5. Tautomerism: rapid interconversion between isomers.
+   Keto-enol tautomerism: CH3COCH3 ⇌ CH2=C(OH)CH3 (keto favored)
+   
+JEE TRAP: Tautomers are NOT true isomers (they interconvert rapidly). But the question may ask about the more stable tautomer.
+
+STEREOISOMERISM (same connectivity, different spatial arrangement):
+
+1. Geometrical Isomerism (cis-trans):
+   Condition: restricted rotation around a bond (C=C or ring) AND each carbon has 2 different groups.
+   
+   Cis: same groups on same side. Trans: same groups on opposite sides.
+   
+   E-Z nomenclature (modern):
+   Assign priority by CIP rules (higher atomic number = higher priority).
+   Z (zusammen = together): higher priority groups on same side.
+   E (entgegen = opposite): higher priority groups on opposite sides.
+   
+   JEE: 2-butene has cis and trans isomers. But 2-methylpropene does NOT (one carbon has two identical groups).
+
+2. Optical Isomerism (enantiomers):
+   Condition: asymmetric/chiral carbon — carbon bonded to 4 different groups.
+   Enantiomers: mirror images, non-superimposable.
+   Rotate plane-polarized light: d (+) or l (-) form.
+   Racemic mixture: equal amounts of d and l → optically inactive (net rotation = 0).
+   
+   Diastereomers: stereoisomers that are NOT mirror images (includes meso forms).
+   
+   Meso compound: has chiral centers but is optically inactive due to internal plane of symmetry.
+   Example: meso-tartaric acid (2,3-dihydroxybutanedioic acid with R,S configuration).
+
+JEE TRAP: Number of stereoisomers = 2^n where n = number of chiral carbons (maximum, may be less if meso forms exist).
+
+----------------------------------------------------------------
+SECTION 5: IUPAC NOMENCLATURE — KEY RULES
+----------------------------------------------------------------
+
+IUPAC Steps:
+1. Find longest carbon chain containing functional group (principal chain).
+2. Number chain to give functional group lowest possible number.
+3. Name substituents as prefixes (methyl, ethyl, chloro, bromo, hydroxy, nitro, amino).
+4. If two possible numbering giving same locant for FG, give lowest number to substituent.
+5. Use alphabetical order for substituents in name.
+
+Priority order for principal group (determines suffix):
+-COOH (acid) > -COO- (ester) > -COX (acid halide) > -CONH2 (amide) > -CHO (aldehyde) > -OH (as "ol") > -NH2 (as "amine") > C=C (as "ene") > C≡C (as "yne")
+
+Lower priority groups become prefixes: -OH → hydroxy, -NH2 → amino, =O → oxo, -X → halo.
+
+Common name to IUPAC (frequently tested):
+Acetaldehyde → ethanal
+Formaldehyde → methanal
+Acetone → propan-2-one
+Acetic acid → ethanoic acid
+Formic acid → methanoic acid
+Benzaldehyde → phenylmethanal (or benzaldehyde retained as IUPAC)
+Vinyl/Vinylidene: ethenyl/ethenylidene
+Allyl: prop-2-en-1-yl
+Phenyl: C6H5- (use as substituent)
+
+----------------------------------------------------------------
+SECTION 6: BOND FISSION AND REACTIVE INTERMEDIATES
+----------------------------------------------------------------
+
+HOMOLYTIC FISSION (Homolysis):
+→ Bond breaks symmetrically — each atom gets one electron.
+→ A:B → A• + B•
+→ Produces FREE RADICALS (neutral, one unpaired electron).
+→ Occurs under UV light, high temperature, or with radical initiators (peroxides).
+→ Free radical reactions are CHAIN reactions (initiation, propagation, termination).
+
+HETEROLYTIC FISSION (Heterolysis):
+→ Bond breaks asymmetrically — both electrons go to one atom.
+→ A:B → A+ + :B- OR A:B → :A- + B+
+→ Produces IONS (carbocation, carbanion, or other ions).
+→ Occurs in polar conditions (polar solvents, ionic reagents).
+
+REACTIVE INTERMEDIATES:
+
+Carbocation (Carbenium ion):
+→ Carbon with positive charge, 3 bonds, empty orbital, sp² hybridized, planar.
+→ Stability: 3° > 2° > 1° > CH3+ (primary least stable)
+→ Tertiary carbocation most stable because 3 alkyl groups donate electrons through hyperconjugation and inductive effect.
+→ Benzylic and allylic carbocations are very stable (delocalization by resonance).
+
+Carbanion:
+→ Carbon with negative charge, 3 bonds + lone pair, sp³ hybridized.
+→ Stability: CH3- > 1° > 2° > 3° (opposite of carbocations)
+→ More electronegative carbon → more stable carbanion.
+→ Alkynyl carbanions (sp carbon) are more stable than alkyl carbanions.
+
+Free Radicals:
+→ Carbon with one unpaired electron, sp² hybridized, planar.
+→ Stability: 3° > 2° > 1° > CH3• (similar to carbocations due to hyperconjugation).
+→ Benzylic and allylic radicals are very stable (resonance stabilization).
+
+Carbene (:CH2):
+→ Carbon with 2 bonds + 2 non-bonding electrons, very reactive.
+→ Not commonly tested in JEE but know the concept.
+
+JEE TRAP: Stability order for carbocations AND free radicals: 3° > 2° > 1° (hyperconjugation + inductive).
+But carbanions: 3° < 2° < 1° (electron-donating alkyl groups DESTABILIZE carbanions).
+
+----------------------------------------------------------------
+SECTION 7: ELECTRONIC EFFECTS
+----------------------------------------------------------------
+
+1. INDUCTIVE EFFECT (I):
+→ Transmission of electronic effect through sigma bonds.
+→ Sigma electrons are polarized toward more electronegative atom.
+→ Fades rapidly with distance (significant only over 2-3 bonds).
+
+Electron-withdrawing groups (-I effect, decrease electron density at attached carbon):
+-F > -OH > -Cl > -Br > -I > -COOH > -CHO > -CN > -NO2
+
+Electron-donating groups (+I effect, increase electron density):
+-C(CH3)3 > -CH(CH3)2 > -C2H5 > -CH3 > H
+
+JEE APPLICATION:
+→ Stability of carboxylic acids: more electronegative substituents increase acid strength.
+   CH3COOH < FCH2COOH < F2CHCOOH < F3CCOOH (increasing acidity)
+
+2. RESONANCE EFFECT (R or M — mesomeric effect):
+→ Delocalization of electrons through conjugated system (alternating single and multiple bonds).
+→ Stabilizes molecules and ions.
+→ +R (electron-donating by resonance): -OH, -NH2, -OR, -Cl, -Br (lone pairs donated into ring)
+→ -R (electron-withdrawing by resonance): -NO2, -CHO, -COOH, -CN (withdraw π electrons)
+
+In benzene ring:
+→ +R groups (OH, NH2): increase electron density at o and p positions → o/p directors in EAS.
+→ -R groups (NO2, COOH): decrease electron density at o and p, relative increase at m → m directors.
+
+JEE TRAP: Halogens have both -I (electron-withdrawing inductive) and +R (electron-donating resonance) effects. Overall: they are o/p directors (resonance wins for directing) but deactivating (inductive effect reduces overall ring electron density).
+
+3. HYPERCONJUGATION:
+→ Donation of σ (C-H) bonding electrons into adjacent empty p-orbital or π system.
+→ Requires C-H bonds adjacent to sp² carbon or carbocation.
+→ More adjacent C-H bonds → more hyperconjugation → more stable.
+→ Explains why 3° carbocation > 2° > 1° (3° has 9 C-H bonds for hyperconjugation, 2° has 6, 1° has 3).
+→ Also explains stability of alkenes: more substituted alkene is more stable (more hyperconjugation).
+→ "No bond resonance" — another name for hyperconjugation.
+
+4. ELECTROMERIC EFFECT:
+→ Complete transfer of electrons at request of attacking reagent (in reaction).
+→ Not a permanent effect (unlike inductive) — only during reaction.
+→ +E: electrons shift TOWARD attacking reagent. -E: electrons shift away.
+→ Less commonly tested than other effects.
+
+----------------------------------------------------------------
+SECTION 8: COMMON REACTION TYPES
+----------------------------------------------------------------
+
+Substitution:
+→ One atom/group replaced by another.
+→ SN1 (unimolecular), SN2 (bimolecular) — covered in haloalkane chapter.
+→ Electrophilic Aromatic Substitution (EAS): aromatic ring acts as nucleophile.
+
+Addition:
+→ Two reactants combine to form one product.
+→ Electrophilic addition to alkenes (common).
+→ Nucleophilic addition to carbonyl compounds (C=O).
+
+Elimination:
+→ Two adjacent atoms/groups removed to form double bond (or triple bond).
+→ Dehydrohalogenation, dehydration.
+→ Saytzeff's rule: preferentially forms more substituted alkene.
+
+Rearrangement:
+→ Atoms reorganize within molecule.
+→ Carbocation rearrangements: 1,2-hydride shift or 1,2-methyl shift (from less stable to more stable carbocation).
+
+JEE TRAP: Rearrangement occurs when it leads to a MORE STABLE carbocation. If rearrangement would give less stable carbocation, it doesn't happen.
+
+----------------------------------------------------------------
+SECTION 9: JEE-SPECIFIC PATTERNS
+----------------------------------------------------------------
+
+HIGH FREQUENCY QUESTION TYPES:
+1. Write IUPAC name from structure or structure from IUPAC name
+2. Identify number of chiral centers, predict optical isomers
+3. Identify functional group isomers for given molecular formula
+4. Compare stability of carbocations/free radicals/carbanions
+5. Predict whether geometrical isomerism is possible for given structure
+6. Identify directing effect of substituent in aromatic compound
+7. Identify type of electronic effect (I, R, hyperconjugation) and its direction
+8. Detect elements using Lassaigne's test
+
+CRITICAL TRAPS:
+→ Meso compounds have chiral centers but are optically inactive (internal mirror plane).
+→ Carbanion stability is OPPOSITE to carbocation stability.
+→ Alkynes are more acidic than alkenes (sp carbon → more s-character → more electronegative → better stabilizes negative charge on C).
+→ For geometrical isomerism: BOTH carbons of double bond must have 2 DIFFERENT groups each. CH2=CHCl has no geometric isomers (one carbon has 2 H's).
+→ Hyperconjugation increases stability of carbocations, radicals, AND more substituted alkenes.
+→ Halogens in benzene are o/p directors despite being deactivating groups.
+
+OUT OF JEE SCOPE:
+→ Walden inversion mechanism details (covered under SN2)
+→ Detailed orbital symmetry considerations (Woodward-Hoffmann)
+→ Detailed quantitative treatment of electronic effects
+
+================================================================
+END OF UNIT 13 & 14 NOTES
+================================================================

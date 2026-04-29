@@ -1,0 +1,313 @@
+================================================================
+JEE MAIN 2026 | CHEMISTRY NOTES
+UNIT 6: EQUILIBRIUM
+[Physical Chemistry | JEE Mains Weightage: VERY HIGH — 2-3 questions per paper]
+================================================================
+
+OFFICIAL SYLLABUS SCOPE (JEE Main 2026):
+Dynamic equilibrium concept, physical and chemical equilibria, Kp and Kc and significance,
+ΔG and ΔG° in chemical equilibrium, Le Chatelier's principle, ionic equilibrium,
+weak/strong electrolytes, acid-base theories, Ka Kb Kw, pH, common ion effect,
+hydrolysis of salts, solubility products (Ksp), buffer solutions.
+
+----------------------------------------------------------------
+SECTION 1: CONCEPT OF EQUILIBRIUM
+----------------------------------------------------------------
+
+Dynamic Equilibrium:
+→ In a closed system, when the rate of forward reaction = rate of backward reaction.
+→ "Dynamic" because reactions continue in both directions — concentrations remain constant but reactions don't stop.
+→ Macroscopic properties (concentration, pressure, density) remain constant.
+→ Can be established from EITHER side of the equation.
+
+Physical Equilibria:
+→ Solid ⇌ Liquid: ice ⇌ water (at melting point)
+→ Liquid ⇌ Gas: water ⇌ water vapour (at any temperature — but full equilibrium only in closed container)
+→ Gas ⇌ Solution: CO2(g) ⇌ CO2(aq) (Henry's law)
+
+----------------------------------------------------------------
+SECTION 2: EQUILIBRIUM CONSTANTS (Kc and Kp)
+----------------------------------------------------------------
+
+For reaction: aA + bB ⇌ cC + dD
+
+   Kc = [C]^c [D]^d / [A]^a [B]^b
+   (concentrations in mol/L)
+
+   Kp = (PC)^c (PD)^d / (PA)^a (PB)^b
+   (partial pressures in atm or bar)
+
+Relationship between Kp and Kc:
+   Kp = Kc (RT)^Δn
+   Δn = (c+d) - (a+b) = moles of gaseous products - moles of gaseous reactants
+   R = 0.0821 L·atm/mol·K
+
+   If Δn = 0: Kp = Kc
+   If Δn > 0: Kp > Kc
+   If Δn < 0: Kp < Kc
+
+IMPORTANT RULES FOR K:
+1. K is dimensionless (activities, not concentrations strictly — but JEE uses concentration ratios)
+2. K depends ONLY on temperature. NOT on concentrations, pressure, or catalyst.
+3. K for reverse reaction = 1/K for forward reaction.
+4. K for scaled reaction: if coefficients multiplied by n, K becomes K^n.
+5. Pure solids and pure liquids do NOT appear in K expression (their activity = 1).
+
+JEE EXAMPLE: CaCO3(s) ⇌ CaO(s) + CO2(g)
+   Kp = PCO2 (only CO2 is gas; CaCO3 and CaO are solids → omitted)
+   Kc = [CO2]
+
+JEE TRAP: Water in aqueous solution is omitted from K expression (pure liquid).
+But water in gas phase IS included.
+
+Significance of K value:
+→ K >> 1: products strongly favored at equilibrium (reaction goes nearly to completion)
+→ K << 1: reactants strongly favored (barely any products formed)
+→ K ≈ 1: significant amounts of both reactants and products at equilibrium
+
+Reaction Quotient (Q):
+→ Same expression as K but using NON-equilibrium concentrations.
+→ Q < K: reaction proceeds forward (more products needed)
+→ Q > K: reaction proceeds backward (more reactants needed)
+→ Q = K: system is at equilibrium
+
+Relationship with ΔG°:
+   ΔG° = -RT ln K
+   ΔG° < 0 ↔ K > 1 (products favored)
+   ΔG° > 0 ↔ K < 1 (reactants favored)
+
+----------------------------------------------------------------
+SECTION 3: LE CHATELIER'S PRINCIPLE
+----------------------------------------------------------------
+
+Le Chatelier's Principle: If a system at equilibrium is disturbed, it shifts to counteract the disturbance and re-establish equilibrium.
+
+EFFECT OF VARIOUS CHANGES:
+
+1. Change in Concentration:
+   → Adding reactant → shifts forward (to consume added reactant)
+   → Adding product → shifts backward (to consume added product)
+   → Removing product → shifts forward (to replace removed product)
+   → K doesn't change (only T changes K)
+
+2. Change in Pressure (for gaseous reactions):
+   → Increase pressure (decrease volume) → shifts toward side with FEWER moles of gas
+   → Decrease pressure → shifts toward side with MORE moles of gas
+   → If Δn = 0: pressure change has no effect
+   → Adding inert gas at constant VOLUME: no effect (partial pressures unchanged)
+   → Adding inert gas at constant PRESSURE: shifts toward more moles of gas (partial pressures decrease)
+
+3. Change in Temperature:
+   → Increase T → shifts endothermic direction (absorbs heat)
+   → Decrease T → shifts exothermic direction (releases heat)
+   → IMPORTANT: Temperature change DOES change the value of K.
+   → Exothermic reaction: K decreases with increasing T
+   → Endothermic reaction: K increases with increasing T
+
+4. Catalyst:
+   → Catalyst increases rate of BOTH forward and backward reactions equally.
+   → Equilibrium is reached faster but K does NOT change.
+   → Position of equilibrium does NOT shift.
+
+JEE TRAP: Catalyst doesn't change K or equilibrium position. It only speeds up reaching equilibrium.
+
+Haber Process Application:
+N2(g) + 3H2(g) ⇌ 2NH3(g)  ΔH = -92 kJ/mol
+→ Low temperature: favors NH3 (exothermic reaction) but slow rate
+→ High pressure: favors NH3 (fewer moles of gas on product side)
+→ Compromise: 450-500°C temperature (moderate), 200 atm pressure, Fe catalyst
+→ This is a classic JEE Le Chatelier application.
+
+----------------------------------------------------------------
+SECTION 4: IONIC EQUILIBRIUM — ACIDS AND BASES
+----------------------------------------------------------------
+
+ACID-BASE THEORIES:
+
+Arrhenius Theory:
+→ Acid: produces H+ in water. Base: produces OH- in water.
+→ Limitation: only for aqueous solutions. NH3 is not a base by this definition.
+
+Bronsted-Lowry Theory:
+→ Acid: proton (H+) donor. Base: proton (H+) acceptor.
+→ Every acid has a conjugate base (formed after H+ donation).
+→ Every base has a conjugate acid (formed after H+ acceptance).
+→ Conjugate pair differs by one H+.
+→ HCl + H2O → H3O+ + Cl- (HCl/Cl- and H2O/H3O+ are conjugate pairs)
+→ Stronger acid → weaker conjugate base
+
+Lewis Theory (most general):
+→ Acid: electron pair acceptor (Lewis acid)
+→ Base: electron pair donor (Lewis base)
+→ Covers reactions without H+ transfer.
+→ Lewis acids: BF3 (empty orbital), AlCl3, Fe3+, Cu2+, CO2
+→ Lewis bases: NH3 (lone pair), H2O, OH-, Cl-
+
+JEE TRAP: BF3 has no H+ to donate but is a Lewis acid. F- has no H+ but is a Lewis base.
+
+Strong vs Weak Acids/Bases:
+Strong acids (essentially complete dissociation): HCl, HBr, HI, HNO3, H2SO4, HClO4
+Strong bases (essentially complete dissociation): NaOH, KOH, Ca(OH)2, Ba(OH)2
+Weak acids (partial dissociation): CH3COOH, HF, H2CO3, H3PO4, HCN
+Weak bases (partial dissociation): NH3, NH4OH, amines
+
+----------------------------------------------------------------
+SECTION 5: IONIZATION CONSTANTS (Ka, Kb, Kw)
+----------------------------------------------------------------
+
+For weak acid HA: HA ⇌ H+ + A-
+   Ka = [H+][A-] / [HA]
+   Higher Ka → stronger acid → more dissociation
+
+For weak base BOH: B + H2O ⇌ BH+ + OH-
+   Kb = [BH+][OH-] / [B]
+   Higher Kb → stronger base
+
+Ionic product of water (Kw):
+   H2O ⇌ H+ + OH-
+   Kw = [H+][OH-] = 10^-14 at 25°C (298 K)
+   [H+] = [OH-] = 10^-7 M in pure water at 25°C
+
+Kw increases with temperature (dissociation is endothermic).
+At higher temperature: Kw > 10^-14, but water is still neutral (pOH and pH change equally).
+
+For conjugate acid-base pair:
+   Ka × Kb = Kw = 10^-14
+   pKa + pKb = 14
+
+pH Scale:
+   pH = -log[H+] = -log[H3O+]
+   pOH = -log[OH-]
+   pH + pOH = 14 (at 25°C)
+   
+   pH < 7: acidic solution
+   pH = 7: neutral solution (at 25°C)
+   pH > 7: basic solution
+
+pH Calculations:
+
+Strong acid: pH = -log[H+] = -log[Cacid] (for monoprotic strong acid)
+Strong base: pOH = -log[OH-], then pH = 14 - pOH
+
+Weak acid (using Ka):
+   [H+] = √(Ka × C) [when α << 1, i.e., < 5% dissociation]
+   pH = (pKa - log C)/2 = ½(pKa + pC)
+   
+Degree of dissociation (α): α = √(Ka/C) [for weak acid]
+
+JEE TRAP: pH of 10^-8 M HCl is NOT 8. You cannot ignore H+ from water for very dilute acid.
+pH is slightly less than 7 (but above 7 from water's contribution). The answer is approximately 6.98.
+
+Buffer Solutions:
+Henderson-Hasselbalch equation:
+   pH = pKa + log([A-]/[HA])
+   pH = pKa + log([salt]/[acid]) for acidic buffer
+   
+   pOH = pKb + log([BH+]/[B])
+   pOH = pKb + log([salt]/[base]) for basic buffer
+
+Buffer works best when pH ≈ pKa (when [A-] = [HA], log term = 0)
+Buffer capacity: maximum around pH = pKa ± 1
+
+JEE EXAMPLE: Acetic acid/sodium acetate buffer:
+   CH3COOH/CH3COO- system, pKa = 4.74
+   Best buffer capacity around pH 4.74
+
+Common ion effect on buffer:
+→ Adding common ion (like CH3COO- to acetic acid solution) suppresses ionization → pH increases.
+
+----------------------------------------------------------------
+SECTION 6: SOLUBILITY EQUILIBRIA (Ksp)
+----------------------------------------------------------------
+
+For sparingly soluble salt AxBy: AxBy(s) ⇌ xA^y+ + yB^x-
+   Ksp = [A^y+]^x [B^x-]^y
+
+Solubility Product is NOT the same as solubility.
+   Solubility (s) = moles dissolved per liter
+
+Ksp from solubility:
+For AB type (like AgCl → Ag+ + Cl-):
+   s = [Ag+] = [Cl-], Ksp = s²
+For AB2 type (like PbCl2 → Pb2+ + 2Cl-):
+   [Pb2+] = s, [Cl-] = 2s, Ksp = s(2s)² = 4s³
+For A2B type (like Ag2S → 2Ag+ + S2-):
+   [Ag+] = 2s, [S2-] = s, Ksp = (2s)²(s) = 4s³
+
+Precipitation condition:
+→ If ionic product (IP) > Ksp: precipitation occurs (supersaturated)
+→ If IP < Ksp: no precipitation (unsaturated, more can dissolve)
+→ If IP = Ksp: saturated solution (equilibrium)
+
+Common Ion Effect on Solubility:
+→ Adding a common ion decreases solubility (Q increases, equilibrium shifts backward).
+→ AgCl solubility in NaCl solution << AgCl solubility in pure water
+→ AgCl solubility in water > AgCl solubility in 0.1 M AgNO3
+
+JEE TRAP: Common ion decreases solubility. This is opposite to what students might expect.
+
+----------------------------------------------------------------
+SECTION 7: HYDROLYSIS OF SALTS
+----------------------------------------------------------------
+
+Salt of strong acid + strong base: pH = 7 (NaCl, KNO3 — no hydrolysis)
+Salt of weak acid + strong base: pH > 7 (CH3COONa — anion hydrolyzes, basic solution)
+Salt of strong acid + weak base: pH < 7 (NH4Cl — cation hydrolyzes, acidic solution)
+Salt of weak acid + weak base: depends on Ka vs Kb
+
+For CH3COONa (sodium acetate):
+   CH3COO- + H2O ⇌ CH3COOH + OH-
+   pH = 7 + ½(pKa + log C) [for salt of weak acid + strong base]
+
+For NH4Cl (ammonium chloride):
+   NH4+ + H2O ⇌ NH3 + H3O+
+   pH = 7 - ½(pKb + log C) [for salt of strong acid + weak base]
+
+JEE TRAP: Na2CO3 solution is basic (carbonate is from H2CO3, a weak acid).
+NH4Cl solution is acidic (NH4+ is from NH3, a weak base).
+
+----------------------------------------------------------------
+SECTION 8: JEE-SPECIFIC PATTERNS
+----------------------------------------------------------------
+
+HIGH FREQUENCY QUESTION TYPES:
+1. Calculate pH of weak acid/base solution using Ka or Kb
+2. Calculate Kp from Kc or vice versa using Δn
+3. Predict direction of reaction shift using Le Chatelier's principle
+4. Calculate Ksp from solubility or solubility from Ksp
+5. Apply common ion effect to solubility or ionization
+6. Buffer pH calculation using Henderson-Hasselbalch
+7. Identify conjugate acid-base pairs
+
+CRITICAL TRAPS:
+→ Temperature is the ONLY factor that changes K value.
+→ Catalyst speeds equilibrium but doesn't change K or position.
+→ Kp = Kc only when Δn = 0.
+→ For NH4F (weak acid + weak base salt): need to compare Ka(HF) vs Kb(NH3).
+→ Solubility from Ksp: careful with stoichiometry factor (4s³ vs s² type).
+→ Buffer pH works best at pH ≈ pKa ± 1. Outside this, buffering capacity falls.
+
+OUT OF JEE SCOPE:
+→ Activity coefficients and non-ideal ionic solutions
+→ Simultaneous equilibria (three or more competing equilibria)
+→ Acid-base indicators (general knowledge level only, not detailed calculations)
+→ Detailed derivation of Henderson-Hasselbalch equation
+
+----------------------------------------------------------------
+SECTION 9: KEY FORMULAS SUMMARY
+----------------------------------------------------------------
+
+Kc = [products] / [reactants] (using stoichiometric powers)
+Kp = Kc(RT)^Δn
+Ka × Kb = Kw = 10^-14 at 25°C
+pKa + pKb = 14
+pH + pOH = 14
+[H+] = √(Ka × C) for weak acid
+pH = ½(pKa - log C)
+pH = pKa + log([A-]/[HA]) (Henderson-Hasselbalch)
+For AB: Ksp = s², s = √Ksp
+For AB2 or A2B: Ksp = 4s³, s = (Ksp/4)^(1/3)
+
+================================================================
+END OF UNIT 6 NOTES
+================================================================

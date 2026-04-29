@@ -1,0 +1,292 @@
+================================================================
+JEE MAIN 2026 | CHEMISTRY NOTES
+UNIT 15: HYDROCARBONS
+[Organic Chemistry | JEE Mains Weightage: HIGH — 1-2 questions per paper]
+================================================================
+
+OFFICIAL SYLLABUS SCOPE (JEE Main 2026):
+Alkanes: conformations (sawhorse/Newman projections of ethane), mechanism of halogenation.
+Alkenes: geometrical isomerism, mechanism of electrophilic addition, addition of H2, halogens,
+water, HX (Markovnikov and peroxide effect), ozonolysis, polymerization.
+Alkynes: acidic character, addition of H2, halogens, water, HX, polymerization.
+Aromatic hydrocarbons: nomenclature, benzene structure and aromaticity, EAS mechanism,
+halogenation, nitration, Friedel-Craft's alkylation and acylation, directive influence.
+
+----------------------------------------------------------------
+SECTION 1: ALKANES
+----------------------------------------------------------------
+
+General formula: CnH2n+2
+All sp³ hybridized carbons, tetrahedral geometry.
+Only sigma bonds, no pi bonds.
+
+Nomenclature IUPAC:
+→ Find longest chain → number from closest end to substituent → name substituents alphabetically.
+→ Methane(C1), Ethane(C2), Propane(C3), Butane(C4), Pentane(C5), Hexane(C6), Heptane(C7), Octane(C8), Nonane(C9), Decane(C10)
+
+Conformations (only for JEE — only ethane tested in detail):
+Two types of representations:
+→ Newman Projection: look along C-C bond. Front carbon shown as dot, back as circle.
+→ Sawhorse Projection: 3D representation showing C-C bond at angle.
+
+Conformations of Ethane:
+→ Eclipsed: H's on front and back carbon exactly aligned (dihedral angle 0°). LEAST STABLE (maximum torsional strain).
+→ Staggered: H's alternating, maximum separation (dihedral angle 60°). MOST STABLE (minimum strain).
+→ Gauche and anti (for butane — gauche has CH3 groups at 60°, anti at 180°). Anti is most stable.
+
+JEE TRAP: Eclipsed conformation has maximum energy (least stable). Staggered is most stable.
+These conformations interconvert rapidly at room temperature — NOT isolable isomers.
+
+Reactions of Alkanes:
+→ Very unreactive (no functional group, all sigma bonds, nonpolar).
+→ Halogenation (most important for JEE):
+   Mechanism: FREE RADICAL CHAIN REACTION (requires UV light or heat)
+   
+   Step 1 INITIATION: X2 → 2X• (homolytic fission by UV light)
+   Step 2 PROPAGATION:
+   CH4 + X• → CH3• + HX (hydrogen abstraction)
+   CH3• + X2 → CH3X + X• (chain continues)
+   Step 3 TERMINATION: any two radicals combine.
+   
+   Reactivity order of halogens: F2 > Cl2 > Br2 > I2 (F2 too reactive, I2 too slow)
+   Selectivity order: I2 > Br2 > Cl2 > F2 (Br2 most selective — attacks only 3° C preferentially)
+   
+JEE TRAP: Chlorination is LESS selective than bromination. Br• is less reactive → more selective → attacks tertiary H preferentially. Cl• is more reactive → less selective → attacks any H.
+
+For propane + Cl2: gives 1-chloropropane AND 2-chloropropane (statistical + selectivity factor).
+For propane + Br2: gives mainly 2-bromopropane (bromination is highly selective for 3° and then 2° H).
+
+Combustion: alkanes burn completely to CO2 + H2O (highly exothermic).
+Cracking: breaking large alkanes into smaller alkenes (petroleum industry).
+Isomerisation: straight chain → branched (increases octane number in petrol).
+
+----------------------------------------------------------------
+SECTION 2: ALKENES
+----------------------------------------------------------------
+
+General formula: CnH2n (one degree of unsaturation = one C=C)
+Contains sp² carbons at double bond.
+
+Preparation (common methods tested in JEE):
+→ Dehydration of alcohols with conc. H2SO4 (or Al2O3 at high T): CH3CH2OH → CH2=CH2
+→ Dehydrohalogenation of haloalkanes with alcoholic KOH: CH3CH2Br + KOH(alc.) → CH2=CH2
+→ Saytzeff's Rule: in elimination, the more substituted alkene (more stable) is the major product.
+
+Geometrical Isomerism of Alkenes:
+→ Condition: each C of C=C must have 2 different groups.
+→ Cis: same groups on same side. Trans: same groups on opposite sides.
+→ E-Z using CIP priority rules: Z = higher priority groups on same side. E = opposite sides.
+→ Trans isomer is generally more stable than cis (less steric strain).
+
+Physical Properties:
+→ Cis isomer has higher dipole moment than trans (bond dipoles partially cancel in trans).
+→ Cis isomer has higher boiling point than trans (due to higher dipole moment → stronger intermolecular forces).
+→ Trans isomer has higher melting point than cis (more symmetrical, packs better in crystal).
+
+REACTIONS OF ALKENES:
+
+1. Hydrogenation: C=C + H2 → C-C (catalyst: Ni, Pd, or Pt)
+   Heat of hydrogenation: more substituted alkene → less heat → more stable starting material.
+   Stability order: 3°(trisubstituted) > 2°(disubstituted) > 1°(monosubstituted) > ethylene.
+
+2. Electrophilic Addition of HX (Markovnikov's Rule):
+   In the addition of HX to unsymmetrical alkene, H adds to carbon with MORE hydrogens.
+   (OR: X adds to carbon with more alkyl substituents — more stable carbocation intermediate.)
+   
+   Mechanism (via carbocation):
+   Step 1: Proton (H+) from HX adds to double bond → carbocation intermediate (more stable).
+   Step 2: X- attacks carbocation → product.
+   
+   Example: CH3-CH=CH2 + HBr → CH3-CHBr-CH3 (major, Markovnikov) NOT CH3-CH2-CH2Br
+   
+   Anti-Markovnikov (Peroxide Effect / Kharasch Effect):
+   → In presence of peroxides (ROOR) or UV light: HBr adds anti-Markovnikov.
+   → Mechanism: FREE RADICAL addition (NOT carbocation).
+   → Br• (free radical) adds first to less hindered carbon → carbon radical at more substituted carbon → more stable radical → HBr supplies H to give anti-Markovnikov product.
+   
+   JEE TRAP: Peroxide effect ONLY applies to HBr. NOT to HCl or HI.
+   HCl: even with peroxides, Markovnikov product forms (Cl• is too reactive to be selective).
+   HI: even with peroxides, Markovnikov (I• is not reactive enough).
+
+3. Addition of X2 (Halogenation):
+   CH2=CH2 + Br2 → CH2Br-CH2Br (1,2-dibromoethane)
+   Mechanism: via HALONIUM ION (cyclic bromonium ion intermediate), NOT open carbocation.
+   This explains ANTI addition of Br2 to alkene (Br adds from opposite sides).
+   
+   JEE: Red-brown Br2 solution is decolorized by alkene → test for unsaturation (also alkyne).
+
+4. Addition of Water (Hydration):
+   CH2=CH2 + H2O → CH3CH2OH (ethanol) — requires H3PO4 catalyst or dilute H2SO4.
+   Follows Markovnikov's rule: OH attaches to more substituted carbon.
+
+5. Ozonolysis:
+   C=C + O3 → Ozonide → then reduction (Zn/H2O) or oxidation (H2O2).
+   
+   Reductive ozonolysis (Zn/H2O):
+   → Aldehydes from terminal C=CH2 and C=CHR.
+   → Ketones from internal disubstituted carbons (C=CRR').
+   
+   Oxidative ozonolysis (H2O2 or O3/H2O):
+   → Aldehydes → carboxylic acids.
+   → Ketones remain as ketones.
+   
+   JEE APPLICATION: Ozonolysis identifies double bond position (reverse synthesis problem).
+   Given: ozonolysis products → find structure of alkene.
+   Rule: join the two carbonyl carbons with C=C.
+
+6. Polymerization:
+   nCH2=CH2 → (-CH2-CH2-)n (polyethylene) — addition polymerization.
+
+JEE TRAP: For ozonolysis, if reductive cleavage gives CH2O (formaldehyde) → original alkene had terminal =CH2 group. If oxidative cleavage gives CO2 → terminal =CH2 was present.
+
+----------------------------------------------------------------
+SECTION 3: ALKYNES
+----------------------------------------------------------------
+
+General formula: CnH2n-2 (2 degrees of unsaturation = one C≡C)
+Contains sp carbons at triple bond. Linear around triple bond.
+
+Terminal Alkyne (R-C≡C-H): acidic C-H bond (sp carbon, 50% s-character → very electronegative).
+→ pKa ≈ 25 (more acidic than alkene ~44 and alkane ~50).
+→ Reacts with NaNH2 (sodium amide), Na metal, AgNO3, Cu(I) salts.
+→ CH≡CH + AgNO3 + NH3 → Ag-C≡C-Ag (white/yellow precipitate) — test for terminal alkyne.
+→ CH≡CH + Cu2Cl2 + NH3 → Cu-C≡C-Cu (red precipitate) — Baeyer's reagent.
+
+Reactions:
+1. Hydrogenation: C≡C + H2 → C=C (partial, with Lindlar's catalyst) → C-C (complete, with Ni).
+   Lindlar's catalyst (Pd/BaSO4/quinoline): gives cis-alkene (syn addition).
+   Na in liquid NH3: gives trans-alkene (anti addition via radical mechanism).
+
+2. Addition of HX: 
+   First addition: Markovnikov's rule → vinyl halide.
+   Second addition: again Markovnikov → geminal dihalide (both X on same C).
+   
+3. Addition of X2:
+   First addition: trans addition → trans dihaloalkene.
+   Second addition → tetrahalide.
+
+4. Hydration (Markovnikov):
+   R-C≡CH + H2O (H2SO4, HgSO4) → R-CO-CH3 (ketone) via enol intermediate.
+   Except acetylene: CH≡CH + H2O → CH3CHO (acetaldehyde, NOT ketone).
+   JEE TRAP: Acetylene hydration gives acetaldehyde (aldehyde), other alkynes give ketones.
+
+5. Polymerization: 
+   3CH≡CH → C6H6 (benzene) — at 300°C over activated charcoal (Berthelot reaction).
+
+----------------------------------------------------------------
+SECTION 4: AROMATIC HYDROCARBONS
+----------------------------------------------------------------
+
+Benzene (C6H6) — most important aromatic compound:
+→ All 6 C are sp² hybridized, planar hexagonal ring.
+→ Each C makes 3 sigma bonds (2 C-C and 1 C-H) + contributes 1 p-orbital perpendicular to ring.
+→ 6 p-orbitals overlap to form delocalized π electron cloud (3π bonds delocalized over all 6 C).
+→ All C-C bonds equal length (1.40 Å) — intermediate between single (1.54) and double (1.34).
+
+Hückel's Rule for Aromaticity: 4n + 2 π electrons (where n = 0, 1, 2, 3...)
+For benzene: 6 π electrons (n=1) → aromatic.
+Aromatic systems must also be: cyclic, conjugated (alternating single/double bonds), planar.
+
+Resonance energy of benzene: ~36 kcal/mol (measure of extra stability from delocalization).
+
+JEE EXAMPLES:
+Benzene: 6 π e- (n=1) → aromatic. ✓
+Cyclooctatetraene (COT): 8 π e- (4×2, doesn't fit 4n+2) → NOT aromatic (antiaromatic if planar).
+Naphthalene: 10 π e- (n=2) → aromatic.
+Cyclopentadienyl anion C5H5-: 6 π e- (n=1) → aromatic.
+Cyclopentadienyl cation C5H5+: 4 π e- → antiaromatic.
+
+ELECTROPHILIC AROMATIC SUBSTITUTION (EAS):
+→ Benzene's π electrons act as nucleophile, attract electrophile.
+→ Key feature: ring aromaticity is preserved (NOT addition which would destroy aromaticity).
+
+MECHANISM (for all EAS reactions):
+Step 1: Generation of electrophile (E+).
+Step 2: E+ attacks benzene ring → arenium ion (Wheland intermediate) — sigma complex forms, loses aromaticity temporarily.
+Step 3: Loss of H+ (proton) restores aromaticity → substituted benzene.
+
+Types of EAS reactions:
+
+1. HALOGENATION:
+   Cl2 + Lewis acid (AlCl3 or FeCl3) → Cl2 → AlCl3 complex → Cl+ (electrophile)
+   C6H6 + Cl+ → C6H5Cl (chlorobenzene) + H+
+   HCl + AlCl3 complex released.
+
+2. NITRATION:
+   HNO3 + H2SO4 (conc.) → NO2+ (nitronium ion) + HSO4- + H2O
+   C6H6 + NO2+ → C6H5NO2 (nitrobenzene) + H+
+   Temperature control: below 55°C for mononitration; above for dinitration.
+
+3. SULFONATION:
+   C6H6 + H2SO4 (fuming, SO3) → C6H5SO3H (benzenesulfonic acid) + H2O
+   Reversible reaction (desulfonation by dilute H2SO4 + heat).
+
+4. FRIEDEL-CRAFTS ALKYLATION:
+   C6H6 + RX + AlCl3 → C6H5R + HX (Lewis acid catalyst)
+   Limitation: polyalkylation occurs (monoalkyl product is more reactive than benzene).
+   Limitation: rearrangement of carbocation may change identity of R group.
+   
+5. FRIEDEL-CRAFTS ACYLATION:
+   C6H6 + RCOCl + AlCl3 → C6H5COR + HCl (aryl ketone formed)
+   Acyl cation (RCO+, acylium ion) does NOT rearrange (resonance stable).
+   No polyacylation (product deactivated by C=O group → less reactive than benzene).
+   More useful than alkylation for clean products.
+
+DIRECTIVE INFLUENCE OF SUBSTITUENTS:
+
+ortho/para (o/p) directors: direct incoming electrophile to ortho and para positions.
+→ Electron-donating groups activate ring: -OH, -OR, -NH2, -NHR, -NHCOR (activating o/p directors)
+→ Halogens: deactivating o/p directors (-I wins over +R for reactivity, but +R wins for position)
+
+meta (m) directors: direct to meta position.
+→ Electron-withdrawing groups deactivate ring: -NO2, -CN, -COOH, -CHO, -COR, -SO3H (deactivating m directors)
+
+JEE TRICK to predict directing effect:
+→ If substituent can donate electrons to ring by resonance (+R): o/p director.
+→ If substituent withdraws electrons from ring by resonance (-R): m director.
+→ Halogens: -I effect (deactivating) but +R effect (o/p directing) — check net effect separately for each property.
+
+SUBSTITUTION REACTIONS when TWO substituents present:
+→ If both substituents direct to same position: strong orientation in that direction.
+→ If they conflict: stronger activating group's directive influence dominates.
+→ Strong activating group > weak activating group > deactivating group in directing strength.
+
+JEE TRAP: In o/p directors, statistically more ortho product expected (2 o positions vs 1 p) BUT actually para is often major product (due to less steric crowding at para).
+
+JEE EXAMPLES:
+Toluene (CH3 = o/p director): electrophile goes to ortho and para.
+Nitrobenzene (NO2 = m director): electrophile goes to meta.
+Chlorobenzene (Cl = o/p director but deactivating): electrophile goes to ortho and para, but slower than benzene.
+Aniline (NH2 = strongly activating o/p director): electrophile goes to ortho and para, very fast.
+
+----------------------------------------------------------------
+SECTION 5: JEE-SPECIFIC PATTERNS
+----------------------------------------------------------------
+
+HIGH FREQUENCY QUESTION TYPES:
+1. Apply Markovnikov's rule to HX/H2O addition to alkene
+2. Predict product of radical bromination at 3° position
+3. Identify product of ozonolysis (reductive or oxidative)
+4. Identify anti-Markovnikov addition (peroxide effect with HBr only)
+5. Write product of EAS reaction with correct directing effect
+6. Predict major product in Friedel-Crafts reactions
+7. Identify cis or trans alkene from Lindlar vs Na/NH3 hydrogenation of alkyne
+8. Use acidic character of terminal alkyne for reaction predictions
+
+CRITICAL TRAPS:
+→ Peroxide (anti-Markovnikov) effect works ONLY with HBr, NOT HCl or HI.
+→ Halogenation of alkanes is free radical. Halogenation of benzene (EAS) is ionic.
+→ Br2 decolorization: both alkenes (addition) and alkynes (addition) decolorize Br2/CCl4.
+→ Lindlar's catalyst → cis alkene. Na/liquid NH3 → trans alkene.
+→ Acetylene + H2O → acetaldehyde. Other terminal alkynes + H2O → ketone.
+→ Friedel-Crafts doesn't work with strongly deactivated rings (nitrobenzene, halobenzene is okay but slow).
+→ Ozonolysis + Zn/H2O: terminal CH2= gives HCHO (formaldehyde). Oxidative ozonolysis gives CO2 from terminal CH2=.
+
+OUT OF JEE SCOPE:
+→ Mechanism of sulfonation in detail
+→ Radical reactions with alkynes (beyond basic knowledge)
+→ Detailed conformational analysis of cycloalkanes
+
+================================================================
+END OF UNIT 15 NOTES
+================================================================

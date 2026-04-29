@@ -1,0 +1,261 @@
+================================================================
+JEE MAIN 2026 | CHEMISTRY NOTES
+UNIT 12: COORDINATION COMPOUNDS
+[Inorganic Chemistry | JEE Mains Weightage: HIGH — 1-2 questions per paper]
+================================================================
+
+OFFICIAL SYLLABUS SCOPE (JEE Main 2026):
+Introduction to coordination compounds. Werner's theory, ligands, coordination number, denticity,
+chelation, IUPAC nomenclature of mononuclear coordination compounds, isomerism,
+bonding: valence bond approach and basic crystal field theory, colour and magnetic properties,
+importance of coordination compounds (qualitative analysis, metal extraction, biological systems).
+
+----------------------------------------------------------------
+SECTION 1: BASIC CONCEPTS
+----------------------------------------------------------------
+
+Coordination Compound:
+→ Compound containing a central metal atom/ion bonded to a group of surrounding molecules or ions called ligands.
+→ Key distinction: coordination compounds retain their identity in solution (unlike double salts like alums which dissociate completely).
+→ Example: [Co(NH3)6]Cl3 → in solution gives [Co(NH3)6]3+ and 3Cl-, NOT free Co3+ and NH3.
+
+Werner's Theory:
+→ Central metal ion has TWO types of valency:
+   1. Primary valency (ionizable): satisfied by counter ions (like Cl- outside brackets). Equal to oxidation state.
+   2. Secondary valency (non-ionizable): satisfied by ligands. Equal to coordination number.
+→ Secondary valency is directional → determines geometry of complex.
+
+Key Terms:
+Central metal atom/ion: atom bonded to ligands (usually transition metal).
+Coordination sphere: central metal + all ligands enclosed in square brackets [ ].
+Counter ion: ions outside coordination sphere that balance overall charge.
+Coordination number (CN): total number of sigma bonds made by metal with ligands (total donor atoms).
+
+Effective Atomic Number (EAN): NOT required in JEE 2026 syllabus — skip detailed calculations.
+
+----------------------------------------------------------------
+SECTION 2: LIGANDS
+----------------------------------------------------------------
+
+Ligand: molecule or ion that donates electron pair(s) to central metal. Always a Lewis base.
+
+Classification by number of donor atoms (denticity):
+→ Monodentate: donates 1 electron pair. (F-, Cl-, Br-, I-, NH3, H2O, OH-, CN-, CO, NO2-)
+→ Bidentate: donates 2 electron pairs. (en = ethylenediamine H2N-CH2-CH2-NH2, C2O4²- = oxalate, acac)
+→ Tridentate: 3 donor atoms. (diethylenetriamine = dien)
+→ Tetradentate: 4 donor atoms. (triethylenetetramine = trien)
+→ Hexadentate: 6 donor atoms. (EDTA = ethylenediaminetetraacetate)
+
+Chelate ligands: bi- or polydentate ligands that form rings with central metal.
+→ Chelate complexes are MORE STABLE than analogous complexes with monodentate ligands (chelate effect = increased entropy on formation).
+→ EDTA is a hexadentate chelating agent — used to treat heavy metal poisoning.
+
+Ambidentate ligand: monodentate ligand that can bind through two different atoms.
+→ SCN- can bind through S (thiocyanato-S or thiocyanate) or through N (thiocyanato-N or isothiocyanate).
+→ NO2- can bind through N (nitro, -NO2) or through O (nitrito, -ONO).
+
+Bridging ligand: connects two or more metal centers. Denoted with μ- prefix.
+Example: μ-Cl means Cl is bridging two metals.
+
+Important Ligands and Their Names:
+F-: fluoro       |  Cl-: chloro    |  Br-: bromo     |  I-: iodo
+OH-: hydroxo     |  O²-: oxo       |  CN-: cyano      |  SCN-: thiocyanato
+NO2- (N): nitro  |  NO2- (O): nitrito |  CO: carbonyl  |  NO: nitrosyl
+NH3: ammine      |  H2O: aqua      |  en: ethylenediamine  |  ox²-: oxalato
+PPh3: triphenylphosphine
+
+----------------------------------------------------------------
+SECTION 3: IUPAC NOMENCLATURE
+----------------------------------------------------------------
+
+Order of naming:
+1. Cation first, then anion (like any other ionic compound).
+2. Within coordination sphere: ligands first (alphabetically), then metal name + oxidation state.
+3. Cationic complex: metal name as is (cobalt, chromium, iron).
+4. Anionic complex: metal name gets -ate suffix (cobaltate, chromate, ferrate, cuprate, argentate, aurate).
+   Note special names: Fe → ferrate, Cu → cuprate, Ag → argentate, Au → aurate, Pb → plumbate, Sn → stannate.
+
+Naming ligands:
+→ Neutral ligands: name as molecule (aqua, ammine, carbonyl, nitrosyl) — exceptions from common names.
+→ Anionic ligands: replace -ide with -o (chloro, bromo, hydroxo, oxo, cyano), -ate with -ato (sulfato, oxalato, acetato).
+→ Cationic ligands: add -ium (rare in JEE).
+
+Prefix for number of ligands:
+→ Simple: di, tri, tetra, penta, hexa
+→ Complex ligand names: bis, tris, tetrakis, pentakis, hexakis (to avoid confusion with di/tri in ligand name)
+   Example: bis(ethylenediamine) not diethylenediamine.
+
+IUPAC NAMING EXAMPLES:
+[Co(NH3)6]Cl3: hexaamminecobalt(III) chloride
+[Pt(Cl)2(NH3)2]: diamminedichloridoplatinum(II)
+K4[Fe(CN)6]: potassium hexacyanoferrate(II) [ferrocyanide]
+K3[Fe(CN)6]: potassium hexacyanoferrate(III) [ferricyanide]
+[CrCl3(en)]: trichlorido(ethylenediamine)chromium(III) — wait, en is bidentate → different formula
+[Co(en)3]3+: tris(ethylenediamine)cobalt(III) ion
+[Ni(CO)4]: tetracarbonylnickel(0)
+Na2[PtCl4]: sodium tetrachloridoplatinate(II)
+[Fe(CO)5]: pentacarbonyliron(0)
+
+JEE TRAP: In anionic complexes — metal gets -ate suffix. So iron becomes ferrate, copper becomes cuprate.
+In cationic or neutral complexes — metal name is unchanged.
+
+----------------------------------------------------------------
+SECTION 4: ISOMERISM IN COORDINATION COMPOUNDS
+----------------------------------------------------------------
+
+Two main types: Structural Isomerism and Stereoisomerism.
+
+STRUCTURAL ISOMERISM:
+
+1. Ionization Isomerism: Same formula, different ions inside/outside coordination sphere.
+   [Co(NH3)5Br]SO4 and [Co(NH3)5SO4]Br
+   (First gives SO4²- in solution, second gives Br- in solution — test with AgNO3 vs BaCl2)
+
+2. Linkage Isomerism: Ambidentate ligand binds through different atoms.
+   [Co(NH3)5(NO2)]Cl2 (nitro, N-bonded) and [Co(NH3)5(ONO)]Cl2 (nitrito, O-bonded)
+
+3. Coordination Isomerism: Both cation and anion are complex ions — exchange of ligands.
+   [Co(en)3][Cr(ox)3] and [Cr(en)3][Co(ox)3]
+
+4. Solvate (Hydrate) Isomerism: Different number of water molecules in coordination sphere vs outside.
+   [Cr(H2O)6]Cl3 (violet), [CrCl(H2O)5]Cl2·H2O (blue-green), [CrCl2(H2O)4]Cl·2H2O (dark green)
+
+STEREOISOMERISM:
+
+1. Geometrical Isomerism (cis-trans):
+   For square planar [MA2B2]: cis has same ligands adjacent, trans has same ligands opposite.
+   Example: cis-[Pt(NH3)2Cl2] = cisplatin (anticancer drug), trans-[Pt(NH3)2Cl2] = transplatin (inactive).
+   For octahedral [MA4B2]: cis has B's at 90°, trans has B's at 180°.
+   [MA3B3]: fac (facial — 3 identical ligands on one face) and mer (meridional — 3 on plane).
+
+2. Optical Isomerism (mirror image non-superimposable):
+   [Co(en)3]3+: exists as d and l (Δ and Λ) forms — chiral complex.
+   cis-[Co(en)2Cl2]+: optically active (chiral).
+   trans-[Co(en)2Cl2]+: has plane of symmetry, NOT optically active.
+
+JEE TRAP: Square planar complexes don't show optical isomerism (they have a plane of symmetry — the molecular plane). Only tetrahedral and octahedral complexes can be optically active.
+
+----------------------------------------------------------------
+SECTION 5: BONDING — VALENCE BOND THEORY (VBT)
+----------------------------------------------------------------
+
+VBT: Metal uses hybridized orbitals to accept electron pairs from ligands.
+
+HYBRIDIZATION AND GEOMETRY:
+CN=2: sp (linear)
+CN=4: sp³ (tetrahedral) or dsp² (square planar)
+CN=6: d²sp³ (inner orbital, strong field ligands) or sp³d² (outer orbital, weak field ligands)
+
+Strong field ligands (cause large splitting, paired electrons): CO, CN-, NO2-, en, NH3
+Weak field ligands (cause small splitting, more unpaired electrons): F-, Cl-, Br-, I-, H2O, OH-
+
+Spectrochemical Series (increasing field strength):
+I- < Br- < Cl- < F- < OH- < H2O < NH3 < en < NO2- < CN- < CO
+
+INNER ORBITAL COMPLEX (Low spin, strong field):
+→ d²sp³ hybridization (uses inner 3d orbitals).
+→ Ligands force electron pairing, fewer unpaired electrons.
+→ Fewer or zero unpaired electrons → weakly paramagnetic or diamagnetic.
+
+OUTER ORBITAL COMPLEX (High spin, weak field):
+→ sp³d² hybridization (uses outer 4d orbitals).
+→ Electrons remain unpaired as much as possible.
+→ More unpaired electrons → more paramagnetic.
+
+JEE EXAMPLES:
+[Fe(CN)6]⁴-: CN- is strong field → d²sp³ (inner), 0 unpaired electrons (diamagnetic), Fe2+: 3d⁶
+[Fe(H2O)6]²+: H2O is weak field → sp³d², 4 unpaired electrons (paramagnetic), Fe2+: 3d⁶
+
+[Co(NH3)6]³+: NH3 is strong field → d²sp³, 0 unpaired (diamagnetic), Co3+: 3d⁶
+
+----------------------------------------------------------------
+SECTION 6: CRYSTAL FIELD THEORY (CFT) — BASICS
+----------------------------------------------------------------
+
+CFT treats ligands as point charges. d-orbitals split due to electrostatic repulsion from ligands.
+
+In OCTAHEDRAL field:
+→ d-orbitals split into:
+   t2g (lower energy): dxy, dxz, dyz (3 orbitals)
+   eg (higher energy): dx²-y², dz² (2 orbitals)
+→ Crystal field splitting energy (Δo or 10Dq): energy gap between t2g and eg.
+
+In TETRAHEDRAL field:
+→ Splitting is reversed: e (lower) and t2 (higher)
+→ Δt = 4/9 × Δo (much smaller than octahedral)
+
+Colour from CFT:
+→ d-electrons absorb wavelength corresponding to Δ (jump from t2g to eg).
+→ Transmitted/reflected color is complementary color of absorbed.
+→ Strong field ligands → large Δ → absorb shorter wavelengths (UV/blue end).
+→ Weak field ligands → small Δ → absorb longer wavelengths (red/yellow end).
+
+JEE TRAP: The colour of coordination complexes is due to d-d transition (energy gap Δ). Changing ligand changes Δ → changes colour. Same metal, different ligands → different colours.
+
+Pairing energy (P): energy required to pair two electrons in same orbital.
+→ If Δ > P: electrons pair in t2g before filling eg → LOW SPIN (strong field ligands)
+→ If Δ < P: electrons fill all orbitals singly before pairing → HIGH SPIN (weak field ligands)
+
+Magnetic Properties (from CFT):
+Number of unpaired electrons → magnetic moment μ = √[n(n+2)] BM
+
+----------------------------------------------------------------
+SECTION 7: IMPORTANCE OF COORDINATION COMPOUNDS
+----------------------------------------------------------------
+
+Biological Importance:
+→ Haemoglobin: Fe2+ coordinated to porphyrin ring (heme) and protein globin. Carries O2.
+→ Chlorophyll: Mg2+ coordinated to porphyrin ring. Essential for photosynthesis.
+→ Vitamin B12 (cyanocobalamin): Co3+ coordination compound.
+→ Carbonic anhydrase: Zn2+ enzyme that hydrates CO2 in blood.
+
+Analytical Chemistry:
+→ EDTA titrations for Ca2+ and Mg2+ determination (water hardness).
+→ [Ni(dmg)2] (nickel dimethylglyoxime): red precipitate — test for Ni2+.
+→ [Fe(SCN)n]^(3-n): blood red color — test for Fe3+.
+→ Blue coloration: [Cu(NH3)4]2+ (tetraamminecopper — deep blue).
+
+Metallurgy:
+→ Extraction of gold: 4Au + 8NaCN + 2H2O + O2 → 4Na[Au(CN)2] + 4NaOH (leaching)
+→ Extraction of silver: similar cyanide process.
+→ Purification of Ni: Mond process using Ni(CO)4.
+
+Medicine:
+→ cisplatin [Pt(NH3)2Cl2]: anticancer drug (binds to DNA, stops cell division).
+→ EDTA: chelation therapy for heavy metal poisoning (Pb, Hg).
+→ Desferrioxamine: chelating agent for iron overload.
+
+JEE TRAP: In haemoglobin, Fe is in +2 state. In haematin, Fe is in +3 state (hemoglobin oxidized — cannot carry O2, causes methemoglobinemia).
+
+----------------------------------------------------------------
+SECTION 8: JEE-SPECIFIC PATTERNS
+----------------------------------------------------------------
+
+HIGH FREQUENCY QUESTION TYPES:
+1. Write IUPAC name of given coordination compound
+2. Write formula from given IUPAC name
+3. Determine geometry and hybridization of complex ion
+4. Find number of unpaired electrons and magnetic moment
+5. Identify type of isomerism in given pair of compounds
+6. Calculate oxidation state of metal in complex
+7. Identify whether complex is inner or outer orbital using field strength
+
+CRITICAL TRAPS:
+→ Coordination number ≠ number of ligands. Bidentate ligands increase CN by 2 each.
+   [Co(en)3]3+: 3 ligands but CN = 6 (each en donates 2 electron pairs).
+→ Counter ions are OUTSIDE the bracket. They are separated in solution.
+   [CoBr(NH3)5]SO4: gives [CoBr(NH3)5]2+ and SO4²- in solution. Does NOT give Co3+ separately.
+→ In anionic complex name: iron → ferrate, copper → cuprate, silver → argentate, gold → aurate, lead → plumbate, tin → stannate.
+→ Optical isomerism: trans-octahedral MA4B2 and MA4BC are NOT optically active. cis-MA4B2 can be. en complexes often are.
+→ Cisplatin (cis-) is active anticancer. Transplatin (trans-) is not.
+→ Δt = 4/9 Δo: tetrahedral complexes always have smaller splitting → mostly high spin.
+
+OUT OF JEE SCOPE:
+→ Detailed MO theory treatment of complexes
+→ Jahn-Teller distortion
+→ Spectroscopic series derivation
+→ Detailed reaction mechanisms of ligand substitution
+
+================================================================
+END OF UNIT 12 NOTES
+================================================================

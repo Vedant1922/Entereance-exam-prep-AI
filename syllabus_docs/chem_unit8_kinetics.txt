@@ -1,0 +1,251 @@
+================================================================
+JEE MAIN 2026 | CHEMISTRY NOTES
+UNIT 8: CHEMICAL KINETICS
+[Physical Chemistry | JEE Mains Weightage: HIGH — 1-2 questions per paper]
+================================================================
+
+OFFICIAL SYLLABUS SCOPE (JEE Main 2026):
+Rate of reaction, factors affecting rate, elementary and complex reactions,
+order and molecularity, rate law, rate constant and units,
+differential and integral forms of zero and first order reactions,
+half-lives, effect of temperature, Arrhenius theory, activation energy,
+collision theory of bimolecular gaseous reactions (no derivation).
+
+----------------------------------------------------------------
+SECTION 1: RATE OF REACTION
+----------------------------------------------------------------
+
+Rate of reaction = change in concentration per unit time.
+
+For reaction: aA + bB → cC + dD
+
+   Rate = -1/a × d[A]/dt = -1/b × d[B]/dt = +1/c × d[C]/dt = +1/d × d[D]/dt
+
+→ Negative sign for reactants (concentration decreases with time).
+→ Positive sign for products (concentration increases with time).
+→ Divided by stoichiometric coefficient to give uniform rate regardless of which species is measured.
+
+Average Rate vs Instantaneous Rate:
+→ Average rate = ΔConcentration / Δtime (over a time interval)
+→ Instantaneous rate = rate at a specific instant = slope of tangent on concentration-time graph
+
+Units of rate = mol/L/s = M/s = mol L-1 s-1
+
+----------------------------------------------------------------
+SECTION 2: RATE LAW AND ORDER OF REACTION
+----------------------------------------------------------------
+
+Rate Law (Rate expression):
+   Rate = k[A]^m [B]^n
+   [Determined experimentally, NOT from stoichiometric coefficients]
+
+k = Rate constant (specific rate — rate when all concentrations = 1 M)
+m = order with respect to A
+n = order with respect to B
+Overall order = m + n
+
+KEY DISTINCTION:
+→ Order of reaction: determined experimentally from rate law.
+→ Molecularity: number of molecules/atoms/ions participating in elementary step. Only for elementary reactions. Always a positive integer (1, 2, or 3 rarely).
+→ For complex (multi-step) reactions, order ≠ molecularity.
+→ Order can be 0, fractional, or negative. Molecularity cannot be fractional or 0.
+
+Units of Rate Constant k:
+   Zero order: k has units of mol/L/s = M·s⁻¹
+   First order: k has units of s⁻¹ (time⁻¹)
+   Second order: k has units of L/mol/s = M⁻¹·s⁻¹
+   nth order: k has units of M^(1-n)·s⁻¹
+
+General formula for k units: mol^(1-n) L^(n-1) s^-1
+OR: (concentration)^(1-n) × time^(-1)
+
+JEE TRAP: Rate constant k depends on temperature and catalyst, NOT concentration.
+Rate depends on concentration. k does not.
+
+----------------------------------------------------------------
+SECTION 3: INTEGRATED RATE LAWS
+----------------------------------------------------------------
+
+ZERO ORDER REACTION (rate is independent of concentration):
+   Rate = k[A]⁰ = k
+   Integrated: [A] = [A]₀ - kt
+   Half-life: t½ = [A]₀/2k (depends on initial concentration)
+   
+   Plot: [A] vs t → straight line, slope = -k
+
+FIRST ORDER REACTION (rate ∝ concentration):
+   Rate = k[A]
+   Differential: -d[A]/dt = k[A]
+   Integrated: ln[A] = ln[A]₀ - kt
+   OR: [A] = [A]₀ × e^(-kt)
+   OR: log([A]₀/[A]) = kt/2.303
+   
+   Half-life: t½ = 0.693/k = ln2/k
+   [INDEPENDENT of initial concentration — this is characteristic of first order]
+   
+   Plot: ln[A] or log[A] vs t → straight line, slope = -k/2.303
+   
+   After n half-lives: [A] = [A]₀ × (1/2)^n
+
+JEE CRITICAL POINT: First order half-life is constant and independent of initial concentration. This means regardless of how much reactant you start with, it takes the same time for half to disappear.
+
+SECOND ORDER REACTION:
+   Rate = k[A]²
+   Integrated: 1/[A] = 1/[A]₀ + kt
+   Half-life: t½ = 1/(k[A]₀) (depends on initial concentration)
+   
+   Plot: 1/[A] vs t → straight line, slope = k
+
+JEE TRAP: Identifying reaction order from given data:
+→ If rate doubles when concentration doubles → first order.
+→ If rate quadruples when concentration doubles → second order.
+→ If rate doesn't change when concentration changes → zero order.
+→ If half-life is constant → first order.
+
+PSEUDO FIRST ORDER REACTIONS:
+→ Reactions that appear first order because one reactant is in large excess (concentration essentially constant).
+→ Example: Hydrolysis of ester in excess water: CH3COOC2H5 + H2O → CH3COOH + C2H5OH
+→ Rate = k[ester][H2O] ≈ k'[ester], where k' = k[H2O] = pseudo first order rate constant.
+
+----------------------------------------------------------------
+SECTION 4: METHODS TO DETERMINE ORDER
+----------------------------------------------------------------
+
+Method 1: Initial Rate Method
+→ Measure initial rates at different initial concentrations.
+→ Keep one reactant concentration constant, vary other.
+→ Rate₁/Rate₂ = ([A]₁/[A]₂)^m → solve for m.
+
+Method 2: Graphical Method
+→ Plot [A] vs t → straight line if zero order
+→ Plot ln[A] vs t → straight line if first order
+→ Plot 1/[A] vs t → straight line if second order
+
+Method 3: Half-life Method
+→ Constant half-life → first order
+→ Half-life increasing with time → second order (depends on decreasing [A])
+→ Half-life decreasing with time → zero order
+
+----------------------------------------------------------------
+SECTION 5: EFFECT OF TEMPERATURE — ARRHENIUS EQUATION
+----------------------------------------------------------------
+
+Rate constant approximately doubles for every 10°C rise in temperature (rough rule of thumb).
+
+Arrhenius Equation:
+   k = A × e^(-Ea/RT)
+   
+   Where:
+   A = pre-exponential factor (frequency factor / Arrhenius constant)
+   Ea = activation energy (minimum energy required for reaction to occur)
+   R = 8.314 J/mol·K
+   T = temperature in Kelvin
+
+Logarithmic form:
+   ln k = ln A - Ea/RT
+   log k = log A - Ea/(2.303 RT)
+   
+Plot: log k vs 1/T → straight line, slope = -Ea/(2.303R)
+
+Temperature Coefficient (μ) = k(T+10)/k(T) ≈ 2 to 3 for most reactions
+
+Comparing rate constants at two temperatures:
+   log(k2/k1) = (Ea/2.303R) × (1/T1 - 1/T2)
+   log(k2/k1) = (Ea/2.303R) × (T2-T1)/(T1×T2)
+
+Activation Energy:
+→ Minimum energy above average energy that reactant molecules must have to form products.
+→ Transition state (activated complex): unstable high-energy intermediate at top of energy barrier.
+→ Ea is independent of temperature.
+→ Catalyst lowers Ea → increases rate without changing thermodynamics (ΔH, ΔG unaffected).
+
+Exothermic reaction: Ea(forward) < Ea(backward)
+Endothermic reaction: Ea(forward) > Ea(backward)
+ΔH = Ea(forward) - Ea(backward)
+
+JEE TRAP: Catalyst lowers activation energy for BOTH forward and backward reactions equally. It doesn't change ΔH or equilibrium constant.
+
+Effect of catalyst:
+→ Increases k (rate constant) by lowering Ea.
+→ Does NOT appear in the overall equation.
+→ Does NOT change K (equilibrium constant).
+→ Increases rate of both forward and backward reactions equally.
+
+----------------------------------------------------------------
+SECTION 6: COLLISION THEORY
+----------------------------------------------------------------
+
+Collision theory (qualitative understanding for JEE):
+
+Rate of reaction depends on:
+1. Collision frequency (Z): number of collisions per second per unit volume.
+   → Increases with concentration and temperature.
+2. Threshold energy: minimum kinetic energy required for effective collision.
+3. Proper orientation: molecules must collide in correct orientation.
+
+Effective collision = collision with sufficient energy + proper orientation.
+   Rate = Z × f × p
+   f = fraction of molecules with energy ≥ threshold = e^(-Ea/RT)
+   p = probability factor (orientation factor)
+
+Arrhenius A factor = Z × p (combines collision frequency and orientation factor).
+
+At higher temperature:
+→ More molecules have kinetic energy ≥ threshold → more effective collisions → higher rate.
+→ Maxwell-Boltzmann distribution shifts to higher energies.
+
+JEE TRAP: Not all collisions lead to reaction. Only effective collisions (correct energy + orientation) do.
+
+----------------------------------------------------------------
+SECTION 7: JEE-SPECIFIC PATTERNS
+----------------------------------------------------------------
+
+HIGH FREQUENCY QUESTION TYPES:
+1. Find rate constant k from integrated rate law (given concentration at two times)
+2. Calculate half-life and determine order from half-life data
+3. Determine order of reaction from initial rate data (method of initial rates)
+4. Identify order from concentration-time graph (which plot gives straight line)
+5. Calculate Ea using Arrhenius equation at two temperatures
+6. Determine units of k for given order
+7. Calculate concentration remaining after n half-lives (first order)
+
+CRITICAL TRAPS:
+→ For first order: t½ = 0.693/k. For zero order: t½ = [A]₀/2k. For second order: t½ = 1/k[A]₀
+→ First order half-life is INDEPENDENT of concentration. Zero and second order are NOT.
+→ Order is determined EXPERIMENTALLY. You cannot read it from the balanced equation.
+→ Molecularity applies ONLY to elementary steps.
+→ Rate of reaction ≠ rate constant k. Rate = k[A]^m[B]^n depends on concentration; k does not.
+→ Catalyst lowers Ea but DOES NOT change enthalpy change (ΔH) of reaction.
+→ After n half-lives: amount left = (1/2)^n × original amount. Amount reacted = [1 - (1/2)^n] × original.
+
+OUT OF JEE SCOPE:
+→ Derivation of Maxwell-Boltzmann distribution
+→ Detailed collision theory mathematical derivations
+→ Chain reactions and free radical mechanisms (in kinetics context)
+→ Enzymatic kinetics (Michaelis-Menten)
+
+----------------------------------------------------------------
+SECTION 8: KEY FORMULAS SUMMARY
+----------------------------------------------------------------
+
+Rate = k[A]^m[B]^n
+[A] = [A]₀ - kt  (zero order)
+ln([A]₀/[A]) = kt = 2.303 log([A]₀/[A])  (first order)
+1/[A] - 1/[A]₀ = kt  (second order)
+
+t½ = [A]₀/2k  (zero order)
+t½ = 0.693/k = ln2/k  (first order, concentration-independent)
+t½ = 1/k[A]₀  (second order)
+
+k = Ae^(-Ea/RT)
+log(k2/k1) = (Ea/2.303R) × [(T2-T1)/(T1T2)]
+
+Units of k:
+Zero order: mol L⁻¹ s⁻¹
+First order: s⁻¹
+Second order: L mol⁻¹ s⁻¹
+nth order: (mol/L)^(1-n) × s⁻¹
+
+================================================================
+END OF UNIT 8 NOTES
+================================================================

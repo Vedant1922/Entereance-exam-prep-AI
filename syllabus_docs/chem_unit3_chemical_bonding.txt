@@ -1,0 +1,297 @@
+================================================================
+JEE MAIN 2026 | CHEMISTRY NOTES
+UNIT 3: CHEMICAL BONDING AND MOLECULAR STRUCTURE
+[Physical Chemistry | JEE Mains Weightage: VERY HIGH — 2-3 questions per paper]
+================================================================
+
+OFFICIAL SYLLABUS SCOPE (JEE Main 2026):
+Kossel-Lewis approach to chemical bond formation, ionic and covalent bonds,
+Ionic bonding: formation, lattice enthalpy. Covalent bonding: electronegativity,
+Fajan's rule, dipole moment, VSEPR theory, shapes of molecules.
+Hybridization (s, p, d orbitals), resonance.
+MOT: LCAOs, bonding/antibonding orbitals, sigma/pi bonds, bond order.
+Hydrogen bonding and metallic bonding.
+
+----------------------------------------------------------------
+SECTION 1: IONIC BONDING
+----------------------------------------------------------------
+
+Ionic bond forms by complete transfer of electron(s) from metal to non-metal.
+Driving force: Both atoms achieve noble gas configuration (octet).
+
+Formation conditions (favorable when):
+→ Low ionization enthalpy of metal (easily loses electrons)
+→ High electron gain enthalpy of non-metal (easily gains electrons)
+→ High lattice enthalpy (strong electrostatic attraction in crystal)
+
+Lattice Enthalpy:
+→ Energy released when 1 mole of ionic crystal is formed from gaseous ions.
+→ Higher lattice enthalpy = more stable ionic compound.
+→ Lattice enthalpy ∝ (charge of ions) / (distance between ions)
+→ MgO has higher lattice enthalpy than NaCl because Mg2+ and O2- have higher charges than Na+ and Cl-.
+
+Fajan's Rules — Determines covalent character in ionic bonds:
+Covalent character increases when:
+1. Cation is small with high charge (high charge density / polarizing power)
+2. Anion is large (easily polarizable / high polarizability)
+
+JEE APPLICATION: 
+→ AgCl has more covalent character than NaCl (Ag+ is more polarizing than Na+)
+→ AlCl3 has significant covalent character (Al3+ is small with high charge)
+→ LiI has more covalent character than LiF (I- is larger, more polarizable)
+
+----------------------------------------------------------------
+SECTION 2: COVALENT BONDING AND LEWIS STRUCTURES
+----------------------------------------------------------------
+
+Covalent bond = sharing of electron pair(s) between atoms.
+Single bond: 1 shared pair. Double bond: 2 shared pairs. Triple bond: 3 shared pairs.
+
+Lewis Structure Rules:
+1. Count total valence electrons.
+2. Connect atoms with single bonds (each uses 2 electrons).
+3. Complete octets of outer atoms first, then central atom.
+4. If central atom lacks octet, form multiple bonds.
+5. Minimize formal charges.
+
+Formal Charge = Valence electrons - Lone pair electrons - (1/2 × Bonding electrons)
+
+Octet rule exceptions (know all of these for JEE):
+→ Incomplete octet: BeCl2 (Be has 4 electrons), BF3 (B has 6 electrons)
+→ Expanded octet: PCl5 (P has 10 electrons), SF6 (S has 12 electrons) — only Period 3+ elements
+→ Odd electron molecules: NO, NO2 (have unpaired electron — paramagnetic)
+
+Resonance:
+→ When a molecule cannot be represented by a single Lewis structure.
+→ Actual structure is hybrid of all resonance structures.
+→ Resonance lowers energy (more stable than any individual structure).
+→ All resonance structures have same arrangement of atoms, only electron distribution differs.
+→ Bond lengths in resonance hybrid are intermediate between single and double bond.
+
+Examples: O3 (ozone), CO3²⁻, NO3⁻, C6H6 (benzene)
+→ In benzene, all C-C bonds are equal length (1.40 Å — between single 1.54 and double 1.34)
+
+Dipole Moment (μ):
+   μ = q × d (charge × distance)
+   Unit: Debye (D) = 3.336 × 10^-30 C·m
+
+→ Measures polarity of bond or molecule.
+→ For molecule: vector sum of all bond dipoles.
+→ Symmetric molecules have μ = 0 even if individual bonds are polar.
+
+JEE EXAMPLES:
+→ CO2: μ = 0 (linear, symmetric, bond dipoles cancel)
+→ H2O: μ ≠ 0 (bent shape, bond dipoles don't cancel)
+→ BF3: μ = 0 (trigonal planar, symmetric)
+→ NF3: μ ≠ 0 (pyramidal, lone pair contributes)
+→ CHCl3: μ ≠ 0 (asymmetric)
+→ CCl4: μ = 0 (tetrahedral, symmetric)
+
+JEE TRAP: CCl4 has polar C-Cl bonds but μ = 0 due to symmetry. CHCl3 has μ ≠ 0 because symmetry is broken.
+
+Electronegativity:
+→ Ability of an atom in a bond to attract shared electron pair toward itself.
+→ Pauling scale: F is highest (4.0), then O (3.5), N (3.0), Cl (3.0)
+→ Increases across period (left to right), decreases down group.
+→ Bond polarity increases with electronegativity difference.
+
+----------------------------------------------------------------
+SECTION 3: VSEPR THEORY AND MOLECULAR SHAPES
+----------------------------------------------------------------
+
+VSEPR = Valence Shell Electron Pair Repulsion Theory
+Principle: Electron pairs (both bonding and lone pairs) arrange themselves to minimize repulsion.
+
+Repulsion order: Lone pair-Lone pair > Lone pair-Bonding pair > Bonding pair-Bonding pair
+→ Lone pairs take up more space → compress bond angles.
+
+VSEPR SHAPES — MASTER TABLE:
+
+Bonding Pairs | Lone Pairs | Geometry | Shape | Bond Angle | Example
+2 | 0 | Linear | Linear | 180° | CO2, BeCl2
+3 | 0 | Trigonal Planar | Trigonal Planar | 120° | BF3, SO3
+2 | 1 | Trigonal Planar | Bent/V-shaped | <120° | SO2
+4 | 0 | Tetrahedral | Tetrahedral | 109.5° | CH4, CCl4
+3 | 1 | Tetrahedral | Trigonal Pyramidal | <109.5° | NH3 (107°)
+2 | 2 | Tetrahedral | Bent/V-shaped | <109.5° | H2O (104.5°)
+5 | 0 | Trigonal Bipyramidal | Trigonal Bipyramidal | 90°,120° | PCl5
+4 | 1 | Trigonal Bipyramidal | See-saw | — | SF4
+3 | 2 | Trigonal Bipyramidal | T-shaped | — | ClF3
+2 | 3 | Trigonal Bipyramidal | Linear | 180° | XeF2, I3-
+6 | 0 | Octahedral | Octahedral | 90° | SF6
+5 | 1 | Octahedral | Square Pyramidal | — | ClF5
+4 | 2 | Octahedral | Square Planar | 90° | XeF4, [PtCl4]²-
+
+Bond Angle Trend:
+→ CH4 (109.5°) > NH3 (107°) > H2O (104.5°)
+→ Reason: Each lone pair reduces bond angle by ~2-2.5°
+
+JEE TRAP: Geometry refers to ALL electron pairs. Shape refers only to atom positions.
+Example: NH3 geometry = tetrahedral (4 pairs), shape = trigonal pyramidal (3 bonds + 1 lone pair).
+
+----------------------------------------------------------------
+SECTION 4: HYBRIDIZATION
+----------------------------------------------------------------
+
+Hybridization = mixing of atomic orbitals of similar energy to form new equivalent hybrid orbitals.
+
+sp Hybridization:
+→ 1 s + 1 p → 2 sp orbitals
+→ Linear geometry, 180° bond angle
+→ Two unhybridized p orbitals available for π bonding
+→ Examples: BeCl2, C2H2 (acetylene), CO2, HCN
+
+sp² Hybridization:
+→ 1 s + 2 p → 3 sp² orbitals
+→ Trigonal planar geometry, 120° bond angle
+→ One unhybridized p orbital available for π bonding
+→ Examples: BF3, C2H4 (ethylene), SO3, benzene (C6H6)
+
+sp³ Hybridization:
+→ 1 s + 3 p → 4 sp³ orbitals
+→ Tetrahedral geometry, 109.5° bond angle
+→ No unhybridized p orbitals
+→ Examples: CH4, NH3, H2O, CCl4
+
+sp³d Hybridization:
+→ 5 hybrid orbitals
+→ Trigonal bipyramidal geometry
+→ Examples: PCl5, SF4, ClF3, XeF2
+
+sp³d² Hybridization:
+→ 6 hybrid orbitals
+→ Octahedral geometry
+→ Examples: SF6, XeF4, [Co(NH3)6]3+
+
+JEE FORMULA to find hybridization:
+   H = (1/2) × [V + M - C + A]
+   V = valence electrons of central atom
+   M = monovalent atoms attached
+   C = charge if cation (subtract)
+   A = charge if anion (add)
+   H=2 → sp, H=3 → sp², H=4 → sp³, H=5 → sp³d, H=6 → sp³d²
+
+Examples:
+→ CH4: H = (4+4)/2 = 4 → sp³
+→ NH3: H = (5+3)/2 = 4 → sp³ (lone pair occupies one sp³ orbital)
+→ H2O: H = (6+2)/2 = 4 → sp³ (two lone pairs)
+→ PCl5: H = (5+5)/2 = 5 → sp³d
+→ SF6: H = (6+6)/2 = 6 → sp³d²
+→ NO3⁻: H = (5+0+1)/2 = 3 → sp² (add 1 for negative charge)
+
+JEE TRAP: Hybridization of carbon in C2H2 is sp even though it has 3 bonds. Each carbon makes 1 sigma (sp-sp) + 2 pi bonds (p-p). Count sigma bonds around each carbon: 2 → sp.
+
+----------------------------------------------------------------
+SECTION 5: MOLECULAR ORBITAL THEORY (MOT)
+----------------------------------------------------------------
+
+MOT treats bonding from a quantum mechanical perspective.
+Linear Combination of Atomic Orbitals (LCAO): Atomic orbitals combine to form molecular orbitals.
+
+Two AOs combine to form:
+→ 1 Bonding MO (lower energy, electron density between nuclei)
+→ 1 Antibonding MO* (higher energy, node between nuclei, denoted with asterisk)
+
+Types of MO:
+→ σ (sigma): formed by head-on overlap (along internuclear axis)
+→ π (pi): formed by lateral/sideways overlap (perpendicular to axis)
+→ σ* and π* are corresponding antibonding MOs
+
+ENERGY ORDER OF MOs (for N2, O2, F2 and similar diatomics):
+For O2, F2, Ne2: σ1s < σ*1s < σ2s < σ*2s < σ2p < π2p = π2p < π*2p = π*2p < σ*2p
+For Li2 to N2: σ1s < σ*1s < σ2s < σ*2s < π2p = π2p < σ2p < π*2p = π*2p < σ*2p
+[Note: for Li2 to N2, π2p fills before σ2p]
+
+Bond Order = (Bonding electrons - Antibonding electrons) / 2
+→ Higher bond order = stronger bond = shorter bond length = higher bond energy
+→ Bond order = 0 → molecule doesn't exist (e.g., He2)
+→ Fractional bond order is possible (e.g., O2⁻ has BO = 1.5)
+
+CRITICAL EXAMPLES FOR JEE:
+
+H2: σ1s² → Bond order = (2-0)/2 = 1, Diamagnetic
+He2: σ1s²σ*1s² → Bond order = (2-2)/2 = 0, Doesn't exist
+
+N2: ...σ2p² → BO = 3, Diamagnetic (all electrons paired)
+O2: ...π*2p¹π*2p¹ → BO = 2, PARAMAGNETIC (2 unpaired electrons in degenerate π* MOs)
+F2: ...π*2p²π*2p² → BO = 1, Diamagnetic
+
+JEE TRAP: O2 is PARAMAGNETIC despite Lewis structure showing no unpaired electrons. This is the most important result of MOT. Lewis structure fails here, MOT succeeds.
+
+Magnetic Properties:
+→ Paramagnetic: has unpaired electrons in MOs (attracted to magnetic field)
+→ Diamagnetic: all electrons paired (weakly repelled by magnetic field)
+
+Bond Order comparison:
+→ O2 > O2⁺ > O2⁻ > O2²⁻
+   BO:  2       2.5      1.5       1
+→ N2 > N2⁺: BO 3 > 2.5
+
+JEE TRAP: Removing electron from O2 to form O2⁺ removes from antibonding → bond ORDER INCREASES.
+Removing electron from N2 to form N2⁺ removes from bonding → bond order DECREASES.
+
+----------------------------------------------------------------
+SECTION 6: HYDROGEN BONDING
+----------------------------------------------------------------
+
+Hydrogen bond forms when H is bonded to a highly electronegative atom (F, O, N) AND is near another electronegative atom.
+
+Intermolecular H-bond: between different molecules (e.g., H2O, HF, NH3, alcohols)
+Intramolecular H-bond: within same molecule (e.g., o-nitrophenol, salicylaldehyde)
+
+Strength: F-H···F > O-H···O > N-H···N
+
+Effects of H-bonding:
+→ Increases boiling point significantly (extra energy needed to break H-bonds)
+→ H2O has anomalously high BP compared to H2S, H2Se, H2Te (all of which have no strong H-bonding)
+→ HF has higher BP than HCl, HBr, HI (same reason)
+→ NH3 has higher BP than PH3, AsH3 (same reason)
+
+JEE TRAP: Why is HF bp lower than H2O bp despite F being more electronegative?
+Because H2O forms 4 H-bonds per molecule (more extensive network), HF forms 2.
+
+o-Nitrophenol has lower BP than p-nitrophenol:
+→ o-nitrophenol has intramolecular H-bonding (within molecule) → cannot form intermolecular H-bonds → lower BP
+→ p-nitrophenol has intermolecular H-bonding → higher BP
+
+Ice has lower density than water:
+→ Hexagonal open cage structure due to H-bonding → less dense than liquid water.
+
+----------------------------------------------------------------
+SECTION 7: JEE-SPECIFIC PATTERNS
+----------------------------------------------------------------
+
+HIGH FREQUENCY QUESTION TYPES:
+1. Determine hybridization and shape of given molecule/ion
+2. Determine bond order using MOT, identify paramagnetic/diamagnetic species
+3. Dipole moment comparison or identification (μ=0 or μ≠0)
+4. Identify resonance structures and resonance hybrid
+5. Apply Fajan's rules to compare covalent character
+6. Compare bond angles between related molecules
+7. H-bonding effects on boiling points and physical properties
+
+CRITICAL TRAPS:
+→ CO2: linear (sp) NOT bent. Bond dipoles cancel. μ = 0.
+→ NO2: bent (because it has an odd electron — unpaired electron on N → sp²-like)
+→ O3: bent with resonance (not linear, not aromatic — it's just resonance)
+→ PCl5: in gas phase = trigonal bipyramidal. In solid state = [PCl4]+ [PCl6]-
+→ Bond length order: Single > Double > Triple (shorter as bond order increases)
+→ Bond energy order: Triple > Double > Single (stronger as bond order increases)
+
+OUT OF JEE SCOPE:
+→ Detailed VB mathematical treatment
+→ MO diagrams for polyatomic molecules beyond diatomics
+→ Crystal field theory (covered in Coordination Compounds)
+
+----------------------------------------------------------------
+SECTION 8: KEY FORMULAS SUMMARY
+----------------------------------------------------------------
+
+μ = q × d (Debye = 3.336 × 10^-30 C·m)
+Bond Order = (Nb - Na) / 2
+H (hybridization number) = (V + M - C + A) / 2
+Formal charge = V - Lp - (1/2)Bp
+
+================================================================
+END OF UNIT 3 NOTES
+================================================================

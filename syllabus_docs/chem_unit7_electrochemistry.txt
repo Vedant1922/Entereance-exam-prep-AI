@@ -1,0 +1,342 @@
+================================================================
+JEE MAIN 2026 | CHEMISTRY NOTES
+UNIT 7: REDOX REACTIONS AND ELECTROCHEMISTRY
+[Physical Chemistry | JEE Mains Weightage: VERY HIGH — 2-3 questions per paper]
+================================================================
+
+OFFICIAL SYLLABUS SCOPE (JEE Main 2026):
+Electronic concepts of oxidation/reduction, redox reactions, oxidation number, rules, balancing.
+Electrolytic and metallic conduction, molar conductivity, Kohlrausch's law.
+Electrochemical cells (electrolytic and galvanic), electrode potentials, standard electrode potential,
+EMF of galvanic cell, Nernst equation, relationship between cell potential and Gibbs energy,
+dry cell, lead accumulator, fuel cells.
+
+----------------------------------------------------------------
+SECTION 1: OXIDATION AND REDUCTION
+----------------------------------------------------------------
+
+Classical definitions:
+→ Oxidation: addition of oxygen, removal of hydrogen, or loss of electrons.
+→ Reduction: removal of oxygen, addition of hydrogen, or gain of electrons.
+
+Electronic concept (JEE level):
+→ Oxidation: LOSS of electrons (OIL: Oxidation Is Loss)
+→ Reduction: GAIN of electrons (RIG: Reduction Is Gain)
+→ "OIL RIG" — memorize this.
+
+Oxidizing agent (oxidant): accepts electrons, gets reduced.
+Reducing agent (reductant): donates electrons, gets oxidized.
+
+In every redox reaction: substance oxidized = reducing agent, substance reduced = oxidizing agent.
+
+----------------------------------------------------------------
+SECTION 2: OXIDATION NUMBER (OXIDATION STATE)
+----------------------------------------------------------------
+
+Rules for assigning oxidation number (in order of priority):
+
+1. Pure elements: oxidation number = 0 (Na, Fe, O2, N2, S8 etc.)
+2. Monatomic ions: oxidation number = ionic charge (Na+ = +1, Cl- = -1, Al3+ = +3)
+3. Hydrogen: +1 in most compounds, EXCEPT -1 in metal hydrides (NaH, CaH2, LiAlH4)
+4. Oxygen: -2 in most compounds, EXCEPT:
+   → -1 in peroxides (H2O2, Na2O2, BaO2)
+   → -½ in superoxides (KO2)
+   → +2 in OF2 (oxygen is more electronegative than F? No! F is MORE electronegative — O is +2)
+5. Fluorine: ALWAYS -1 (most electronegative element)
+6. Sum of all oxidation numbers in neutral compound = 0
+7. Sum of all oxidation numbers in ion = charge of ion
+
+JEE EXAMPLES:
+→ In Cr2O7²-: 2x + 7(-2) = -2 → x = +6 (Cr is +6)
+→ In MnO4-: x + 4(-2) = -1 → x = +7 (Mn is +7)
+→ In SO4²-: x + 4(-2) = -2 → x = +6 (S is +6)
+→ In Na2S2O3: 2(+1) + 2x + 3(-2) = 0 → x = +2 (average, S has +2 oxidation state on average)
+→ In S4O6²-: average S = +2.5 (fractional oxidation state is possible)
+
+JEE TRAP: In H2O2, O is -1 (peroxide). In OF2, O is +2 (F is -1, not O). 
+In Mn2O7, Mn is +7 (not +5 as some students calculate — check: 2(+7) + 7(-2) = 0 ✓).
+
+Disproportionation: When the same element simultaneously gets oxidized and reduced.
+Example: Cl2 + 2NaOH → NaCl + NaOCl + H2O
+Cl goes from 0 to -1 (in NaCl, reduced) and 0 to +1 (in NaOCl, oxidized).
+
+----------------------------------------------------------------
+SECTION 3: BALANCING REDOX REACTIONS
+----------------------------------------------------------------
+
+Two methods: Oxidation number method and Half-reaction (ion-electron) method.
+
+Half-Reaction Method (most used in JEE):
+
+Step 1: Split into two half-reactions (oxidation and reduction).
+Step 2: Balance atoms other than H and O.
+Step 3: Balance O by adding H2O.
+Step 4: Balance H by adding H+.
+Step 5: Balance charge by adding electrons.
+Step 6: Multiply half-reactions to equalize electrons transferred.
+Step 7: Add half-reactions and cancel common terms.
+Step 8: In basic solution: add OH- to both sides to neutralize H+, form H2O.
+
+JEE EXAMPLE: MnO4- + Fe2+ in acidic solution:
+Oxidation: Fe2+ → Fe3+ + e-
+Reduction: MnO4- + 8H+ + 5e- → Mn2+ + 4H2O
+Multiply oxidation by 5: 5Fe2+ → 5Fe3+ + 5e-
+Net: MnO4- + 5Fe2+ + 8H+ → Mn2+ + 5Fe3+ + 4H2O
+
+----------------------------------------------------------------
+SECTION 4: ELECTROLYTIC AND METALLIC CONDUCTION
+----------------------------------------------------------------
+
+Metallic Conduction:
+→ Flow of electrons through metal conductor.
+→ Conductor: substance that conducts electricity.
+→ Resistance (R) in ohms (Ω), Conductance (G) = 1/R in siemens (S)
+
+Electrolytic Conduction:
+→ Flow of ions through electrolyte solution.
+→ Requires liquid medium (aqueous solution or molten salt).
+→ Increases with temperature (more ionic mobility, less viscosity).
+
+Specific Conductance (κ, kappa):
+   κ = (1/R) × (l/A) = G × (l/A)
+   [l = length between electrodes, A = cross-sectional area]
+   Unit: S/m or S/cm
+
+Cell Constant = l/A (property of the cell, not the solution)
+
+Molar Conductance (Λm):
+   Λm = κ × 1000/M    [M = molarity, κ in S/cm, gives Λm in S·cm²/mol]
+   OR Λm = κ/c          [c = concentration in mol/m³, gives Λm in S·m²/mol]
+
+Equivalent Conductance (Λeq):
+   Λeq = Λm / n-factor (less common in modern JEE but useful to know)
+
+Variation with concentration:
+→ Strong electrolyte: Λm increases gradually as concentration decreases (Debye-Hückel-Onsager equation)
+   Λm = Λm° - b√c [Kohlrausch's empirical equation]
+→ Weak electrolyte: Λm increases sharply at very low concentration (degree of ionization increases)
+
+Kohlrausch's Law of Independent Migration of Ions:
+   Λm° = λ°+ + λ°- (for 1:1 electrolyte)
+   [At infinite dilution, each ion migrates independently]
+   
+   General: Λm° = ν+ λ°+ + ν- λ°-
+   [ν+ and ν- = stoichiometric coefficients of cation and anion]
+
+JEE APPLICATION: Calculate Λm° for weak acid using Kohlrausch's law.
+   Λm°(CH3COOH) = Λm°(HCl) + Λm°(CH3COONa) - Λm°(NaCl)
+   [Cannot measure directly by extrapolation for weak acids]
+
+Degree of dissociation of weak electrolyte:
+   α = Λm / Λm°
+   [At concentration c, fraction that has dissociated]
+
+JEE TRAP: Kohlrausch's law allows calculation of Λm° for WEAK electrolytes indirectly, since they can't be extrapolated on the Λm vs √c graph (it's not linear for weak electrolytes).
+
+----------------------------------------------------------------
+SECTION 5: ELECTROCHEMICAL CELLS
+----------------------------------------------------------------
+
+Galvanic (Voltaic) Cell: Converts chemical energy → electrical energy (spontaneous reaction).
+Electrolytic Cell: Converts electrical energy → chemical energy (non-spontaneous reaction forced by external voltage).
+
+Galvanic Cell — Example: Daniell Cell (Zn-Cu cell):
+   Zn(s) | ZnSO4(aq) || CuSO4(aq) | Cu(s)
+   Anode (negative): Zn → Zn2+ + 2e- (oxidation, left side)
+   Cathode (positive): Cu2+ + 2e- → Cu (reduction, right side)
+   Net: Zn + Cu2+ → Zn2+ + Cu
+
+Cell Notation (by convention):
+   Anode || Cathode (single vertical line = electrode-solution interface, double || = salt bridge)
+   Oxidation at left (anode), Reduction at right (cathode).
+
+Salt Bridge:
+→ Contains concentrated electrolyte (like KNO3 or KCl in agar-agar gel).
+→ Maintains electrical neutrality by allowing ion migration.
+→ Completes the circuit.
+
+----------------------------------------------------------------
+SECTION 6: ELECTRODE POTENTIALS AND EMF
+----------------------------------------------------------------
+
+Electrode Potential: Potential difference between electrode and electrolyte.
+Standard Electrode Potential (E°): measured at 25°C, 1 M concentration, 1 atm.
+
+Standard Hydrogen Electrode (SHE): E° = 0.00 V (reference electrode)
+   H+(1M) + e- → ½H2(g, 1atm)  E° = 0.00 V
+
+Cell EMF:
+   E°cell = E°cathode - E°anode = E°reduction(right) - E°reduction(left)
+   OR E°cell = E°cathode + E°anode (if E°anode given as oxidation potential)
+
+For spontaneous cell: E°cell must be positive (ΔG < 0).
+
+Standard Reduction Potentials (must know for JEE):
+   F2/F-: +2.87 V (strongest oxidizer)
+   MnO4-/Mn2+: +1.51 V
+   Cr2O7²-/Cr3+: +1.33 V
+   Cl2/Cl-: +1.36 V
+   O2/H2O: +1.23 V
+   Fe3+/Fe2+: +0.77 V
+   I2/I-: +0.54 V
+   Cu2+/Cu: +0.34 V
+   H+/H2: 0.00 V (SHE)
+   Pb2+/Pb: -0.13 V
+   Fe2+/Fe: -0.44 V
+   Zn2+/Zn: -0.76 V
+   Al3+/Al: -1.66 V
+   Mg2+/Mg: -2.37 V
+   Na+/Na: -2.71 V
+   Li+/Li: -3.04 V (strongest reducer)
+
+Higher reduction potential = better oxidizing agent.
+Lower reduction potential (more negative) = better reducing agent.
+
+JEE TRAP: A higher standard reduction potential means the species is MORE easily reduced (better oxidizing agent). A metal with very negative E° is easily oxidized (good reducing agent).
+
+----------------------------------------------------------------
+SECTION 7: NERNST EQUATION
+----------------------------------------------------------------
+
+At non-standard conditions:
+   E = E° - (RT/nF) ln Q
+   E = E° - (0.0592/n) log Q    [at 25°C = 298 K]
+   
+   Where: n = moles of electrons transferred, Q = reaction quotient
+
+At equilibrium: E = 0, Q = K
+   E° = (0.0592/n) log K    [at 25°C]
+   [This links electrochemistry to equilibrium constant]
+
+JEE APPLICATIONS:
+→ Concentration cell (same electrode material, different concentrations):
+   E = (0.0592/n) log [C2/C1]  [where C2 > C1 at cathode]
+
+→ Cell potential changes with concentration.
+→ More dilute the electrolyte at cathode, lower the potential.
+
+Relationship: ΔG = -nFE
+   ΔG° = -nFE°
+   n = number of electrons, F = Faraday = 96500 C/mol
+
+If E > 0 → ΔG < 0 → spontaneous.
+If E = 0 → ΔG = 0 → equilibrium.
+If E < 0 → ΔG > 0 → non-spontaneous.
+
+----------------------------------------------------------------
+SECTION 8: ELECTROLYSIS AND FARADAY'S LAWS
+----------------------------------------------------------------
+
+Electrolytic Cell: External battery forces non-spontaneous reaction.
+Anode (positive terminal): Oxidation occurs here.
+Cathode (negative terminal): Reduction occurs here.
+
+JEE TRAP: In electrolytic cells, anode is positive (opposite to galvanic cell where anode is negative).
+
+Faraday's First Law:
+   Mass deposited ∝ quantity of charge (coulombs)
+   w = (E/F) × Q = (M/nF) × I × t
+   [E = equivalent mass, M = molar mass, n = n-factor, I = current in amperes, t = time in seconds]
+
+Faraday's Second Law:
+   When same charge passes through different electrolytes, masses deposited are proportional to their equivalent masses.
+
+Faraday's Constant (F) = 96500 C/mol = charge on 1 mole of electrons.
+
+JEE CALCULATIONS:
+   Moles of electrons = I × t / F = Q/F
+   Moles of substance deposited = (I × t) / (n × F)
+   Mass deposited = molar mass × moles = (M × I × t) / (n × F)
+
+ELECTROLYSIS OF WATER: 2H2O → 2H2 + O2
+→ Cathode: 2H2O + 2e- → H2 + 2OH- (or 2H+ + 2e- → H2 in acid)
+→ Anode: 2H2O → O2 + 4H+ + 4e-
+→ Volume of H2 produced is TWICE the volume of O2 (ratio 2:1)
+
+ELECTROLYSIS OF NaCl(aq) — Chlor-alkali process:
+→ Cathode: 2H2O + 2e- → H2 + 2OH-
+→ Anode: 2Cl- → Cl2 + 2e-
+→ Products: H2, Cl2, NaOH (sodium hydroxide)
+→ Important industrial process.
+
+----------------------------------------------------------------
+SECTION 9: BATTERIES AND FUEL CELLS
+----------------------------------------------------------------
+
+Primary Cells (non-rechargeable):
+
+Dry Cell (Leclanche Cell):
+→ Anode: Zn (Zinc can — the outer casing)
+→ Cathode: Graphite rod in MnO2 + NH4Cl paste
+→ Reactions: Zn → Zn2+ + 2e- (anode)
+              MnO2 + NH4+ + e- → MnO(OH) + NH3 (cathode)
+→ EMF ≈ 1.5 V
+
+Mercury Cell:
+→ Anode: Zn-Hg amalgam, Cathode: HgO in KOH paste
+→ Constant voltage throughout, used in watches, hearing aids.
+
+Secondary Cells (rechargeable):
+
+Lead Storage Battery (lead accumulator):
+→ Anode: Pb (lead), Cathode: PbO2, Electrolyte: H2SO4 (38%)
+→ Discharge (use): Pb + SO4²- → PbSO4 + 2e- (anode)
+                    PbO2 + SO4²- + 4H+ + 2e- → PbSO4 + 2H2O (cathode)
+→ Charge (recharging): reactions reversed
+→ During discharge: H2SO4 is consumed → density of H2SO4 decreases → check battery health by density measurement
+→ EMF ≈ 2.0 V per cell, 6 cells = 12 V car battery
+
+Nickel-Cadmium Cell: Cd/Cd(OH)2 // NiOOH/Ni(OH)2
+
+Fuel Cells (galvanic cells using continuous fuel supply):
+→ Hydrogen-oxygen fuel cell: H2 + O2 → H2O, produces electricity without combustion.
+→ High efficiency, used in spacecraft, zero emission.
+
+----------------------------------------------------------------
+SECTION 10: JEE-SPECIFIC PATTERNS
+----------------------------------------------------------------
+
+HIGH FREQUENCY QUESTION TYPES:
+1. Calculate E°cell from standard reduction potentials
+2. Apply Nernst equation to find cell potential at non-standard conditions
+3. Find mass deposited in electrolysis using Faraday's law
+4. Assign oxidation numbers and balance redox equations
+5. Calculate ΔG from cell potential or vice versa
+6. Identify stronger oxidizing/reducing agent from reduction potentials
+7. Kohlrausch's law calculations for molar conductance
+8. Identify anode/cathode in galvanic and electrolytic cells
+
+CRITICAL TRAPS:
+→ Galvanic cell: anode = negative, cathode = positive.
+   Electrolytic cell: anode = positive (connected to + terminal of battery), cathode = negative.
+→ E°cell = E°cathode - E°anode (both as reduction potentials). NEVER add them directly.
+→ When n is determined for Faraday's law: n = change in oxidation state × number of atoms.
+→ Lead battery: during USE, PbSO4 forms at BOTH electrodes. H2SO4 is consumed.
+→ Kohlrausch's law applies at INFINITE dilution (limiting molar conductance).
+→ Conductance of solution increases with temperature (metallic conduction DECREASES with T).
+→ Concentration cell: same electrodes, different concentrations. Electrode with higher concentration is cathode.
+
+OUT OF JEE SCOPE:
+→ Debye-Hückel theory details
+→ Detailed transport number calculations
+→ Overpotential and activation energy of electrode processes
+
+----------------------------------------------------------------
+SECTION 11: KEY FORMULAS SUMMARY
+----------------------------------------------------------------
+
+E°cell = E°cathode - E°anode
+E = E° - (0.0592/n) log Q  [at 25°C]
+ΔG = -nFE
+ΔG° = -nFE° = -RT ln K
+E° = (0.0592/n) log K  [at 25°C]
+w = (M × I × t) / (n × F)
+F = 96500 C/mol
+Λm = κ × 1000 / M  [κ in S/cm, M in mol/L]
+Λm° = λ°+ + λ°-  (Kohlrausch's Law)
+α = Λm / Λm°  (degree of dissociation)
+Ka = α²C / (1-α) ≈ α²C for weak electrolytes
+
+================================================================
+END OF UNIT 7 NOTES
+================================================================

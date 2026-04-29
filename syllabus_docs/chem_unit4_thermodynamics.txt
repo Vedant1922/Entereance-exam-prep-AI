@@ -1,0 +1,274 @@
+================================================================
+JEE MAIN 2026 | CHEMISTRY NOTES
+UNIT 4: CHEMICAL THERMODYNAMICS
+[Physical Chemistry | JEE Mains Weightage: HIGH — 1-2 questions per paper]
+================================================================
+
+OFFICIAL SYLLABUS SCOPE (JEE Main 2026):
+Fundamentals: system/surroundings, extensive/intensive properties, state functions, entropy, process types.
+First Law: work, heat, internal energy, enthalpy, heat capacity, Hess's law, standard enthalpies.
+Second Law: spontaneity, ΔS universe, ΔG system, ΔG° and equilibrium constant.
+
+----------------------------------------------------------------
+SECTION 1: BASIC THERMODYNAMIC TERMS
+----------------------------------------------------------------
+
+System: The part of universe under study.
+Surroundings: Everything else outside the system.
+Boundary: Separates system from surroundings.
+
+Types of Systems:
+→ Open system: Exchanges both matter AND energy with surroundings. (e.g., open beaker)
+→ Closed system: Exchanges only energy, NOT matter. (e.g., sealed gas in a cylinder)
+→ Isolated system: Exchanges NEITHER matter nor energy. (e.g., thermos flask — ideal)
+
+Types of Processes:
+→ Isothermal: constant temperature (ΔT = 0)
+→ Adiabatic: no heat exchange (q = 0)
+→ Isobaric: constant pressure (ΔP = 0)
+→ Isochoric: constant volume (ΔV = 0)
+
+State Functions vs Path Functions:
+→ State function: depends only on initial and final state, NOT the path taken.
+   Examples: U (internal energy), H (enthalpy), S (entropy), G (Gibbs energy), T, P, V
+→ Path function: depends on the path taken.
+   Examples: q (heat), w (work)
+
+Extensive vs Intensive Properties:
+→ Extensive: depends on amount of matter. Examples: mass, volume, U, H, S, G
+→ Intensive: does not depend on amount. Examples: T, P, density, molar quantities, concentration
+
+----------------------------------------------------------------
+SECTION 2: INTERNAL ENERGY AND FIRST LAW
+----------------------------------------------------------------
+
+Internal Energy (U):
+→ Total energy stored within a system (kinetic + potential of all molecules).
+→ Is a state function — only ΔU matters, not absolute value.
+→ For ideal gas: U depends only on temperature (not P or V).
+
+First Law of Thermodynamics:
+   ΔU = q + w
+   [Energy is conserved — change in internal energy = heat absorbed + work done ON system]
+
+Sign Convention (IUPAC — very important for JEE):
+→ q > 0: heat absorbed by system (endothermic)
+→ q < 0: heat released by system (exothermic)
+→ w > 0: work done ON system (compression)
+→ w < 0: work done BY system (expansion)
+
+Work of Expansion/Compression:
+   w = -Pext × ΔV = -Pext (V2 - V1)
+   [Negative sign because expansion (ΔV > 0) means work done BY system]
+
+For Free Expansion (into vacuum): Pext = 0 → w = 0
+For Isothermal Reversible Expansion of ideal gas:
+   w = -nRT ln(V2/V1) = -2.303 nRT log(V2/V1)
+For Adiabatic process: q = 0, so ΔU = w
+
+JEE TRAP: ΔU for isothermal expansion of ideal gas = 0 (because ΔT = 0 for ideal gas).
+So for isothermal: q = -w (heat absorbed = work done by gas)
+
+----------------------------------------------------------------
+SECTION 3: ENTHALPY
+----------------------------------------------------------------
+
+Enthalpy (H):
+   H = U + PV
+   ΔH = ΔU + Δ(PV)
+
+At constant pressure: ΔH = qp (enthalpy change = heat at constant pressure)
+At constant volume: ΔU = qv (internal energy change = heat at constant volume)
+
+Relationship between ΔH and ΔU for gaseous reactions:
+   ΔH = ΔU + ΔngRT
+   Δng = moles of gaseous products - moles of gaseous reactants
+   R = 8.314 J/mol·K
+
+JEE EXAMPLE: N2(g) + 3H2(g) → 2NH3(g)
+   Δng = 2 - (1+3) = -2
+   ΔH = ΔU + (-2)RT = ΔU - 2RT
+   [ΔH < ΔU for this reaction]
+
+Sign convention:
+→ Exothermic reactions: ΔH < 0 (heat released, products more stable)
+→ Endothermic reactions: ΔH > 0 (heat absorbed)
+
+Heat Capacity:
+→ C = q/ΔT (heat required per unit temperature rise)
+→ Specific heat capacity (c): per gram. Molar heat capacity (Cm): per mole.
+→ For ideal gases: Cp - Cv = R (= 8.314 J/mol·K)
+→ Cp > Cv always (extra work done against pressure at constant P)
+→ γ = Cp/Cv (ratio of heat capacities)
+
+Enthalpy of Reaction = Σ(enthalpy of bonds broken) - Σ(enthalpy of bonds formed)
+Or: ΔH°rxn = Σ ΔHf°(products) - Σ ΔHf°(reactants)
+
+----------------------------------------------------------------
+SECTION 4: STANDARD ENTHALPIES — ALL TYPES
+----------------------------------------------------------------
+
+Standard conditions: 298 K, 1 bar pressure, 1 M concentration.
+
+Standard Enthalpy of Formation (ΔHf°):
+→ Enthalpy change when 1 mole of compound is formed from elements in standard states.
+→ ΔHf° of any element in standard state = 0 (by definition)
+→ Example: ΔHf° of H2O(l) = -286 kJ/mol
+
+Standard Enthalpy of Combustion (ΔHc°):
+→ Enthalpy change when 1 mole of substance burns completely in O2.
+→ Always negative (combustion is exothermic).
+→ Products: CO2(g) for C, H2O(l) for H, SO2(g) for S.
+
+Standard Enthalpy of Atomization (ΔHatom):
+→ Enthalpy to convert 1 mole of substance to gaseous atoms.
+→ For diatomic: equals half the bond dissociation enthalpy.
+→ Always positive (endothermic — bonds must be broken).
+
+Bond Dissociation Enthalpy:
+→ Enthalpy to break 1 mole of specific bond in gaseous state.
+→ Always positive (endothermic).
+→ ΔHrxn = Σ(bonds broken) - Σ(bonds formed)
+→ Positive values = energy input, so: ΔH = ΣBE(reactants) - ΣBE(products)
+
+Lattice Enthalpy:
+→ Enthalpy for formation of ionic crystal from gaseous ions.
+→ Calculated via Born-Haber cycle (Hess's law applied to ionic compounds).
+
+Enthalpy of Solution:
+→ ΔHsoln = ΔHlattice + ΔHhydration
+→ If ΔHhydration > ΔHlattice: exothermic dissolution
+→ If ΔHhydration < ΔHlattice: endothermic dissolution (e.g., NH4NO3 dissolving in water is endothermic)
+
+Enthalpy of Neutralization:
+→ For strong acid + strong base: always -57.1 kJ/mol
+→ For weak acid or weak base: less than 57.1 kJ/mol (some energy used to ionize weak acid/base)
+
+----------------------------------------------------------------
+SECTION 5: HESS'S LAW
+----------------------------------------------------------------
+
+Hess's Law: ΔH for overall reaction = sum of ΔH for individual steps.
+(Because H is a state function — path doesn't matter)
+
+Method: Add thermochemical equations like algebraic equations.
+→ If you reverse a reaction, reverse the sign of ΔH.
+→ If you multiply a reaction by n, multiply ΔH by n.
+
+JEE APPLICATION: Used to calculate:
+→ Enthalpy of reactions that cannot be measured directly.
+→ Lattice enthalpy via Born-Haber cycle.
+→ Bond dissociation enthalpies.
+
+----------------------------------------------------------------
+SECTION 6: SECOND LAW AND ENTROPY
+----------------------------------------------------------------
+
+Second Law: Spontaneous processes increase the entropy of the universe.
+   ΔSuniverse = ΔSsystem + ΔSsurroundings ≥ 0
+
+Entropy (S):
+→ Measure of disorder or randomness in a system.
+→ State function: only ΔS matters.
+→ S increases with: heating, phase change (solid→liquid→gas), dissolution, more moles of gas.
+
+   ΔS = qrev/T (at constant temperature)
+   qrev = heat absorbed in reversible process
+
+Sign of ΔS:
+→ Positive: disorder increases (melting, vaporization, dissolution, more gas moles in products)
+→ Negative: disorder decreases (crystallization, condensation, fewer gas moles in products)
+
+Predicting ΔS sign for reactions:
+→ If Δng(gas) > 0: ΔS > 0 (more moles of gas → more disorder)
+→ If Δng(gas) < 0: ΔS < 0
+
+JEE EXAMPLE: CaCO3(s) → CaO(s) + CO2(g) → Δng = +1 → ΔS > 0
+
+Third Law of Thermodynamics:
+→ Entropy of perfectly crystalline substance at absolute zero (0 K) = 0.
+→ This defines the absolute scale of entropy (unlike U and H where we can only measure changes).
+
+----------------------------------------------------------------
+SECTION 7: GIBBS FREE ENERGY AND SPONTANEITY
+----------------------------------------------------------------
+
+Gibbs Free Energy (G):
+   G = H - TS
+   ΔG = ΔH - TΔS (at constant T and P)
+
+Criteria for Spontaneity:
+   ΔG < 0: Spontaneous (favorable) process
+   ΔG > 0: Non-spontaneous (requires input of energy)
+   ΔG = 0: System at equilibrium (no net change)
+
+SPONTANEITY TABLE — JEE LOVES THESE QUESTIONS:
+ΔH | ΔS | ΔG = ΔH - TΔS | Spontaneity
+-  |  + | Always negative | Always spontaneous (at all temperatures)
++  |  - | Always positive | Never spontaneous (non-spontaneous at all temperatures)
+-  |  - | Depends on T    | Spontaneous at LOW temperature (when |ΔH| > |TΔS|)
++  |  + | Depends on T    | Spontaneous at HIGH temperature (when TΔS > ΔH)
+
+JEE EXAMPLE: Melting of ice: ΔH > 0 (endothermic), ΔS > 0 (disorder increases)
+→ Spontaneous above 0°C (high T favors). At 0°C, ΔG = 0 (equilibrium).
+
+Relationship between ΔG° and Equilibrium Constant:
+   ΔG° = -RT ln K = -2.303 RT log K
+   If ΔG° < 0: K > 1 (products favored at equilibrium)
+   If ΔG° > 0: K < 1 (reactants favored at equilibrium)
+   If ΔG° = 0: K = 1
+
+Relationship between ΔG° and cell potential (electrochemistry link):
+   ΔG° = -nFE°cell
+   [n = moles of electrons, F = Faraday's constant = 96500 C/mol]
+
+Work Function:
+→ Maximum non-PV work = -ΔG (at constant T and P)
+→ This is why ΔG is called "free energy" — it's the energy free/available to do work.
+
+----------------------------------------------------------------
+SECTION 8: JEE-SPECIFIC PATTERNS
+----------------------------------------------------------------
+
+HIGH FREQUENCY QUESTION TYPES:
+1. Calculate ΔH using Hess's law or bond energies
+2. Predict sign of ΔS for given reactions
+3. Determine temperature range for spontaneity given ΔH and ΔS
+4. Calculate ΔH using ΔHf° of products and reactants
+5. Relate ΔG° to equilibrium constant K
+6. Calculate ΔH vs ΔU using ΔH = ΔU + ΔngRT
+7. Born-Haber cycle numerical for lattice enthalpy
+
+CRITICAL TRAPS:
+→ ΔU = 0 for isothermal expansion of ideal gas (NOT for real gases)
+→ ΔHcombustion is always negative (combustion = exothermic). If answer is positive, check signs.
+→ ΔHf° of elements in standard state = 0. Don't assign values to H2(g), O2(g), C(graphite), etc.
+→ Work = -PextΔV. For expansion, ΔV is positive, so w is negative (work done BY system).
+→ In bond energy calculations: energy to break bonds is always positive (endothermic).
+→ Standard state of water for ΔHcombustion is liquid H2O(l) NOT H2O(g).
+
+OUT OF JEE SCOPE:
+→ Statistical thermodynamics
+→ Carnot cycle detailed analysis
+→ Clausius inequality derivation
+→ Residual entropy calculations
+
+----------------------------------------------------------------
+SECTION 9: KEY FORMULAS SUMMARY
+----------------------------------------------------------------
+
+ΔU = q + w
+w = -Pext·ΔV
+w (reversible isothermal) = -nRT ln(V2/V1)
+ΔH = ΔU + ΔngRT
+ΔH = Σ ΔHf°(products) - Σ ΔHf°(reactants)
+ΔH = Σ BE(bonds broken) - Σ BE(bonds formed)
+ΔG = ΔH - TΔS
+ΔG° = -RT ln K = -2.303 RT log K
+ΔG° = -nFE°
+Cp - Cv = R = 8.314 J/mol·K
+ΔSuniverse ≥ 0 (for spontaneous process)
+
+================================================================
+END OF UNIT 4 NOTES
+================================================================

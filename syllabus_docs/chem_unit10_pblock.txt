@@ -1,0 +1,263 @@
+================================================================
+JEE MAIN 2026 | CHEMISTRY NOTES
+UNIT 10: p-BLOCK ELEMENTS (Groups 13-18)
+[Inorganic Chemistry | JEE Mains Weightage: MEDIUM — 1 question per paper]
+================================================================
+
+OFFICIAL SYLLABUS SCOPE (JEE Main 2026):
+Group 13 to Group 18 Elements. General Introduction: electronic configuration and general trends
+in physical and chemical properties across periods and down groups,
+unique behaviour of first element in each group.
+
+----------------------------------------------------------------
+SECTION 1: GROUP 13 — BORON FAMILY
+----------------------------------------------------------------
+
+Elements: B, Al, Ga, In, Tl
+Configuration: ns² np¹ → 3 valence electrons, maximum valence = 3
+
+First Element Uniqueness (Boron):
+→ B is a metalloid (semi-metal), not a metal (unlike Al, Ga, In, Tl which are metals).
+→ B forms only covalent compounds (no B3+ ion due to high charge density).
+→ Al forms both ionic (AlCl3 is partially covalent by Fajan's rules) and covalent.
+→ B has tendency to form three-center two-electron bonds (found in diboranes, B2H6).
+
+Key Trends:
+→ Atomic radius increases down the group.
+→ IE decreases down the group.
+→ Metallic character increases down the group (B → non-metal, Al-Tl → metals).
+→ +1 oxidation state becomes more stable down the group (inert pair effect: Tl is mostly +1).
+
+Important Compounds:
+Borax: Na2B4O7·10H2O (sodium tetraborate)
+→ Used in soap, cleaning, as flux in metallurgy.
+→ Borax bead test: identifies metal ions by characteristic flame color.
+
+Boric acid: B(OH)3 or H3BO3
+→ Weak monobasic acid (Lewis acid, not Bronsted acid — accepts OH- rather than donating H+).
+
+Boron Trifluoride (BF3):
+→ sp² hybridized, trigonal planar, Lewis acid (accepts electron pairs).
+→ Completes octet by acting as Lewis acid with Lewis bases like NH3, F-.
+
+Alums: M+M3+(SO4)2·12H2O (e.g., KAl(SO4)2·12H2O — potash alum)
+→ Double salts. Used in water purification (Al3+ causes coagulation of colloidal impurities).
+
+JEE TRAP: BF3 is sp² hybridized (not sp³). It's an electron-deficient compound — a Lewis acid.
+
+Diagonal Relationship (B and Si):
+→ B resembles Si more than it resembles Al. Both form acidic oxides, covalent compounds, similar type of hydrides.
+
+----------------------------------------------------------------
+SECTION 2: GROUP 14 — CARBON FAMILY
+----------------------------------------------------------------
+
+Elements: C, Si, Ge, Sn, Pb
+Configuration: ns² np² → 4 valence electrons, maximum valence = 4
+
+First Element Uniqueness (Carbon):
+→ Carbon has unique ability to form long chains (catenation) — basis of entire organic chemistry.
+→ No other element in Group 14 can catenate to the same extent.
+→ C-C bond is strong and stable. Si-Si bond is weaker.
+
+Allotropes of Carbon: Graphite, Diamond, Fullerene (Buckminster fullerene, C60), Carbon nanotubes.
+→ Diamond: sp³, tetrahedral network, hardest natural substance, poor conductor.
+→ Graphite: sp², hexagonal layers, layers held by van der Waals forces, good conductor (delocalized π electrons).
+→ Fullerene: sp², C60 soccer ball structure, cage-like.
+
+Silicon:
+→ Si is semiconductor, forms SiO2 (silica), silicates, silicones.
+→ SiO2 is network covalent solid (not molecular like CO2) — Si needs expanded octet.
+→ Why Si doesn't form SiO2 as gas like CO2? Because Si cannot form pπ-pπ double bonds (no π bonding in Si=O).
+
+Inert Pair Effect (down the group):
+→ Sn shows +2 and +4 states. Pb mostly +2 (Pb2+ more stable than Pb4+).
+→ PbO2 (Pb4+) is a strong oxidizing agent (unstable, wants to become Pb2+).
+
+Carbon Oxides:
+→ CO: toxic (binds hemoglobin), reducing agent, Lewis base (has lone pair on C).
+→ CO2: Lewis acid (reacts with Lewis bases like OH- to form carbonate).
+
+JEE TRAP: CO is a Lewis base (donates lone pair from C). CO2 is a Lewis acid (accepts electron pair — reacts with NaOH to give Na2CO3).
+
+----------------------------------------------------------------
+SECTION 3: GROUP 15 — NITROGEN FAMILY (PNICTOGENS)
+----------------------------------------------------------------
+
+Elements: N, P, As, Sb, Bi
+Configuration: ns² np³ → 5 valence electrons
+Maximum oxidation state: +5. Minimum: -3.
+
+First Element Uniqueness (Nitrogen):
+→ N forms multiple bonds (N≡N, N=N, N=O). Due to small size and availability of p orbitals for π bonding.
+→ N has lone pair but does NOT form d-orbitals (unlike P, As, Sb which have d-orbitals).
+→ N cannot form NF5 (no d-orbitals to expand octet). P can form PCl5 (uses d-orbitals).
+→ N2 is extremely stable (triple bond, ΔHf = 0, ΔGf = 0).
+→ Fixation of N2 (converting to usable forms): Haber process (industrial), bacteria (biological).
+
+Nitrogen Compounds for JEE:
+→ NH3 (ammonia): sp³, pyramidal, Lewis base, manufactured by Haber process.
+→ N2O4: colorless gas ⇌ NO2 (brown paramagnetic gas), equilibrium tested in JEE.
+→ HNO3: strong acid, oxidizing agent. Reacts with Cu (giving NO2 with conc., NO with dilute).
+→ HNO2: weak acid, used as diazotizing agent.
+
+Phosphorus allotropes:
+→ White phosphorus (P4): tetrahedral, toxic, reactive, waxy solid.
+→ Red phosphorus: polymer, less reactive, used in match boxes.
+→ Black phosphorus: most stable, semiconducting.
+
+PCl3 (sp³, pyramidal) vs PCl5 (sp³d, trigonal bipyramidal):
+→ PCl3 + Cl2 → PCl5 (phosphorus expands octet using d-orbitals).
+→ Nitrogen CANNOT form NCl5 (no d-orbitals).
+
+Phosphorus Oxoacids (important for JEE):
+→ H3PO4 (orthophosphoric acid): triprotic, +5 oxidation state.
+→ H3PO3 (phosphorous acid): diprotic only (one P-H bond, non-ionizable), +3 oxidation state.
+→ H3PO2 (hypophosphorous acid): monoprotic only, +1 oxidation state.
+→ RULE: Number of ionizable H = number of P-OH groups. P-H bonds are non-ionizable.
+→ H3PO3 is a strong reducing agent (has P-H bond, lower oxidation state).
+
+JEE TRAP: H3PO3 has 3 H atoms but is DIPROTIC (only 2 OH groups; 1 H is directly bonded to P).
+
+----------------------------------------------------------------
+SECTION 4: GROUP 16 — OXYGEN FAMILY (CHALCOGENS)
+----------------------------------------------------------------
+
+Elements: O, S, Se, Te, Po
+Configuration: ns² np⁴ → 6 valence electrons
+Oxidation states: -2, -1, +2, +4, +6
+
+First Element Uniqueness (Oxygen):
+→ O only forms -2 oxidation state (except peroxides -1, OF2 +2, superoxides -½).
+→ O cannot expand octet (no d-orbitals in Period 2).
+→ O forms very strong hydrogen bonds and stable O=O double bond in O2.
+→ S can form SF6 (expands octet). O cannot form OF6.
+→ O is more electronegative than S, so O-H bonds are more polar → stronger hydrogen bonding.
+
+Allotropes of Sulfur:
+→ Rhombic sulfur (α-S): stable below 96°C, crown structure S8 rings.
+→ Monoclinic sulfur (β-S): stable above 96°C, also S8 rings.
+→ Transition temperature: 96°C (interconversion point).
+→ Plastic sulfur: amorphous, formed by pouring boiling S into cold water.
+
+Oxoacids of Sulfur (important):
+→ H2SO4 (sulfuric acid): strong diprotic acid, dehydrating agent, oxidizing agent.
+→ H2SO3 (sulfurous acid): weak, +4 state, reducing agent.
+→ H2S2O7 (pyrosulfuric acid / oleum): formed by SO3 dissolving in H2SO4.
+→ H2S2O8 (peroxodisulfuric acid / Marshall's acid): strongest oxidizing oxoacid of S.
+→ Na2S2O3 (sodium thiosulfate): used as anti-chlor (removes excess Cl2), reacts with I2.
+
+Ozone (O3):
+→ Bent shape, sp² hybridized, resonance structure.
+→ Powerful oxidizing agent (stronger than O2).
+→ Decomposes to O2 + O (atomic oxygen = actual oxidizing agent).
+→ Formed in upper atmosphere from O2 by UV radiation.
+→ Absorbs harmful UV radiation (protects life on Earth).
+→ CFC compounds deplete ozone layer.
+
+JEE TRAP: Ozone is a better oxidizing agent than O2. Tests: turns starch-iodide paper blue (releases I2 from KI), turns moist litmus red (unlike O2 which doesn't affect it).
+
+----------------------------------------------------------------
+SECTION 5: GROUP 17 — HALOGENS
+----------------------------------------------------------------
+
+Elements: F, Cl, Br, I, At
+Configuration: ns² np⁵ → 7 valence electrons, need 1 electron to complete octet.
+Most electronegative group.
+
+First Element Uniqueness (Fluorine):
+→ F has only -1 oxidation state (most electronegative, cannot be oxidized further).
+→ F cannot form positive oxidation states (no d-orbitals available for expansion).
+→ F forms strongest H-bond (F-H···F).
+→ HF is a WEAK acid (despite F being most electronegative) because F-H bond is very strong (high bond dissociation energy makes ionization difficult).
+→ HCl, HBr, HI are strong acids. Only HF is weak.
+
+Acid strength order: HF << HCl < HBr < HI
+(Bond strength: HF > HCl > HBr > HI → Stronger bond = harder to ionize = weaker acid)
+
+Oxidizing power order: F2 > Cl2 > Br2 > I2 (decreases down group, E° becomes less positive)
+Reducing power of halide ions: I- > Br- > Cl- > F- (I- is best reducing agent)
+
+Hydrogen Halide bond strength: HF > HCl > HBr > HI (decreasing down group)
+Boiling point: HF > HI > HBr > HCl (HF has H-bonding, anomaly — normally BP increases down)
+
+Interhalogen Compounds: formed between two different halogens.
+→ XX' type: ClF, BrF, ICl, IBr
+→ XX'3 type: ClF3, BrF3, IF3
+→ XX'5 type: BrF5, IF5
+→ XX'7 type: IF7 (only one of this type)
+→ The lighter halogen is in the center for higher compounds: IF7 has I as center.
+→ They are more reactive than parent halogens.
+
+Oxoacids of Halogens (for Cl, Br, I):
+→ HOCl (hypochlorous acid, +1): weakest, best bleach/germicide.
+→ HClO2 (chlorous acid, +3)
+→ HClO3 (chloric acid, +5)
+→ HClO4 (perchloric acid, +7): strongest acid among oxoacids.
+→ Acid strength increases with oxidation state: HOCl < HClO2 < HClO3 < HClO4.
+→ Oxidizing power: HOCl > HClO2 > HClO3 > HClO4 (opposite to acid strength).
+
+JEE TRAP: HClO4 (perchloric acid) is the strongest acid among all oxoacids. It's in the same league as strong acids like H2SO4.
+
+Chlorine (Cl2) reactions:
+→ With water: Cl2 + H2O ⇌ HCl + HOCl (disproportionation)
+→ With NaOH (cold dilute): Cl2 + 2NaOH → NaCl + NaOCl + H2O (sodium hypochlorite — bleaching agent)
+→ With NaOH (hot conc.): 3Cl2 + 6NaOH → 5NaCl + NaClO3 + 3H2O (sodium chlorate)
+
+Bleaching Powder: Ca(OCl)Cl or Ca(ClO)Cl
+→ Mixture of calcium hypochlorite and chloride.
+→ Bleaching due to OCl- which releases Cl2 in presence of acid (moisture + CO2).
+
+JEE TRAP: Bleaching powder is NOT pure Ca(OCl)2. It's the mixed salt Ca(OCl)Cl.
+
+----------------------------------------------------------------
+SECTION 6: GROUP 18 — NOBLE GASES
+----------------------------------------------------------------
+
+Elements: He, Ne, Ar, Kr, Xe, Rn
+Configuration: ns² np⁶ (completely filled valence shell)
+→ Chemically inert (stable octet or duplet for He).
+→ Monoatomic, non-reactive under normal conditions.
+
+Xenon compounds (Kr can also form few):
+→ XeF2, XeF4, XeF6 (fluorides), XeO3, XeOF4
+→ XeF2: linear, sp³d hybridization (3 lone pairs).
+→ XeF4: square planar, sp³d² hybridization (2 lone pairs).
+→ XeF6: distorted octahedral, sp³d³ hybridization (1 lone pair).
+
+JEE TRAP: Even noble gases can form compounds (with highly electronegative F and O under high pressure). Xe compounds are more stable than Kr compounds.
+
+Applications: He (balloons, diving mixtures), Ne (neon signs), Ar (inert atmosphere in metallurgy, light bulbs), Kr and Xe (photography, lighting).
+
+----------------------------------------------------------------
+SECTION 7: JEE-SPECIFIC PATTERNS
+----------------------------------------------------------------
+
+HIGH FREQUENCY QUESTION TYPES:
+1. Compare properties within a group or across period for p-block elements
+2. Identify number of ionizable H in phosphorus oxoacids
+3. Identify oxidation state of element in compound
+4. Predict product of halogen reaction with NaOH (hot vs cold)
+5. Identify allotropes and their properties (carbon, sulfur, phosphorus)
+6. Compare acid strength of hydrohalic acids or oxoacids
+7. XeF compound shapes using VSEPR
+8. Explain why first element differs from rest of group
+
+CRITICAL TRAPS:
+→ H3PO3 is diprotic (not triprotic). H3PO2 is monoprotic.
+→ HF is a weak acid (NOT strong despite F being most electronegative).
+→ Acid strength of hydrohalic acids: HI > HBr > HCl > HF (weakest).
+→ Acid strength of oxoacids of Cl: HClO4 > HClO3 > HClO2 > HOCl.
+→ Bleaching powder formula: Ca(OCl)Cl (not Ca(ClO)2).
+→ N cannot form NCl5 (no d-orbitals). P can form PCl5.
+→ CO is Lewis base (lone pair on C). CO2 is Lewis acid.
+→ Cl2 + cold NaOH → NaOCl. Cl2 + hot NaOH → NaClO3.
+
+OUT OF JEE SCOPE:
+→ Detailed synthesis routes for all p-block compounds
+→ Lattice structures of ionic p-block compounds
+→ Industrial extraction of noble gases
+
+================================================================
+END OF UNIT 10 NOTES
+================================================================

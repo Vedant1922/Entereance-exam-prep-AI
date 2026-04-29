@@ -1,0 +1,265 @@
+================================================================
+JEE MAIN 2026 | CHEMISTRY NOTES
+UNIT 11: d-BLOCK AND f-BLOCK ELEMENTS
+[Inorganic Chemistry | JEE Mains Weightage: MEDIUM — 1 question per paper]
+================================================================
+
+OFFICIAL SYLLABUS SCOPE (JEE Main 2026):
+Transition elements: general introduction, electronic configuration, occurrence and characteristics,
+general trends in properties of first row transition elements — physical properties, IE, oxidation states,
+atomic radii, colour, catalytic behaviour, magnetic properties, complex formation, interstitial compounds,
+alloy formation, K2Cr2O7 and KMnO4.
+Lanthanoids: electronic configuration, oxidation states, lanthanoid contraction.
+Actinoids: electronic configuration and oxidation states.
+
+----------------------------------------------------------------
+SECTION 1: d-BLOCK ELEMENTS (TRANSITION METALS)
+----------------------------------------------------------------
+
+Definition: Elements in which d-orbitals are progressively filled.
+d-block: Groups 3-12 (Sc to Zn, Y to Cd, La to Hg, Ac to Cn)
+First row transition metals: Sc (Z=21) to Zn (Z=30)
+
+General Electronic Configuration: [Noble gas] (n-1)d^1-10 ns^0-2
+
+IMPORTANT CONFIGURATIONS (must memorize):
+Sc: [Ar] 3d¹ 4s²
+Ti: [Ar] 3d² 4s²
+V: [Ar] 3d³ 4s²
+Cr: [Ar] 3d⁵ 4s¹ (EXCEPTION — half-filled 3d is more stable)
+Mn: [Ar] 3d⁵ 4s²
+Fe: [Ar] 3d⁶ 4s²
+Co: [Ar] 3d⁷ 4s²
+Ni: [Ar] 3d⁸ 4s²
+Cu: [Ar] 3d¹⁰ 4s¹ (EXCEPTION — completely filled 3d is more stable)
+Zn: [Ar] 3d¹⁰ 4s² (NOT a transition metal by strict definition — d is completely filled)
+
+Electronic configurations of IONS (remove 4s before 3d):
+Fe²⁺: [Ar] 3d⁶ (4s removed first)
+Fe³⁺: [Ar] 3d⁵
+Cu²⁺: [Ar] 3d⁹
+Cr³⁺: [Ar] 3d³
+
+JEE TRAP: When forming cations of transition metals, ALWAYS remove 4s electrons FIRST, then 3d.
+So Fe → Fe2+ removes both 4s electrons, NOT 3d.
+
+----------------------------------------------------------------
+SECTION 2: GENERAL PROPERTIES OF TRANSITION METALS
+----------------------------------------------------------------
+
+PHYSICAL PROPERTIES:
+→ High melting and boiling points (due to strong metallic bonding, involvement of d-electrons in bonding).
+→ High density.
+→ High electrical and thermal conductivity.
+→ Malleable and ductile.
+→ Exception: Zn and Hg have low melting points (Hg is liquid at room temperature). Mercury's d-orbitals are completely filled and don't contribute to metallic bonding.
+
+ATOMIC RADII:
+→ Atomic radius shows a small decrease from Sc to Cr (increasing nuclear charge), then remains nearly constant from Cr to Ni (addition of electrons in d-orbitals increases repulsion, counteracting nuclear charge increase), then slightly increases for Cu and Zn.
+→ Key point: atomic radii of 2nd and 3rd row transition metals are nearly identical due to lanthanoid contraction.
+
+IONIZATION ENTHALPY:
+→ Generally increases from left to right (increasing Z, decreasing radius).
+→ Irregular trend because ionization involves both 4s and 3d electrons.
+
+OXIDATION STATES:
+→ Show VARIABLE oxidation states — key characteristic of transition metals.
+→ Reason: d-electrons are close in energy to s-electrons → both can participate in bonding.
+→ Minimum OS = +2 (lose 2 4s electrons) for most transition metals.
+→ Maximum OS = group number for metals in Groups 3-7 (for first row).
+→ Mn shows widest range: +2 to +7. Most oxidation states of any element in first row.
+→ After group 8, maximum OS doesn't reach group number.
+
+Common oxidation states:
+Fe: +2, +3    |   Cr: +2, +3, +6    |   Mn: +2, +3, +4, +6, +7
+Cu: +1, +2    |   Co: +2, +3         |   V: +2, +3, +4, +5
+
+JEE TRAP: Cu+ disproportionates in water: 2Cu+ → Cu + Cu2+. So Cu+ is unstable in aqueous solution. Cu2+ is more stable.
+But Cu+ is stable in solid state as CuCl, Cu2O (insoluble, can't disproportionate).
+
+COLOUR:
+→ Most transition metal compounds are colored.
+→ Reason: d-d electron transitions. Electron absorbs visible light, jumps from lower d-level to higher d-level. Transmitted light = complement of absorbed color.
+→ Requires PARTIALLY filled d-orbitals. If d is empty (Sc3+: 3d⁰) or completely filled (Zn2+: 3d¹⁰, Cu+: 3d¹⁰) → COLORLESS compounds.
+→ Color depends on oxidation state and surrounding ligands (they affect energy of d-orbital splitting).
+
+JEE EXAMPLES:
+→ Cu2+ (3d⁹): blue in water (aqua complex)
+→ Fe3+ (3d⁵): pale violet or yellow in different states
+→ MnO4- (Mn⁷⁺, 3d⁰): PURPLE/VIOLET — but wait, 3d⁰ means no d-d transition! Color here is due to CHARGE TRANSFER, not d-d transition.
+→ K2Cr2O7: orange-red (Cr⁶⁺, 3d⁰) — also charge transfer.
+→ Zn2+ compounds: white/colorless (3d¹⁰, no d-d transition possible).
+
+JEE TRAP: MnO4- is deeply purple but Mn is +7 with d⁰ — color is due to charge transfer from O to Mn, not d-d transition.
+
+MAGNETIC PROPERTIES:
+→ Paramagnetic: has unpaired electrons (attracted to magnetic field).
+→ Diamagnetic: all electrons paired (weakly repelled).
+→ Spin-only magnetic moment (μ):
+   μ = √[n(n+2)] BM (Bohr Magneton)
+   where n = number of unpaired electrons
+
+Unpaired electrons and μ:
+n=0: μ=0 (diamagnetic)
+n=1: μ=1.73 BM
+n=2: μ=2.83 BM
+n=3: μ=3.87 BM
+n=4: μ=4.90 BM
+n=5: μ=5.92 BM
+
+JEE EXAMPLE: Fe2+ has 3d⁶ configuration → 4 unpaired electrons → μ = √(4×6) = √24 = 4.90 BM
+
+CATALYTIC PROPERTIES:
+→ Transition metals and their compounds are widely used as catalysts.
+→ Reason: variable oxidation states, ability to form intermediate compounds.
+→ Examples:
+   Fe catalyst in Haber process (N2 + 3H2 → 2NH3)
+   V2O5 in Contact process (SO2 + ½O2 → SO3, for H2SO4 production)
+   Ni in hydrogenation of vegetable oils
+   Pt, Pd in catalytic converters (car exhaust)
+   MnO2 as oxidant in various reactions
+   ZnO + Cr2O3 catalyst in methanol synthesis
+
+INTERSTITIAL COMPOUNDS:
+→ Small atoms (H, C, N) occupy interstitial holes in metallic lattice.
+→ Examples: steel (Fe + C), TiC, Mn4N.
+→ Properties: harder than pure metals, lower ductility, higher melting points.
+→ Non-stoichiometric composition (TiC0.7, not always exact ratios).
+
+ALLOY FORMATION:
+→ Transition metals mix with each other (similar radii, similar electronegativity).
+→ Form substitutional alloys (one atom replaces another in lattice).
+→ Examples: Stainless steel (Fe + Cr + Ni), Brass (Cu + Zn), Bronze (Cu + Sn).
+
+----------------------------------------------------------------
+SECTION 3: K2Cr2O7 (POTASSIUM DICHROMATE) — HIGH JEE IMPORTANCE
+----------------------------------------------------------------
+
+Preparation: 
+2FeCr2O4 + 4Na2CO3 + 7/2 O2 → 4Na2CrO4 + Fe2O3 + 4CO2 (roasting)
+Na2CrO4 + H2SO4 → Na2Cr2O7 + Na2SO4 + H2O
+Na2Cr2O7 + 2KCl → K2Cr2O7 + 2NaCl (potassium dichromate crystalized out)
+
+Properties:
+→ Orange-red solid, Cr is in +6 oxidation state.
+→ Acidic solution: dichromate form (Cr2O7²-)  [orange]
+→ Basic solution: chromate form (CrO4²-)       [yellow]
+   Cr2O7²- + 2OH- → 2CrO4²- + H2O (acidify → reverse)
+→ This chromate-dichromate equilibrium is tested in JEE.
+
+Reactions as oxidizing agent (in acidic medium):
+Cr2O7²- + 14H+ + 6e- → 2Cr3+ + 7H2O  (standard reaction — E° = +1.33 V)
+
+JEE Applications:
+→ Oxidizes Fe2+ to Fe3+: Cr2O7²- + 6Fe2+ + 14H+ → 2Cr3+ + 6Fe3+ + 7H2O
+→ Oxidizes I- to I2
+→ Oxidizes SO2 to SO3
+→ Used in analytical chemistry and chrome tanning of leather.
+
+JEE TRAP: Dichromate is reduced to Cr3+ (green color) during oxidizing reactions. Color change orange → green is a test for dichromate in acidic conditions.
+
+----------------------------------------------------------------
+SECTION 4: KMnO4 (POTASSIUM PERMANGANATE) — HIGH JEE IMPORTANCE
+----------------------------------------------------------------
+
+Preparation:
+2MnO2 + 2KOH + O2 → 2K2MnO4 + H2O (alkaline fusion)
+K2MnO4 (green) → KMnO4 (purple) + ... (electrolytic oxidation)
+Or: 3K2MnO4 + 2CO2 → 2KMnO4 + MnO2 + 2K2CO3 (disproportionation in neutral/acidic)
+
+Properties:
+→ Dark purple (violet) solid. Mn is in +7 oxidation state (highest for Mn).
+→ Strong oxidizing agent in all pH conditions but with different products.
+
+Products of KMnO4 reduction:
+
+In ACIDIC medium:
+   MnO4- + 8H+ + 5e- → Mn2+ + 4H2O  (Mn: +7 → +2, colorless)
+   
+In NEUTRAL or ALKALINE medium:
+   MnO4- + 2H2O + 3e- → MnO2 + 4OH-  (Mn: +7 → +4, brown precipitate)
+   
+In STRONGLY ALKALINE medium:
+   MnO4- + e- → MnO4²-  (Mn: +7 → +6, green manganate ion)
+
+JEE APPLICATIONS:
+→ Acidic KMnO4 titrations: KMnO4 is self-indicating (purple → colorless at endpoint).
+→ Oxidizes: Fe2+ → Fe3+, C2O4²- → CO2, H2O2 → O2, Cl- → Cl2, I- → I2, SO3²- → SO4²-.
+→ Baeyer's reagent: alkaline KMnO4 (turns colorless with alkenes — dihydroxylation).
+
+JEE TRAP: In acidic KMnO4 titrations, H2SO4 is used to acidify (not HCl — Cl- would reduce KMnO4 and be oxidized itself, interfering with titration). HNO3 also avoided (oxidizing acid).
+
+----------------------------------------------------------------
+SECTION 5: f-BLOCK ELEMENTS
+----------------------------------------------------------------
+
+LANTHANOIDS (Rare Earth Elements):
+Elements: Ce (58) to Lu (71) — 14 elements after La (57).
+General configuration: [Xe] 4f^1-14 5d^0-1 6s²
+
+Properties:
+→ All have +3 as most common oxidation state.
+→ Ce can be +4 (extra stability of empty 4f → Ce4+ is [Xe] configuration).
+→ Eu and Yb can be +2 (extra stability of half-filled Eu2+ is 4f7 and filled Yb2+ is 4f14).
+→ Lanthanoid Contraction: steady decrease in atomic and ionic radius from La to Lu as 4f electrons are added. 4f electrons provide poor shielding → Zeff increases → radius decreases.
+
+Lanthanoid Contraction Consequences:
+1. 2nd and 3rd row transition metals have very similar radii (Hf ≈ Zr, Ta ≈ Nb, W ≈ Mo).
+   This makes them extremely hard to separate chemically.
+2. Increased density of 3rd row transition metals compared to what would be expected without lanthanoid contraction.
+
+ACTINOIDS:
+Elements: Th (90) to Lr (103) — 14 elements after Ac (89).
+General configuration: [Rn] 5f^1-14 6d^0-2 7s²
+
+Differences from lanthanoids:
+→ 5f orbitals more diffuse than 4f → actinoids show more variable oxidation states (like d-block).
+→ +3 is common but higher states (+4, +5, +6) are also seen in early actinoids.
+→ All actinoids are radioactive. Most are synthetically produced.
+→ Thorium (Th), Uranium (U), and Plutonium (Pu) are most important industrially (nuclear).
+
+JEE: Know that actinoids have more oxidation state variability than lanthanoids due to 5f being closer in energy to 5d and 6s orbitals.
+
+----------------------------------------------------------------
+SECTION 6: JEE-SPECIFIC PATTERNS
+----------------------------------------------------------------
+
+HIGH FREQUENCY QUESTION TYPES:
+1. Electronic configurations of transition metals and their ions
+2. Identify number of unpaired electrons → calculate magnetic moment
+3. Write or balance KMnO4 reactions in different media
+4. Chromate-dichromate equilibrium and pH dependence
+5. Explain why transition metal compounds are colored
+6. Explain variable oxidation states with examples
+7. Lanthanoid contraction and its consequences
+8. Why Zn2+ and Cu+ compounds are colorless
+
+CRITICAL TRAPS:
+→ When forming transition metal cations: remove 4s BEFORE 3d.
+→ Fe2+ has 4 unpaired electrons (3d⁶ with Hund's rule), NOT 2.
+→ MnO4- is colored due to CHARGE TRANSFER (not d-d transition) — Mn is 3d⁰.
+→ K2Cr2O7 + acidic medium → Cr3+ (green). Cr2O7²- is orange, CrO4²- is yellow.
+→ KMnO4 in acid → Mn2+ (colorless). In neutral → MnO2 (brown). In strong alkali → MnO4²- (green).
+→ Lanthanoid contraction makes 2nd and 3rd row d-block pairs nearly same size (Zr/Hf, Nb/Ta, Mo/W).
+
+OUT OF JEE SCOPE:
+→ Crystal field theory in detail (covered in Coordination Compounds)
+→ Detailed extraction metallurgy of transition metals
+→ Detailed nuclear reactions of actinoids
+
+----------------------------------------------------------------
+SECTION 7: KEY FACTS SUMMARY
+----------------------------------------------------------------
+
+Cr: [Ar] 3d⁵ 4s¹ (exception), Cu: [Ar] 3d¹⁰ 4s¹ (exception)
+Mn has widest range of oxidation states (+2 to +7)
+μ = √[n(n+2)] BM (n = unpaired electrons)
+Colourless: Sc3+(d⁰), Ti4+(d⁰), Zn2+(d¹⁰), Cu+(d¹⁰)
+KMnO4: Acid → Mn2+, Neutral → MnO2, Strong alkali → MnO4²-
+K2Cr2O7: Acidic → Cr2O7²-(orange), Basic → CrO4²-(yellow)
+Lanthanoid contraction: 4f poor shielding → radii decrease smoothly
+All actinoids are radioactive
+
+================================================================
+END OF UNIT 11 NOTES
+================================================================

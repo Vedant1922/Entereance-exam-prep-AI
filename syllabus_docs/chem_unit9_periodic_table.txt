@@ -1,0 +1,202 @@
+================================================================
+JEE MAIN 2026 | CHEMISTRY NOTES
+UNIT 9: CLASSIFICATION OF ELEMENTS AND PERIODICITY IN PROPERTIES
+[Inorganic Chemistry | JEE Mains Weightage: MEDIUM-HIGH — 1 question per paper]
+================================================================
+
+OFFICIAL SYLLABUS SCOPE (JEE Main 2026):
+Modern periodic law, present form of periodic table, s, p, d, f block elements,
+periodic trends in atomic and ionic radii, ionization enthalpy, electron gain enthalpy,
+valence, oxidation states, chemical reactivity.
+
+----------------------------------------------------------------
+SECTION 1: MODERN PERIODIC LAW AND TABLE STRUCTURE
+----------------------------------------------------------------
+
+Modern Periodic Law (Moseley): Properties of elements are periodic functions of their ATOMIC NUMBER (not atomic mass).
+
+Structure of the Periodic Table:
+→ 7 Periods (horizontal rows), 18 Groups (vertical columns)
+→ Period number = number of principal quantum shells occupied.
+
+Period 1: 2 elements (H, He) — fills 1s
+Period 2: 8 elements (Li to Ne) — fills 2s, 2p
+Period 3: 8 elements (Na to Ar) — fills 3s, 3p
+Period 4: 18 elements (K to Kr) — fills 4s, 3d, 4p
+Period 5: 18 elements (Rb to Xe) — fills 5s, 4d, 5p
+Period 6: 32 elements — fills 6s, 4f, 5d, 6p
+Period 7: 32 elements — fills 7s, 5f, 6d, 7p
+
+Block Classification (based on which subshell is being filled):
+→ s-block: Groups 1 and 2 (Li, Na, K... and Be, Mg, Ca...) — filling s orbital
+→ p-block: Groups 13-18 (B, C, N... to He/Ne/Ar...) — filling p orbital
+→ d-block: Groups 3-12 (transition metals, Sc to Zn, etc.) — filling d orbital
+→ f-block: Lanthanoids and Actinoids (inner transition elements) — filling f orbital
+
+JEE TRAP: H and He are unique.
+→ H is placed in Group 1 (like alkali metals) but also resembles halogens. It's neither a metal nor non-metal.
+→ He is in Group 18 (noble gases) but is an s-block element.
+
+Group Naming (old IUPAC):
+Group 1: Alkali metals (Li, Na, K, Rb, Cs, Fr)
+Group 2: Alkaline earth metals (Be, Mg, Ca, Sr, Ba, Ra)
+Group 17: Halogens (F, Cl, Br, I, At)
+Group 18: Noble gases (He, Ne, Ar, Kr, Xe, Rn)
+
+----------------------------------------------------------------
+SECTION 2: PERIODIC TRENDS IN PROPERTIES
+----------------------------------------------------------------
+
+ATOMIC RADIUS:
+→ Defined as half the internuclear distance between identical neighboring atoms.
+→ Covalent radius: half of bond length in diatomic molecule (for non-metals).
+→ Van der Waals radius: half of internuclear distance between non-bonded atoms.
+→ Van der Waals > Covalent radius.
+
+Trend across period (left to right):
+→ Atomic radius DECREASES.
+→ Reason: nuclear charge (Z) increases, electrons added to same shell — increased Zeff pulls electrons closer.
+
+Trend down group (top to bottom):
+→ Atomic radius INCREASES.
+→ Reason: new shell added, electrons farther from nucleus despite more protons.
+
+Exceptions:
+→ Noble gases have very large van der Waals radii (appear to break the trend in groups, but comparing different types of radii).
+
+IONIC RADIUS:
+→ Cation (M+) < parent atom (electrons removed → less shielding → nucleus pulls remaining harder)
+→ Anion (X-) > parent atom (extra electrons added → more repulsion → expanded)
+
+Isoelectronic species (same number of electrons, different Z):
+→ Higher nuclear charge = smaller radius.
+→ Order: N3- > O2- > F- > Ne > Na+ > Mg2+ > Al3+
+→ All have 10 electrons, but Z increases → more attraction → smaller size.
+
+JEE TRAP: Along isoelectronic series: higher Z → SMALLER size (more protons pulling same number of electrons).
+
+----------------------------------------------------------------
+
+IONIZATION ENTHALPY (Ionization Energy, IE):
+→ Minimum energy required to remove outermost electron from neutral gaseous atom.
+→ M(g) → M+(g) + e-   ΔH = IE1 (first ionization energy)
+→ M+(g) → M2+(g) + e-  ΔH = IE2 (second IE)
+→ Always positive (endothermic — energy must be supplied).
+→ IE2 > IE1 always (harder to remove electron from positive ion).
+
+Trend across period:
+→ IE generally INCREASES left to right.
+→ Higher Zeff, smaller radius → more tightly bound electrons → harder to remove.
+
+Exceptions in 2nd period:
+→ Be (Z=4) > B (Z=5): B has one 2p electron which is more shielded by 2s electrons and easier to remove.
+   IE order: Li < B < Be (Be doesn't follow the expected increase — its 2s² is harder to remove than B's 2p¹)
+→ N (Z=7) > O (Z=8): N has half-filled 2p³ (extra stability, symmetric). O has 2p⁴ (paired electrons repel each other), so O has lower IE than N.
+   IE order: N > O (anomaly — half-filled 2p is extra stable)
+
+MUST MEMORIZE FOR JEE:
+In Period 2: Li < B < Be < C < O < N < F < Ne
+(Two major exceptions: Be > B, and N > O)
+
+Trend down group:
+→ IE DECREASES (atomic radius increases → outer electrons farther from nucleus → easier to remove).
+
+----------------------------------------------------------------
+
+ELECTRON GAIN ENTHALPY (Electron Affinity):
+→ Energy change when electron is added to neutral gaseous atom.
+→ X(g) + e- → X-(g) ΔH = ΔegH
+→ Can be negative (energy released) or positive (energy required).
+
+Trend across period:
+→ Generally becomes more negative (more energy released) from left to right.
+→ Non-metals readily accept electrons.
+
+Exceptions:
+→ F (fluorine) has lower (less negative) electron gain enthalpy than Cl despite being more electronegative.
+   Reason: F is extremely small — electron-electron repulsion in compact 2p orbital is high when adding electron.
+   Cl > F in electron gain enthalpy: Cl(-349) > F(-328) kJ/mol
+→ Noble gases: very high positive electron gain enthalpy (resist gaining electrons).
+→ N, Be, Mg have positive (unfavorable) electron gain enthalpy (stable configurations).
+
+CRITICAL JEE FACT: Cl has the highest electron gain enthalpy among halogens (NOT fluorine).
+
+Trend down group:
+→ Electron gain enthalpy becomes less negative (less energy released) going down the group.
+
+----------------------------------------------------------------
+
+ELECTRONEGATIVITY:
+→ Ability of bonded atom to attract shared electron pair toward itself.
+→ Pauling scale: F = 4.0 (highest), Cs = 0.7 (lowest among stable elements).
+
+Trend across period: INCREASES (left to right)
+Trend down group: DECREASES
+
+Order: F > O > N ≈ Cl > Br > C > S > I > H > P...
+
+JEE APPLICATION:
+→ Higher electronegativity difference → more ionic bond character.
+→ Electronegativity determines polarity of bonds and direction of dipole moment.
+→ Pauling used electronegativity to explain bond character in Fajan's rules.
+
+----------------------------------------------------------------
+SECTION 3: VALENCE AND OXIDATION STATES
+----------------------------------------------------------------
+
+Valence = combining capacity of element.
+Most elements show valence = group number or (18 - group number) for p-block.
+
+Common Oxidation States for JEE:
+→ Group 1: +1 only
+→ Group 2: +2 only
+→ Group 13: +3 (and +1 for heavier elements — inert pair effect)
+→ Group 14: +4, +2 (inert pair effect increases down group)
+→ Group 15: -3, +3, +5
+→ Group 16: -2, +4, +6
+→ Group 17: -1, +1, +3, +5, +7 (F only -1, no +ve states for F)
+→ Group 18: 0 (Kr, Xe can be +2, +4 in compounds — but rarely asked)
+
+Inert Pair Effect: In heavier p-block elements (Tl, Pb, Bi), +2 lower oxidation state becomes increasingly stable because the s-electron pair resists participation in bonding.
+→ Tl (+1 > +3), Pb (+2 > +4), Bi (+3 > +5) are more stable lower states.
+
+----------------------------------------------------------------
+SECTION 4: JEE-SPECIFIC PATTERNS
+----------------------------------------------------------------
+
+HIGH FREQUENCY QUESTION TYPES:
+1. Identify block, period, group of element given atomic number or configuration
+2. Compare atomic/ionic radii of given species (including isoelectronic)
+3. Arrange elements in increasing/decreasing order of IE
+4. Identify exception in periodic trend (N>O, Cl>F in electron affinity, Be>B)
+5. Compare electronegativity and predict bond polarity
+6. Identify inert pair effect in heavier p-block elements
+
+CRITICAL TRAPS:
+→ F has highest electronegativity but NOT the highest electron gain enthalpy (Cl does).
+→ N > O in ionization enthalpy (half-filled stability of N's 2p³).
+→ Be > B in ionization enthalpy (filled 2s² vs empty 2p).
+→ Ionic radius: cation is SMALLER than parent atom. Anion is LARGER.
+→ In isoelectronic series: MORE protons = SMALLER radius (more attraction with same electrons).
+→ IE2 is always greater than IE1 for same atom.
+
+OUT OF JEE SCOPE:
+→ Slater's rules for calculating effective nuclear charge (detailed calculation)
+→ Detailed derivation of Pauling electronegativity scale
+→ Electron affinity of exotic elements beyond Period 3
+
+----------------------------------------------------------------
+SECTION 5: KEY RELATIONSHIPS SUMMARY
+----------------------------------------------------------------
+
+Across period (L to R): Atomic radius ↓, IE ↑, EN ↑, EA more negative
+Down group: Atomic radius ↑, IE ↓, EN ↓
+Cation < parent atom < Anion (size comparison)
+Isoelectronic: higher Z = smaller size
+Exceptions: Be > B (IE), N > O (IE), Cl > F (electron gain enthalpy)
+F has highest EN (4.0 Pauling scale)
+Cl has highest electron gain enthalpy
+
+================================================================
+END OF UNIT 9 NOTES
+================================================================
