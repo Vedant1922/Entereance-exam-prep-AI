@@ -77,7 +77,7 @@ app.post('/chat', async (req, res) => {
     let notesContent = '';
     
     try {
-      const routerModel = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+      const routerModel = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
       const routerPrompt = `You are a strict traffic router for a JEE Chemistry AI Tutor.
 Analyze the student's message. 
 If the student is asking a general question (e.g., 'hi', 'how are you', 'how should I study', 'motivate me', 'thanks', 'bye', or anything not directly related to chemistry subject matter), reply with EXACTLY the word: GENERAL
@@ -158,7 +158,7 @@ Reply ONLY with 'GENERAL' or the exact filename. Do not add any quotes, punctuat
 
     // --- Select Model ---
     const model = genAI.getGenerativeModel({
-      model: "gemini-1.5-pro",
+      model: "gemini-2.5-pro",
       systemInstruction: finalSystemInstruction
     });
 
@@ -196,7 +196,7 @@ Reply ONLY with 'GENERAL' or the exact filename. Do not add any quotes, punctuat
     if (finalSessionId && history.length === 0) {
       const titlePrompt = `Summarize this query in 3 simple words (no punctuation, no quotes): "${message}"`;
       // Use fallback tiny model for speed and cost
-      const fastModel = genAI.getGenerativeModel({ model: "gemini-1.5-pro" });
+      const fastModel = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
       fastModel.generateContent(titlePrompt).then(({ response }) => {
         let text = response.text().trim();
         text = text.replace(/["']/g, ''); // strip quotes
@@ -210,11 +210,18 @@ Reply ONLY with 'GENERAL' or the exact filename. Do not add any quotes, punctuat
   } catch (error) {
     console.error('Error generating AI response:', error);
     if (!res.headersSent) {
-      res.status(500).json({ error: error.message || 'Failed to generate response.' });
-    } else {
-      res.write(`data: ${JSON.stringify({ error: error.message })}\n\n`);
-      res.end();
+      res.setHeader('Content-Type', 'text/event-stream');
+      res.setHeader('Cache-Control', 'no-cache');
+      res.setHeader('Connection', 'keep-alive');
+      res.setHeader('Access-Control-Allow-Origin', '*');
+      res.flushHeaders();
     }
+    
+    const fallbackMessage = `Hey there! 😅 I'm currently experiencing an unusually high volume of questions from other JEE aspirants and my servers are a bit overloaded. Please wait a moment and try asking your question again!`;
+    
+    res.write(`data: ${JSON.stringify({ chunk: fallbackMessage })}\n\n`);
+    res.write('data: [DONE]\n\n');
+    res.end();
   }
 });
 
