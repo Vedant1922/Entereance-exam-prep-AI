@@ -3,7 +3,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import fs from 'fs';
 import path from 'path';
-import { GoogleGenerativeAI } from '@google/generative-ai';
+import OpenAI from 'openai';
 import { createClient } from '@supabase/supabase-js';
 
 // Load environment variables from a .env file into process.env
@@ -19,8 +19,10 @@ app.use(cors());
 // Middleware to automatically parse incoming JSON payloads in the request body
 app.use(express.json());
 
-// Initialize the Google Gemini AI client using the API key from environment variables
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+// Initialize the OpenAI client using the API key from environment variables
+const openai = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY,
+});
 
 // Initialize Supabase Client
 const supabaseUrl = process.env.SUPABASE_URL;
@@ -33,7 +35,7 @@ export const supabase = createClient(supabaseUrl, supabaseKey);
 /**
  * POST /chat endpoint
  * Expected JSON Input: { "message": "your text here" }
- * Expected JSON Output: { "response": "AI's text here" }
+ * Expected JSON Output: SSE stream of { "chunk": "..." } events
  */
 app.post('/chat', async (req, res) => {
   try {
@@ -72,12 +74,11 @@ app.post('/chat', async (req, res) => {
       });
     }
 
-    // --- AI Router: Two-Pass Classification ---
+    // --- AI Router: Classify the student's question (gpt-4o-mini for speed & cost) ---
     let chapterFilename = null;
     let notesContent = '';
     
     try {
-      const routerModel = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
       const routerPrompt = `You are a strict traffic router for a JEE Chemistry AI Tutor.
 Analyze the student's message. 
 If the student is asking a general question (e.g., 'hi', 'how are you', 'how should I study', 'motivate me', 'thanks', 'bye', or anything not directly related to chemistry subject matter), reply with EXACTLY the word: GENERAL
@@ -104,8 +105,14 @@ chem_unit19_20_biomolecules_practical
 Student message: "${message}"
 Reply ONLY with 'GENERAL' or the exact filename. Do not add any quotes, punctuation, or other text.`;
 
-      const routerResult = await routerModel.generateContent(routerPrompt);
-      const routerResponse = routerResult.response.text().trim().replace(/['"]/g, ''); // strip any quotes
+      const routerResult = await openai.chat.completions.create({
+        model: "gpt-4o-mini",
+        messages: [{ role: "user", content: routerPrompt }],
+        max_tokens: 20,
+        temperature: 0,
+      });
+
+      const routerResponse = routerResult.choices[0]?.message?.content?.trim().replace(/['\"]/g, '') || 'GENERAL';
       console.log(`[AI Router] Classified message as: ${routerResponse}`);
 
       if (routerResponse !== 'GENERAL' && routerResponse.length > 0) {
@@ -156,27 +163,33 @@ Reply ONLY with 'GENERAL' or the exact filename. Do not add any quotes, punctuat
       res.write(`data: ${JSON.stringify({ sessionId: finalSessionId })}\n\n`);
     }
 
-    // --- Select Model ---
-    const model = genAI.getGenerativeModel({
-      model: "gemini-2.5-flash",
-      systemInstruction: finalSystemInstruction
-    });
-
-    // --- Format History ---
+    // --- Format History for OpenAI ---
+    // OpenAI uses 'assistant' role (not 'model' like Gemini), which matches our DB perfectly
     const recentHistory = history.slice(-5);
     const formattedHistory = recentHistory.map(msg => ({
-      role: msg.role === 'assistant' ? 'model' : 'user',
-      parts: [{ text: msg.content }]
+      role: msg.role === 'assistant' ? 'assistant' : 'user',
+      content: msg.content
     }));
 
-    // --- Start Chat & Stream ---
-    const chat = model.startChat({ history: formattedHistory });
-    const result = await chat.sendMessageStream(message);
+    // --- Build the full messages array for OpenAI ---
+    const openaiMessages = [
+      { role: "system", content: finalSystemInstruction },
+      ...formattedHistory,
+      { role: "user", content: message }
+    ];
+
+    // --- Stream the response from GPT-4o ---
+    const stream = await openai.chat.completions.create({
+      model: "gpt-4o",
+      messages: openaiMessages,
+      stream: true,
+      temperature: 0.7,
+    });
 
     let fullAssistantResponse = '';
 
-    for await (const chunk of result.stream) {
-      const chunkText = chunk.text();
+    for await (const chunk of stream) {
+      const chunkText = chunk.choices[0]?.delta?.content || '';
       if (chunkText) {
         fullAssistantResponse += chunkText;
         res.write(`data: ${JSON.stringify({ chunk: chunkText })}\n\n`);
@@ -195,11 +208,14 @@ Reply ONLY with 'GENERAL' or the exact filename. Do not add any quotes, punctuat
     // Auto-Title Logic (Fire and forget, non-blocking)
     if (finalSessionId && history.length === 0) {
       const titlePrompt = `Summarize this query in 3 simple words (no punctuation, no quotes): "${message}"`;
-      // Use fallback tiny model for speed and cost
-      const fastModel = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
-      fastModel.generateContent(titlePrompt).then(({ response }) => {
-        let text = response.text().trim();
-        text = text.replace(/["']/g, ''); // strip quotes
+      openai.chat.completions.create({
+        model: "gpt-4o-mini",
+        messages: [{ role: "user", content: titlePrompt }],
+        max_tokens: 10,
+        temperature: 0,
+      }).then((result) => {
+        let text = result.choices[0]?.message?.content?.trim() || 'New Chat';
+        text = text.replace(/[\"']/g, ''); // strip quotes
         supabase.from('chat_sessions').update({ title: text, updated_at: new Date() }).eq('id', finalSessionId).then();
       }).catch(err => console.error("Auto-titling failed:", err));
     }
