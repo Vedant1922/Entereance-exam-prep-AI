@@ -158,7 +158,7 @@ Reply ONLY with 'GENERAL' or the exact filename. Do not add any quotes, punctuat
 
     // --- Select Model ---
     const model = genAI.getGenerativeModel({
-      model: "gemini-2.5-pro",
+      model: "gemini-2.5-flash",
       systemInstruction: finalSystemInstruction
     });
 

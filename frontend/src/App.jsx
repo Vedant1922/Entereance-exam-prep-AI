@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { MessageSquare, Flame, CalendarClock, UserCircle, ArrowUp, Plus, Settings, LogOut, Atom, FlaskConical, Calculator, Mail, Menu } from 'lucide-react';
+import { MessageSquare, Flame, CalendarClock, UserCircle, ArrowUp, Plus, Settings, LogOut, Atom, FlaskConical, Calculator, Mail, Menu, MoreVertical, Trash2, Edit2, Pin } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import remarkMath from 'remark-math';
@@ -63,6 +63,12 @@ function App() {
   // Database State
   const [currentSessionId, setCurrentSessionId] = useState(null);
   const [chatSessions, setChatSessions] = useState([]);
+  const [openDropdownId, setOpenDropdownId] = useState(null);
+  
+  // Custom UI States
+  const [editingSessionId, setEditingSessionId] = useState(null);
+  const [editingTitle, setEditingTitle] = useState('');
+  const [deleteConfirmId, setDeleteConfirmId] = useState(null);
 
   const messagesEndRef = useRef(null);
   const textareaRef = useRef(null);
@@ -160,6 +166,48 @@ function App() {
         console.error("Failed to delete chats", err);
       }
     }
+  };
+
+  const handleTogglePin = async (e, sessionId, currentPinStatus) => {
+    e.stopPropagation();
+    const newStatus = !currentPinStatus;
+    // Update local state instantly
+    setChatSessions(prev => prev.map(s => s.id === sessionId ? { ...s, is_pinned: newStatus } : s));
+    // Update DB
+    await supabase.from('chat_sessions').update({ is_pinned: newStatus }).eq('id', sessionId);
+    setOpenDropdownId(null);
+  };
+
+  const triggerDelete = (e, sessionId) => {
+    e.stopPropagation();
+    setDeleteConfirmId(sessionId);
+    setOpenDropdownId(null);
+  };
+
+  const confirmDeleteChat = async () => {
+    if (deleteConfirmId) {
+      await supabase.from('chat_sessions').delete().eq('id', deleteConfirmId);
+      setChatSessions(prev => prev.filter(s => s.id !== deleteConfirmId));
+      if (currentSessionId === deleteConfirmId) {
+        handleNewChat();
+      }
+    }
+    setDeleteConfirmId(null);
+  };
+
+  const triggerRename = (e, sessionId, currentTitle) => {
+    e.stopPropagation();
+    setEditingSessionId(sessionId);
+    setEditingTitle(currentTitle || "New Chat");
+    setOpenDropdownId(null);
+  };
+
+  const saveRenameChat = async (sessionId) => {
+    if (editingTitle && editingTitle.trim()) {
+      await supabase.from('chat_sessions').update({ title: editingTitle.trim() }).eq('id', sessionId);
+      setChatSessions(prev => prev.map(s => s.id === sessionId ? { ...s, title: editingTitle.trim() } : s));
+    }
+    setEditingSessionId(null);
   };
 
   const handleSkipOnboarding = () => {
@@ -290,7 +338,13 @@ function App() {
         for (const line of lines) {
           if (!line.startsWith('data: ')) continue;
           const data = line.slice(6).trim();
-          if (data === '[DONE]') break;
+          if (data === '[DONE]') {
+            // Re-fetch sidebar to get the auto-generated title after a brief delay
+            setTimeout(() => {
+              loadSidebarSessions();
+            }, 1500);
+            break;
+          }
 
           try {
             const parsed = JSON.parse(data);
@@ -415,6 +469,35 @@ function App() {
   return (
     <div className="overflow-hidden bg-theme_bg text-[#ECECEC] selection:bg-theme_green/40 selection:text-white font-sans h-screen flex w-full">
       
+      {/* --- CUSTOM DELETE MODAL --- */}
+      {deleteConfirmId && (
+        <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-[100] flex items-center justify-center p-4 animate-in fade-in duration-200">
+          <div className="bg-[#1C1C1C] border border-red-500/20 rounded-2xl w-full max-w-sm p-6 shadow-2xl animate-in zoom-in-95 duration-200">
+            <div className="w-10 h-10 rounded-xl bg-red-500/15 border border-red-500/20 flex items-center justify-center mb-5">
+              <Trash2 className="w-5 h-5 text-red-400" />
+            </div>
+            <h2 className="text-xl font-bold text-white mb-2">Delete Chat?</h2>
+            <p className="text-[13px] text-gray-400 mb-8">
+              This action cannot be undone. This chat and its history will be permanently removed.
+            </p>
+            <div className="flex gap-3">
+              <button 
+                onClick={() => setDeleteConfirmId(null)}
+                className="flex-1 py-3 text-[13.5px] font-semibold text-gray-400 hover:text-white bg-white/5 hover:bg-white/10 rounded-xl transition-colors"
+              >
+                Cancel
+              </button>
+              <button 
+                onClick={confirmDeleteChat}
+                className="flex-1 py-3 text-[13.5px] font-bold text-red-100 bg-red-500/80 hover:bg-red-500 rounded-xl transition-colors"
+              >
+                Delete
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* --- SETTINGS / ONBOARDING MODAL --- */}
       {(showSettings || showOnboarding) && (
         <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-[100] flex items-center justify-center p-4">
@@ -557,16 +640,73 @@ function App() {
           {chatSessions.length === 0 ? (
             <p className="px-3 text-xs text-gray-600 mt-4 italic">No recent chats.</p>
           ) : (
-            chatSessions.map((s) => (
-              <button 
-                key={s.id} 
-                onClick={() => loadChatHistory(s.id, s.subject)}
-                className={`w-full flex items-center gap-2.5 px-3 py-2 text-sm rounded-xl text-left truncate transition-colors duration-150 group ${currentSessionId === s.id ? 'bg-white/10 text-white' : 'hover:bg-white/5 text-gray-400 hover:text-white'}`}
-              >
-                <MessageSquare className={`w-3.5 h-3.5 transition-all flex-shrink-0 ${currentSessionId === s.id ? 'text-theme_green' : 'opacity-40 group-hover:opacity-80 group-hover:text-theme_green'}`} />
-                <span className="truncate text-[13px]">{s.title || 'New Chat'}</span>
-              </button>
-            ))
+            [...chatSessions].sort((a, b) => {
+              const aPinned = a.is_pinned;
+              const bPinned = b.is_pinned;
+              if (aPinned && !bPinned) return -1;
+              if (!aPinned && bPinned) return 1;
+              return new Date(b.updated_at) - new Date(a.updated_at);
+            }).map((s) => {
+              const isPinned = s.is_pinned;
+              const isEditing = editingSessionId === s.id;
+              return (
+              <div key={s.id} className="relative group/item mb-0.5">
+                <button 
+                  onClick={() => { if (!isEditing) loadChatHistory(s.id, s.subject) }}
+                  className={`w-full flex items-center justify-between px-3 py-2.5 md:py-2 text-sm rounded-xl text-left transition-colors duration-150 ${currentSessionId === s.id && !isEditing ? 'bg-white/10 text-white' : 'hover:bg-white/5 text-gray-400 hover:text-white'}`}
+                >
+                  <div className="flex items-center gap-2.5 w-[85%]">
+                    <MessageSquare className={`w-3.5 h-3.5 transition-all flex-shrink-0 ${currentSessionId === s.id ? 'text-theme_green' : 'opacity-40 group-hover/item:opacity-80 group-hover/item:text-theme_green'}`} />
+                    
+                    {isEditing ? (
+                      <input 
+                        type="text"
+                        autoFocus
+                        value={editingTitle}
+                        onChange={(e) => setEditingTitle(e.target.value)}
+                        onBlur={() => saveRenameChat(s.id)}
+                        onKeyDown={(e) => {
+                          if (e.key === 'Enter') saveRenameChat(s.id);
+                          if (e.key === 'Escape') setEditingSessionId(null);
+                        }}
+                        className="bg-[#222] border border-theme_green/50 text-white text-[13px] rounded px-2 py-0.5 w-full outline-none focus:ring-1 focus:ring-theme_green/20"
+                        onClick={(e) => e.stopPropagation()}
+                      />
+                    ) : (
+                      <span className="truncate text-[13px]">{s.title || 'New Chat'}</span>
+                    )}
+                  </div>
+                  {isPinned && !isEditing && <Pin className="w-3 h-3 text-theme_green flex-shrink-0 ml-1" />}
+                </button>
+                
+                {/* 3-Dot Button */}
+                <button 
+                  onClick={(e) => { e.stopPropagation(); setOpenDropdownId(openDropdownId === s.id ? null : s.id); }}
+                  className={`absolute right-1 top-1.5 p-1 rounded-md bg-[#2A2A2A] hover:bg-[#3A3A3A] transition-all duration-200 border border-white/10 ${currentSessionId === s.id || openDropdownId === s.id ? 'opacity-100' : 'opacity-0 md:group-hover/item:opacity-100'}`}
+                >
+                  <MoreVertical className="w-3.5 h-3.5 text-gray-400 hover:text-white" />
+                </button>
+
+                {/* Dropdown Menu */}
+                {openDropdownId === s.id && (
+                  <>
+                    <div className="fixed inset-0 z-40" onClick={() => setOpenDropdownId(null)} />
+                    <div className="absolute right-0 top-8 w-32 bg-[#2A2A2A] border border-white/10 rounded-xl shadow-2xl z-50 overflow-hidden flex flex-col py-1 animate-in fade-in zoom-in-95 duration-100">
+                      <button onClick={(e) => handleTogglePin(e, s.id, isPinned)} className="flex items-center gap-2 px-3 py-2.5 text-[12px] text-gray-300 hover:bg-white/10 hover:text-white w-full text-left transition-colors">
+                        <Pin className="w-3 h-3" /> {isPinned ? 'Unpin' : 'Pin Chat'}
+                      </button>
+                      <button onClick={(e) => triggerRename(e, s.id, s.title)} className="flex items-center gap-2 px-3 py-2.5 text-[12px] text-gray-300 hover:bg-white/10 hover:text-white w-full text-left transition-colors">
+                        <Edit2 className="w-3 h-3" /> Rename
+                      </button>
+                      <div className="h-px bg-white/10 my-0.5 mx-2" />
+                      <button onClick={(e) => triggerDelete(e, s.id)} className="flex items-center gap-2 px-3 py-2.5 text-[12px] text-red-400 hover:bg-red-500/15 w-full text-left transition-colors">
+                        <Trash2 className="w-3 h-3" /> Delete
+                      </button>
+                    </div>
+                  </>
+                )}
+              </div>
+            )})
           )}
         </div>
 
