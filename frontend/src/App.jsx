@@ -381,18 +381,22 @@ function App() {
       });
     } finally {
       setIsLoading(false);
+      // Delayed refresh to capture the auto-generated title from the backend
+      setTimeout(() => {
+        loadSidebarSessions();
+      }, 1500);
     }
   };
 
   if (isAuthLoading) {
-    return <div className="h-screen w-full bg-[#212121] flex items-center justify-center text-white">Loading...</div>;
+    return <div className="h-screen w-full bg-[#000000] flex items-center justify-center text-white font-medium">Loading...</div>;
   }
 
   // --- AUTH OVERLAY SCREEN ---
   if (!session) {
     return (
-      <div className="h-screen w-full bg-[#171717] flex items-center justify-center text-[#ECECEC] font-sans selection:bg-theme_green/40 selection:text-white">
-        <div className="bg-[#212121] p-10 rounded-3xl border border-white/5 shadow-2xl w-full max-w-md flex flex-col items-center relative overflow-hidden">
+      <div className="h-screen w-full bg-[#0A0A0A] flex items-center justify-center text-white font-sans selection:bg-theme_green/40 selection:text-white">
+        <div className="bg-[#000000] p-10 rounded-3xl border border-white/5 shadow-2xl w-full max-w-md flex flex-col items-center relative overflow-hidden">
           {/* Subtle top glow */}
           <div className="absolute top-0 w-full h-1 bg-gradient-to-r from-transparent via-theme_green/50 to-transparent"></div>
           
@@ -403,8 +407,8 @@ function App() {
           <p className="text-[13.5px] text-gray-400 mb-8 text-center px-4">Your personal, highly-trained JEE mentor.</p>
 
           {/* Toggle Tabs */}
-          <div className="flex w-full bg-[#171717] p-1.5 rounded-xl border border-white/5 mb-8 relative">
-            <div className={`absolute top-1.5 bottom-1.5 w-[calc(50%-6px)] bg-[#2A2A2A] rounded-lg shadow-sm transition-all duration-300 ease-out border border-white/5 ${isSignUp ? 'translate-x-[calc(100%+6px)]' : 'translate-x-0'}`}></div>
+          <div className="flex w-full bg-[#0A0A0A] p-1.5 rounded-xl border border-white/5 mb-8 relative">
+            <div className={`absolute top-1.5 bottom-1.5 w-[calc(50%-6px)] bg-[#171717] rounded-lg shadow-sm transition-all duration-300 ease-out border border-white/5 ${isSignUp ? 'translate-x-[calc(100%+6px)]' : 'translate-x-0'}`}></div>
             <button 
               onClick={() => setIsSignUp(false)}
               className={`flex-1 py-2.5 text-[13px] font-semibold z-10 transition-colors duration-200 ${!isSignUp ? 'text-white' : 'text-gray-500 hover:text-gray-300'}`}
@@ -425,14 +429,14 @@ function App() {
               placeholder="Email address" 
               value={authEmail}
               onChange={(e) => setAuthEmail(e.target.value)}
-              className="w-full bg-[#171717] border border-white/5 rounded-xl px-4 py-3 outline-none focus:border-theme_green/50 focus:ring-1 focus:ring-theme_green/20 text-sm transition-all text-white placeholder-gray-500"
+              className="w-full bg-[#0A0A0A] border border-white/5 rounded-xl px-4 py-3 outline-none focus:border-theme_green/50 focus:ring-1 focus:ring-theme_green/20 text-sm transition-all text-white placeholder-gray-500"
             />
             <input 
               type="password" 
               placeholder="Password" 
               value={authPassword}
               onChange={(e) => setAuthPassword(e.target.value)}
-              className="w-full bg-[#171717] border border-white/5 rounded-xl px-4 py-3 outline-none focus:border-theme_green/50 focus:ring-1 focus:ring-theme_green/20 text-sm transition-all text-white placeholder-gray-500"
+              className="w-full bg-[#0A0A0A] border border-white/5 rounded-xl px-4 py-3 outline-none focus:border-theme_green/50 focus:ring-1 focus:ring-theme_green/20 text-sm transition-all text-white placeholder-gray-500"
             />
             {authError && <p className="text-red-400 text-[13px] mt-1 text-center font-medium bg-red-400/10 border border-red-500/20 py-2 rounded-lg">{authError}</p>}
             <button 
@@ -501,7 +505,7 @@ function App() {
       {/* --- SETTINGS / ONBOARDING MODAL --- */}
       {(showSettings || showOnboarding) && (
         <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-[100] flex items-center justify-center p-4">
-          <div className="bg-[#1C1C1C] border border-white/10 rounded-2xl w-full max-w-sm p-6 relative shadow-2xl">
+          <div className="bg-[#050505] border border-white/10 rounded-2xl w-full max-w-sm p-6 relative shadow-2xl">
             <div className="w-10 h-10 rounded-xl bg-theme_green/15 border border-theme_green/25 flex items-center justify-center mb-5">
               <Settings className="w-5 h-5 text-theme_green" />
             </div>
@@ -532,7 +536,7 @@ function App() {
                 <select 
                   value={selectedYear} 
                   onChange={(e) => setSelectedYear(e.target.value)}
-                  className="w-full bg-[#171717] hover:bg-[#1A1A1A] border border-white/10 rounded-xl px-4 py-3 text-[14px] text-white outline-none focus:border-theme_green/40 focus:ring-1 focus:ring-theme_green/20 appearance-none transition-colors cursor-pointer"
+                  className="w-full bg-[#0A0A0A] hover:bg-[#111111] border border-white/10 rounded-xl px-4 py-3 text-[14px] text-white outline-none focus:border-theme_green/40 focus:ring-1 focus:ring-theme_green/20 appearance-none transition-colors cursor-pointer"
                 >
                   <option value="2026">2026</option>
                   <option value="2027">2027</option>
@@ -656,7 +660,7 @@ function App() {
                   className={`w-full flex items-center justify-between px-3 py-2.5 md:py-2 text-sm rounded-xl text-left transition-colors duration-150 ${currentSessionId === s.id && !isEditing ? 'bg-white/10 text-white' : 'hover:bg-white/5 text-gray-400 hover:text-white'}`}
                 >
                   <div className="flex items-center gap-2.5 w-[85%]">
-                    <MessageSquare className={`w-3.5 h-3.5 transition-all flex-shrink-0 ${currentSessionId === s.id ? 'text-theme_green' : 'opacity-40 group-hover/item:opacity-80 group-hover/item:text-theme_green'}`} />
+                    {/* Icon removed for cleaner look as requested */}
                     
                     {isEditing ? (
                       <input 
@@ -673,7 +677,7 @@ function App() {
                         onClick={(e) => e.stopPropagation()}
                       />
                     ) : (
-                      <span className="truncate text-[13px]">{s.title || 'New Chat'}</span>
+                      <span className="truncate text-[14px] font-medium tracking-tight">{s.title || 'New Chat'}</span>
                     )}
                   </div>
                   {isPinned && !isEditing && <Pin className="w-3 h-3 text-theme_green flex-shrink-0 ml-1" />}
@@ -723,12 +727,16 @@ function App() {
           </div>
           <button
             onClick={() => setIsProfileOpen(!isProfileOpen)}
-            className="w-full flex items-center gap-2.5 px-2.5 py-2 hover:bg-white/5 rounded-xl transition-all duration-150 group"
+            className="w-full flex items-center gap-3 px-2.5 py-2.5 hover:bg-white/5 rounded-2xl transition-all duration-150 group"
           >
-            <UserCircle className="w-8 h-8 text-gray-500 group-hover:text-theme_green transition-colors flex-shrink-0" />
+            {/* ChatGPT-style Profile Circle */}
+            <div className="w-8 h-8 rounded-full bg-gradient-to-br from-theme_green/40 to-theme_green/10 border border-theme_green/30 flex items-center justify-center text-[13px] font-bold text-theme_green flex-shrink-0 group-hover:scale-105 transition-transform">
+              {(session?.user?.email?.charAt(0) || 'J').toUpperCase()}
+            </div>
             <div className="flex flex-col text-left min-w-0">
-              <span className="text-[13px] font-semibold text-gray-200 group-hover:text-white transition-colors truncate">{session?.user?.email?.split('@')[0] || 'JEE Aspirant'}</span>
-              <span className="text-[11px] text-gray-600 truncate">{session?.user?.email || 'user@jee.local'}</span>
+              <span className="text-[13.5px] font-bold text-white transition-colors truncate">
+                {session?.user?.email?.split('@')[0] || 'JEE Aspirant'}
+              </span>
             </div>
           </button>
         </div>
@@ -749,7 +757,7 @@ function App() {
           </button>
 
           {/* Subject Switcher */}
-          <div className="flex items-center p-0.5 md:p-1 bg-[#2A2A2A] border border-white/8 rounded-full shadow-lg pointer-events-auto ml-9 md:ml-0">
+          <div className="flex items-center p-0.5 md:p-1 bg-[#111111] border border-white/8 rounded-full shadow-lg pointer-events-auto ml-9 md:ml-0">
             {['PHYSICS', 'CHEMISTRY', 'MATHS'].map(sub => {
               const Icon = SUBJECT_ICONS[sub];
               const isActive = activeSubject === sub;
@@ -782,10 +790,10 @@ function App() {
                   <button
                     key={i}
                     onClick={() => handleSuggestionClick(s.text)}
-                    className="flex items-start gap-3 p-4 bg-[#2A2A2A] hover:bg-[#303030] border border-white/6 hover:border-theme_green/20 rounded-2xl text-left transition-all duration-200 group"
+                    className="flex items-start gap-3 p-4 bg-[#0A0A0A] hover:bg-[#111111] border border-white/6 hover:border-theme_green/20 rounded-2xl text-left transition-all duration-200 group"
                   >
                     <span className="text-xl flex-shrink-0">{s.emoji}</span>
-                    <span className="text-[13px] md:text-[13.5px] text-gray-300 group-hover:text-white leading-snug transition-colors">{s.text}</span>
+                    <span className="text-[13px] md:text-[13.5px] text-[#F3F4F6] group-hover:text-white leading-snug transition-colors">{s.text}</span>
                   </button>
                 ))}
               </div>
@@ -795,11 +803,11 @@ function App() {
               {messages.map((msg, i) => (
                 <div key={i} className={`flex w-full ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
                   {msg.role === 'user' ? (
-                    <div className="bg-[#2F2F2F] text-[#ECECEC] px-4 py-2.5 rounded-3xl max-w-[85%] md:max-w-[75%] text-[14px] md:text-[15px] leading-relaxed">
-                      {msg.content}
+                    <div className="bg-[#171717] text-white px-5 py-3 rounded-2xl max-w-[85%] md:max-w-[75%] text-[14px] md:text-[15px] leading-relaxed shadow-sm border border-white/[0.03]">
+                      {msg.content.includes('] ') ? msg.content.split('] ')[1] : msg.content}
                     </div>
                   ) : (
-                    <div className="text-gray-300 max-w-[95%] md:max-w-[92%] text-[14.5px] md:text-[15.5px] leading-relaxed relative markdown-body text-left w-full">
+                    <div className="text-[#F3F4F6] max-w-[95%] md:max-w-[92%] text-[14.5px] md:text-[15.5px] leading-relaxed relative markdown-body text-left w-full">
                       {msg.content ? (
                         <ReactMarkdown
                           remarkPlugins={[remarkGfm, remarkMath]}
@@ -824,24 +832,24 @@ function App() {
         </div>
 
         {/* Input Area */}
-        <div className="absolute w-full bottom-0 bg-gradient-to-t from-theme_bg via-theme_bg/95 to-transparent pt-10 pb-4 md:pb-6 px-3 md:px-16 z-10 pointer-events-none">
-          <div className="max-w-2xl mx-auto relative bg-theme_input rounded-2xl border border-white/8 overflow-hidden focus-within:border-theme_green/50 shadow-lg focus-within:ring-1 focus-within:ring-theme_green/20 transition-all duration-300 pointer-events-auto">
+        <div className="absolute w-full bottom-0 bg-gradient-to-t from-theme_bg via-theme_bg/95 to-transparent pt-10 pb-4 md:pb-8 px-3 md:px-16 z-10 pointer-events-none">
+          <div className="max-w-2xl mx-auto relative bg-theme_input rounded-2xl border-2 border-white/10 overflow-hidden focus-within:border-theme_green/40 shadow-2xl focus-within:ring-2 focus-within:ring-theme_green/10 transition-all duration-300 pointer-events-auto">
             <textarea
               ref={textareaRef}
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={(e) => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); handleSend(); } }}
               placeholder={`Ask about ${activeSubject.toLowerCase()}...`}
-              className="w-full max-h-32 md:max-h-40 min-h-[52px] md:min-h-[56px] py-3.5 md:py-4 pl-4 pr-12 bg-transparent resize-none outline-none text-[14.5px] md:text-[15.5px] text-[#ECECEC] placeholder-[#555] disabled:opacity-50 leading-relaxed"
+              className="w-full max-h-32 md:max-h-40 min-h-[52px] md:min-h-[56px] py-3.5 md:py-4 pl-4 pr-12 bg-transparent resize-none outline-none text-[14.5px] md:text-[15.5px] text-white placeholder-[#555] disabled:opacity-50 leading-relaxed"
               rows="1"
               disabled={isLoading}
             />
             <button
               onClick={handleSend}
               disabled={!input.trim() || isLoading}
-              className="absolute right-2 md:right-2.5 bottom-2.5 w-7 h-7 md:w-8 md:h-8 bg-white disabled:bg-[#444] disabled:cursor-not-allowed rounded-full flex items-center justify-center transition-all duration-200 active:scale-90 hover:bg-gray-200"
+              className="absolute right-3 bottom-3 w-8 h-8 md:w-9 md:h-9 bg-white disabled:bg-[#333] disabled:cursor-not-allowed rounded-full flex items-center justify-center transition-all duration-200 active:scale-90 hover:bg-gray-200 shadow-md"
             >
-              <ArrowUp className="w-3.5 h-3.5 md:w-4 md:h-4 text-black disabled:text-gray-600" />
+              <ArrowUp className="w-4 h-4 md:w-5 md:h-5 text-black disabled:text-gray-500" />
             </button>
           </div>
           <p className="text-center text-[10px] md:text-[11px] text-[#444] mt-2 md:mt-3 tracking-wide pointer-events-auto">

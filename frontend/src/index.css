@@ -4,10 +4,10 @@
   --color-theme_green: #A6DEBF;
   --color-theme_cyan: #5FC4C0;
   --color-theme_tan: #DEBFA6;
-  --color-theme_bg: #212121;         /* ChatGPT exact background */
-  --color-theme_sidebar: #171717;    /* ChatGPT exact sidebar - deeper near-black */
-  --color-theme_bubble: #2C3130;     /* Our twist: very subtle green-tinted dark gray */
-  --color-theme_input: #2F2F2F;      /* ChatGPT input box */
+  --color-theme_bg: #000000;         /* Pure deep black */
+  --color-theme_sidebar: #0A0A0A;    /* Very dark sidebar */
+  --color-theme_bubble: #111111;     /* Darker message bubble */
+  --color-theme_input: #171717;      /* Darker input box */
 }
 
 html, body, #root {
@@ -20,26 +20,26 @@ html, body, #root {
 
 /* --- CUSTOM MARKDOWN STYLES FOR CHAT BUBBLES --- */
 .markdown-body {
-  line-height: 1.75;
+  line-height: 1.8;
   word-break: break-word;
-  font-size: 15.5px;
-  color: #D1D5DB; /* Soft gray body text - not harsh white */
-  font-weight: 400; /* Explicitly normal weight for body */
+  font-size: 16px;
+  color: #F3F4F6; /* Brighter, more emerging white */
+  font-weight: 400;
 }
 .markdown-body p {
   margin-top: 0;
   margin-bottom: 0.9rem;
   font-weight: 400;
-  color: #D1D5DB;
+  color: #F3F4F6;
 }
 .markdown-body p:last-child {
   margin-bottom: 0;
 }
 
-/* Bold text - slightly brighter white but NOT harsh */
+/* Bold text - pure white */
 .markdown-body strong {
-  font-weight: 600;
-  color: #F3F4F6;
+  font-weight: 700;
+  color: #FFFFFF;
 }
 
 /* Headings - visually distinct but not excessively large */
@@ -48,8 +48,8 @@ html, body, #root {
 .markdown-body h3,
 .markdown-body h4 {
   font-family: 'Inter', sans-serif;
-  font-weight: 600;
-  color: #F9FAFB;
+  font-weight: 700;
+  color: #FFFFFF;
   line-height: 1.4;
   margin-top: 1.6rem;
   margin-bottom: 0.35rem;

@@ -178,9 +178,9 @@ Reply ONLY with 'GENERAL' or the exact filename. Do not add any quotes, punctuat
       { role: "user", content: message }
     ];
 
-    // --- Stream the response from GPT-4o ---
+    // --- Stream the response from GPT-4o-mini ---
     const stream = await openai.chat.completions.create({
-      model: "gpt-4o",
+      model: "gpt-4o-mini",
       messages: openaiMessages,
       stream: true,
       temperature: 0.7,
@@ -206,7 +206,7 @@ Reply ONLY with 'GENERAL' or the exact filename. Do not add any quotes, punctuat
     }
 
     // Auto-Title Logic (Fire and forget, non-blocking)
-    if (finalSessionId && history.length === 0) {
+    if (finalSessionId && history.length <= 1) {
       const titlePrompt = `Summarize this query in 3 simple words (no punctuation, no quotes): "${message}"`;
       openai.chat.completions.create({
         model: "gpt-4o-mini",
