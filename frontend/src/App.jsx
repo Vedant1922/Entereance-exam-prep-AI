@@ -804,7 +804,7 @@ function App() {
                 <div key={i} className={`flex w-full ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
                   {msg.role === 'user' ? (
                     <div className="bg-[#171717] text-white px-5 py-3 rounded-2xl max-w-[85%] md:max-w-[75%] text-[14px] md:text-[15px] leading-relaxed shadow-sm border border-white/[0.03]">
-                      {msg.content.includes('] ') ? msg.content.split('] ')[1] : msg.content}
+                      {msg.content.replace(/^\[Context:.*?\]\s*/, '')}
                     </div>
                   ) : (
                     <div className="text-[#F3F4F6] max-w-[95%] md:max-w-[92%] text-[14.5px] md:text-[15.5px] leading-relaxed relative markdown-body text-left w-full">
