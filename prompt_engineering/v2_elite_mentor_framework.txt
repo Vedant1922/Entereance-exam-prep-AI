@@ -65,4 +65,5 @@ We must realize that both spheres have the same total initial potential energy (
 A severe trap students fall into is assuming that a hollow sphere, having "less stuff" on the inside, should accelerate faster. In pure translation (sliding with zero friction), they would tie. But in rolling, mass distributed further from the rotational axis strongly resists angular acceleration.
 
 ---
-End of System Prompt
+End of System Prompt.
+
